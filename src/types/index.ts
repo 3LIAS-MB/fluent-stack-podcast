@@ -1,0 +1,56 @@
+export type EpisodeLevel = 'beginner' | 'intermediate' | 'advanced';
+export type EpisodeFormat = 'solo' | 'duo';
+export type OutputFormat = '16:9' | '9:16';
+
+export interface Word {
+  word: string;
+  start: number;
+  end: number;
+  speaker: 'Host' | 'Alex' | 'Sam';
+}
+
+export interface Captions {
+  words: Word[];
+}
+
+export interface VocabularyItem {
+  term: string;
+  definition: string;
+  example?: string;
+}
+
+export interface EpisodeData {
+  audioUrl: string;
+  imageUrl: string;
+  vocabulary: VocabularyItem[];
+  title: string;
+  level: EpisodeLevel;
+  format: EpisodeFormat;
+  outputFormat: OutputFormat;
+}
+
+export interface RenderRequest {
+  audioUrl: string;
+  imageUrl: string;
+  vocabulary: VocabularyItem[];
+  title: string;
+  level: EpisodeLevel;
+  format: EpisodeFormat;
+  outputFormat: OutputFormat;
+}
+
+export interface RenderResponse {
+  status: 'success' | 'error';
+  outputPath?: string;
+  error?: string;
+}
+
+export interface CompositionProps {
+  audioUrl: string;
+  imageUrl: string;
+  vocabulary: VocabularyItem[];
+  title: string;
+  level: EpisodeLevel;
+  format: EpisodeFormat;
+  captions: Captions;
+}
