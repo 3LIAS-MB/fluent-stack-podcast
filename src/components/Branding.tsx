@@ -1,15 +1,11 @@
 import { useVideoConfig } from 'remotion';
 import { EpisodeLevel } from '../types';
+import { LEVEL_ACCENT_COLOR } from '../utils/levelColors';
 
 interface BrandingProps {
   level: EpisodeLevel;
 }
 
-const LEVEL_COLORS: Record<EpisodeLevel, string> = {
-  beginner: '#22C55E',
-  intermediate: '#3B82F6',
-  advanced: '#EF4444',
-};
 
 const LEVEL_LABELS: Record<EpisodeLevel, string> = {
   beginner: 'Beginner',
@@ -48,6 +44,7 @@ export const Branding: React.FC<BrandingProps> = ({ level }) => {
             fontSize: Math.round(28 * s),
             fontWeight: 700,
             letterSpacing: 1,
+            fontFamily: 'Outfit',
             textShadow: `${2 * s}px ${2 * s}px ${4 * s}px rgba(0,0,0,0.8)`,
           }}
         >
@@ -60,15 +57,17 @@ export const Branding: React.FC<BrandingProps> = ({ level }) => {
           position: 'absolute',
           top: Math.round(24 * s),
           right: Math.round(24 * s),
-          backgroundColor: LEVEL_COLORS[normalizedLevel],
+          backgroundColor: LEVEL_ACCENT_COLOR[normalizedLevel],
           color: '#FFFFFF',
           fontSize: Math.round(22 * s),
           fontWeight: 700,
           padding: `${Math.round(8 * s)}px ${Math.round(20 * s)}px`,
-          borderRadius: Math.round(20 * s),
+          borderRadius: Math.round(12 * s),
+          fontFamily: 'Outfit',
           textTransform: 'uppercase',
           letterSpacing: 1,
-          boxShadow: `0 4px 12px rgba(0,0,0,0.3)`,
+          boxShadow: `0 4px 20px ${LEVEL_ACCENT_COLOR[normalizedLevel]}66, 0 2px 8px rgba(0,0,0,0.4)`,
+          // boxShadow: `0 4px 12px rgba(0,0,0,0.3)`,
         }}
       >
         {LEVEL_LABELS[normalizedLevel]}

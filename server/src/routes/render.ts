@@ -25,6 +25,7 @@ export function createRenderRouter(port: number = DEFAULT_PORT) {
             term: item.term ?? item.word ?? item.name ?? String(item),
             definition: item.definition ?? item.meaning ?? item.desc ?? item.description ?? '',
             example: item.example ?? item.usage ?? undefined,
+            category: item.category ?? item.section ?? item.type ?? undefined,
           }));
           console.log(`Vocabulary parseado desde JSON: ${data.vocabulary.length} items`);
         } else {
@@ -59,6 +60,7 @@ export function createRenderRouter(port: number = DEFAULT_PORT) {
         term: item.term ?? item.word ?? item.name ?? String(item),
         definition: item.definition ?? item.meaning ?? item.desc ?? item.description ?? '',
         example: item.example ?? item.usage ?? undefined,
+        category: item.category ?? item.section ?? item.type ?? undefined,
       }));
       console.log(`Vocabulary ya era array, normalizado: ${data.vocabulary.length} items`);
     } else {

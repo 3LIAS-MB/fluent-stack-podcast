@@ -6,7 +6,9 @@ import { KaraokeSubtitles } from '../components/KaraokeSubtitles';
 import { VocabRecap } from '../components/VocabRecap';
 import { Branding } from '../components/Branding';
 
-const VOCAB_RECAP_DURATION = 180;
+const AUDIO_BUFFER_FRAMES = 15;
+const ITEMS_PER_PAGE = 15;
+const FRAMES_PER_PAGE = 150; // 5s × 30fps
 
 export const PodcastVideoShort: React.FC<CompositionProps> = ({
   audioUrl,
@@ -18,10 +20,17 @@ export const PodcastVideoShort: React.FC<CompositionProps> = ({
   captions,
 }) => {
   const audioDurationFrames = captions.words.length > 0
-    ? Math.ceil(captions.words[captions.words.length - 1].end * 30)
+    ? Math.ceil(captions.words[captions.words.length - 1].end * 30) + AUDIO_BUFFER_FRAMES
     : 0;
 
-  const totalDuration = audioDurationFrames + VOCAB_RECAP_DURATION;
+  let parsedVocab: typeof vocabulary = vocabulary;
+  if (typeof parsedVocab === 'string') {
+    try { parsedVocab = JSON.parse(parsedVocab as unknown as string); } catch { parsedVocab = [] as any; }
+  }
+  const safeVocab = Array.isArray(parsedVocab) ? parsedVocab : [];
+
+  const pageCount = safeVocab.length > 0 ? Math.ceil(safeVocab.length / ITEMS_PER_PAGE) : 0;
+  const vocabRecapDuration = pageCount * FRAMES_PER_PAGE;
 
   return (
     <div
@@ -38,16 +47,18 @@ export const PodcastVideoShort: React.FC<CompositionProps> = ({
 
         <AudioWave audioSrc={audioUrl} heightPercent={8} color="white" />
 
-        <KaraokeSubtitles captions={captions} format={format} wordsPerGroup={3} />
+        <KaraokeSubtitles captions={captions} format={format} />
 
         <Branding level={level} />
       </Sequence>
 
-      {vocabulary.length > 0 && (
-        <Sequence from={audioDurationFrames}>
+      {safeVocab.length > 0 && (
+        <Sequence from={audioDurationFrames} durationInFrames={vocabRecapDuration}>
           <VocabRecap
-            vocabulary={vocabulary}
+            vocabulary={safeVocab}
             startFrame={0}
+            title={title}
+            level={level}
           />
         </Sequence>
       )}

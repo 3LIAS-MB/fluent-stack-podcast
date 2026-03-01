@@ -13,10 +13,17 @@ export interface Captions {
   words: Word[];
 }
 
+export interface SubtitleBlock {
+  words: Word[];
+  start: number; // tiempo de inicio del bloque (start de la primera palabra)
+  end: number;   // tiempo de fin del bloque (end de la última palabra)
+}
+
 export interface VocabularyItem {
   term: string;
   definition: string;
   example?: string;
+  category?: string;  // e.g. "Phrasal Verbs", "Technical Terms", "Interview Expressions", "Collocation"
 }
 
 export interface EpisodeData {

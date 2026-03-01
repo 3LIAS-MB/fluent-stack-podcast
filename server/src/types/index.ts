@@ -19,6 +19,7 @@ export interface VocabularyItem {
   term: string;
   definition: string;
   example?: string;
+  category?: string;  // e.g. "Phrasal Verbs", "Technical Terms", "Interview Expressions", "Collocation"
 }
 
 export interface RenderRequest {

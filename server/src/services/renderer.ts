@@ -3,7 +3,7 @@ import fs from 'fs';
 import { bundle } from '@remotion/bundler';
 import { getCompositions, renderMedia } from '@remotion/renderer';
 import { Captions, RenderOptions, RenderRequest } from '../types';
-import { appendVocabToVideo } from './vocabImage';
+// appendVocabToVideo eliminado: el vocab ahora lo renderiza Remotion via VocabRecap.tsx
 
 const ffmpegPath: string = require('ffmpeg-static');
 const ffprobePath: string = require('ffprobe-static').path;
@@ -70,57 +70,48 @@ export async function renderVideo(
     );
   }
 
-  // ── Calcular duración real (solo audio, el vocab se añade post-proceso) ───
+  // ── Calcular duración total: audio + vocab paginado ─────────────────────
   const FPS = 30;
-  const AUDIO_BUFFER_FRAMES = 15; // 0.5s buffer para que la última palabra no se corte
+  const AUDIO_BUFFER_FRAMES = 15;
+  const ITEMS_PER_PAGE = 15;
+  const FRAMES_PER_PAGE = 150; // 5s × 30fps — igual que VocabRecap.tsx y vocabImage.ts
+
   const lastWord = captions.words[captions.words.length - 1];
   const audioDurationFrames = lastWord
     ? Math.ceil(lastWord.end * FPS) + AUDIO_BUFFER_FRAMES
     : 300;
 
+  const validVocab = Array.isArray(data.vocabulary)
+    ? data.vocabulary.filter((v) => v.term && v.definition?.trim())
+    : [];
+  const pageCount = validVocab.length > 0 ? Math.ceil(validVocab.length / ITEMS_PER_PAGE) : 0;
+  const vocabDurationFrames = pageCount * FRAMES_PER_PAGE;
+  const totalDurationFrames = audioDurationFrames + vocabDurationFrames;
+
   console.log(`\nDuración calculada:`);
   console.log(`  Audio: ${(audioDurationFrames / FPS).toFixed(1)}s (${audioDurationFrames} frames)`);
-  console.log(`  Vocab: imagen estática 30s (post-proceso ffmpeg)`);
+  console.log(`  Vocab: ${validVocab.length} items → ${pageCount} páginas → ${(vocabDurationFrames / FPS).toFixed(1)}s (${vocabDurationFrames} frames)`);
+  console.log(`  Total: ${(totalDurationFrames / FPS).toFixed(1)}s (${totalDurationFrames} frames)`);
 
   const compositionWithRealDuration = {
     ...composition,
-    durationInFrames: audioDurationFrames,
+    durationInFrames: totalDurationFrames,
   };
 
-  // Pasar vocabulary vacío al renderer — el vocab se hace via imagen estática
-  const inputPropsWithoutVocab = {
-    ...inputProps,
-    vocabulary: [],
-  };
-
-  console.log('Rendering media (solo audio)...');
+  console.log('Rendering media (audio + vocab via Remotion)...');
   await renderMedia({
     composition: compositionWithRealDuration,
     serveUrl: bundleLocation,
     codec: 'h264',
     outputLocation: outputPath,
-    inputProps: inputPropsWithoutVocab,
+    inputProps,
     ffmpegExecutable: ffmpegPath,
     ffprobeExecutable: ffprobePath,
     onProgress: ({ renderedFrames }) => {
-      const pct = Math.round((renderedFrames / audioDurationFrames) * 100);
-      process.stdout.write(`\rRender: ${renderedFrames}/${audioDurationFrames} frames (${pct}%)`);
+      const pct = Math.round((renderedFrames / totalDurationFrames) * 100);
+      process.stdout.write(`\rRender: ${renderedFrames}/${totalDurationFrames} frames (${pct}%)`);
     },
   });
-
-  // ── Post-proceso: agregar vocab slide como imagen estática 30s ────────────
-  const isShort = data.outputFormat === '9:16';
-  const vocabWidth = isShort ? 1080 : 1920;
-  const vocabHeight = isShort ? 1920 : 1080;
-  await appendVocabToVideo(
-    Array.isArray(data.vocabulary) ? data.vocabulary : [],
-    outputPath,
-    data.title,
-    data.level,
-    30,          // 30 segundos de vocab slide
-    vocabWidth,
-    vocabHeight
-  );
 
   console.log('\nRender completado:', outputPath);
   return outputPath;

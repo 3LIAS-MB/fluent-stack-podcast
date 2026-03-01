@@ -49,12 +49,15 @@ export async function transcribeWithOpenAI(
       return generateEstimatedTimestamps(response.text, format);
     }
 
-    const words = response.words.map((w: any) => ({
-      word: w.word,
-      start: w.start,
-      end: w.end,
-      speaker: (format === 'solo' ? 'Host' : 'Alex') as 'Host' | 'Alex' | 'Sam',
-    }));
+    const words = response.words
+      .map((w: any) => ({
+        // Limpia puntuación pegada al inicio/fin que devuelve Whisper (ej: "done," → "done")
+        word: w.word.trim().replace(/^[.,!?¡¿;:]+|[.,!?¡¿;:]+$/g, ''),
+        start: w.start,
+        end: w.end,
+        speaker: (format === 'solo' ? 'Host' : 'Alex') as 'Host' | 'Alex' | 'Sam',
+      }))
+      .filter((w) => w.word.length > 0); // descarta entradas que solo eran puntuación
 
     return { words };
   } catch (error) {

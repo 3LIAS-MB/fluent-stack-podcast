@@ -49,6 +49,7 @@ export const AudioWave: React.FC<AudioWaveProps> = ({
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+          filter: `drop-shadow(0 0 12px ${color}88) drop-shadow(0 0 4px ${color}55)`,
           // background: 'linear-gradient(to top, rgba(0,0,0,0.3) 0%, transparent 100%)',
         }}
       >
@@ -59,9 +60,12 @@ export const AudioWave: React.FC<AudioWaveProps> = ({
           frequencyData={frequencyData}
           width={width * 0.5}
           height={barHeight * 0.8}
-          lineThickness={5}
-          gapSize={7}
-          roundness={3}
+          lineThickness={8}
+          gapSize={5}
+          roundness={8}
+          // lineThickness={5}
+          // gapSize={7}
+          // roundness={3}
           color={color}
           maxDb={-20}
           minDb={-80}

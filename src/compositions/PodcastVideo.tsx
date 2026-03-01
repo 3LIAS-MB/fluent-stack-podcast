@@ -5,10 +5,13 @@ import { AudioWave } from '../components/AudioWave';
 import { KaraokeSubtitles } from '../components/KaraokeSubtitles';
 import { VocabRecap } from '../components/VocabRecap';
 import { Branding } from '../components/Branding';
+import { getLevelColor } from '../utils/levelColors';
 
 const AUDIO_BUFFER_FRAMES = 15;
-const CARD_DURATION = 90;
-const CARD_TRANSITION = 30;
+
+// Constantes de paginación — deben coincidir con VocabRecap.tsx y vocabImage.ts
+const ITEMS_PER_PAGE = 15;
+const FRAMES_PER_PAGE = 150; // 5s × 30fps
 
 export const PodcastVideo: React.FC<CompositionProps> = ({
   audioUrl,
@@ -23,18 +26,16 @@ export const PodcastVideo: React.FC<CompositionProps> = ({
     ? Math.ceil(captions.words[captions.words.length - 1].end * 30) + AUDIO_BUFFER_FRAMES
     : 0;
 
-  // Remotion serializa inputProps como JSON al pasar al browser sandbox del renderer.
-  // Por seguridad, parseamos vocabulary si llega como string.
+  // Guard: parsear si Remotion serializa vocabulary como string
   let parsedVocab: typeof vocabulary = vocabulary;
   if (typeof parsedVocab === 'string') {
     try { parsedVocab = JSON.parse(parsedVocab as unknown as string); } catch { parsedVocab = [] as any; }
   }
   const safeVocab = Array.isArray(parsedVocab) ? parsedVocab : [];
-  const vocabRecapDuration = safeVocab.length > 0
-    ? safeVocab.length * (CARD_DURATION + CARD_TRANSITION) + 30
-    : 0;
 
-  const totalDuration = audioDurationFrames + vocabRecapDuration;
+  // Duración del recap = páginas × 150 frames (igual que vocabImage.ts: páginas × 5s)
+  const pageCount = safeVocab.length > 0 ? Math.ceil(safeVocab.length / ITEMS_PER_PAGE) : 0;
+  const vocabRecapDuration = pageCount * FRAMES_PER_PAGE;
 
   return (
     <div
@@ -49,18 +50,21 @@ export const PodcastVideo: React.FC<CompositionProps> = ({
 
         <Audio src={audioUrl} />
 
-        <AudioWave audioSrc={audioUrl} heightPercent={8} color="white" />
-
-        <KaraokeSubtitles captions={captions} format={format} wordsPerGroup={4} />
+        <AudioWave audioSrc={audioUrl} heightPercent={8} color={getLevelColor(level)} />
+        {/* <AudioWave audioSrc={audioUrl} heightPercent={8} color="white" /> */}
+        {/* <KaraokeSubtitles captions={captions} format={format} /> */}
+        <KaraokeSubtitles captions={captions} format={format} level={level} />
 
         <Branding level={level} />
       </Sequence>
 
       {safeVocab.length > 0 && (
-        <Sequence from={audioDurationFrames}>
+        <Sequence from={audioDurationFrames} durationInFrames={vocabRecapDuration}>
           <VocabRecap
             vocabulary={safeVocab}
             startFrame={0}
+            title={title}
+            level={level}
           />
         </Sequence>
       )}

@@ -106,23 +106,39 @@ function generateVocabPage(
     filters.push(`drawtext=text='${pageLabel}':fontsize=${FONT_SMALL}:fontcolor=${WHITE}@0.5:x=(w-text_w)/2:y=${PAGE_Y}`);
   }
 
-  // ── Cabecera de tabla ──────────────────────────────────────────────────────
-  const TH_Y = TABLE_Y;
-  filters.push(`drawbox=x=${MARGIN_X}:y=${TH_Y - Math.round(8 * s)}:w=${width - MARGIN_X * 2}:h=${ROW_H}:color=0x1A1A3A:t=fill`);
-  filters.push(`drawtext=text='TERM':fontsize=${FONT_SMALL}:fontcolor=${GOLD}:x=${MARGIN_X + Math.round(10 * s)}:y=${TH_Y + Math.round(10 * s)}`);
-  filters.push(`drawtext=text='DEFINITION':fontsize=${FONT_SMALL}:fontcolor=${GOLD}:x=${COL2_X}:y=${TH_Y + Math.round(10 * s)}`);
+  // ── Filas de esta página (con encabezados de sección por categoría) ───────
+  // `virtualRow` cuenta tanto filas de items como filas de categoría para
+  // posicionar el contenido correctamente en el eje Y.
+  let virtualRow = 0;
+  let currentCategory = '';
 
-  // ── Filas de esta página ───────────────────────────────────────────────────
   for (let i = 0; i < pageItems.length; i++) {
-    const rowY = TABLE_Y + ROW_H + i * ROW_H;
-    const term = sanitizeForDrawtext(pageItems[i].term);
-    const def = sanitizeForDrawtext(pageItems[i].definition);
+    const item = pageItems[i];
+    const cat = item.category?.trim() ?? '';
+
+    // Si la categoría cambia (o aparece por primera vez), insertar fila de sección
+    if (cat && cat !== currentCategory) {
+      currentCategory = cat;
+      const catY = TABLE_Y + virtualRow * ROW_H;
+      const safeCat = sanitizeForDrawtext(cat.toUpperCase());
+
+      // Barra de categoría: fondo azul oscuro con texto dorado centrado-izquierda
+      filters.push(`drawbox=x=${MARGIN_X}:y=${catY - Math.round(4 * s)}:w=${width - MARGIN_X * 2}:h=${ROW_H}:color=0x0D1B2A:t=fill`);
+      filters.push(`drawtext=text='${safeCat}':fontsize=${FONT_SMALL}:fontcolor=${GOLD}:x=${MARGIN_X + Math.round(14 * s)}:y=${catY + Math.round(10 * s)}`);
+      virtualRow++;
+    }
+
+    // Fila de item
+    const rowY = TABLE_Y + virtualRow * ROW_H;
+    const term = sanitizeForDrawtext(item.term);
+    const def = sanitizeForDrawtext(item.definition);
 
     if (i % 2 === 0) {
       filters.push(`drawbox=x=${MARGIN_X}:y=${rowY - Math.round(4 * s)}:w=${width - MARGIN_X * 2}:h=${ROW_H}:color=${ROW_ODD}:t=fill`);
     }
     filters.push(`drawtext=text='${term}':fontsize=${FONT_MEDIUM}:fontcolor=${GOLD}:x=${MARGIN_X + Math.round(10 * s)}:y=${rowY + Math.round(8 * s)}`);
     filters.push(`drawtext=text='${def}':fontsize=${FONT_MEDIUM}:fontcolor=${WHITE}:x=${COL2_X}:y=${rowY + Math.round(8 * s)}`);
+    virtualRow++;
   }
 
   const vfChain = filters.join(',');
