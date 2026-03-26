@@ -14,7 +14,6 @@ export async function transcribeAudio(
   format: EpisodeFormat,
   method: TranscriptionMethod = 'openai'
 ): Promise<TranscriptionResult> {
-  console.log(`Descargando audio: ${audioUrl}`);
   const audioFile = await downloadFile(audioUrl, 'audio');
 
   let captions: Captions;
@@ -31,8 +30,6 @@ export async function transcribeWithOpenAI(
   audioFile: string,
   format: EpisodeFormat
 ): Promise<Captions> {
-  console.log('Transcribiendo con OpenAI Whisper...');
-
   if (!openai) {
     throw new Error("OpenAI no está configurado. Usa el método 'local'.");
   }
@@ -67,7 +64,6 @@ export async function transcribeWithOpenAI(
 }
 
 export async function transcribeWithFasterWhisper(audioFile: string): Promise<Captions> {
-  console.log('Transcribiendo con Faster Whisper (local)...');
 
   return new Promise((resolve, reject) => {
     const python = spawn('python', [

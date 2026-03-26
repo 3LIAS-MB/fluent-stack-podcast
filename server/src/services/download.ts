@@ -22,8 +22,10 @@ export async function downloadFile(url: string, suffix: string): Promise<string>
     };
 
     protocol.get(url, options, (response: any) => {
+      const displayUrl = url.length > 60 ? `${url.substring(0, 50)}...` : url;
+
       if (response.statusCode >= 300 && response.statusCode < 400 && response.headers.location) {
-        console.log(`  → Redirigiendo (${response.statusCode}) a: ${response.headers.location}`);
+        console.log(`  → Redirigiendo (${response.statusCode})`);
         downloadFile(response.headers.location, suffix).then(resolve).catch(reject);
         return;
       }
@@ -42,7 +44,7 @@ export async function downloadFile(url: string, suffix: string): Promise<string>
           fs.unlink(tempFile, () => { });
           reject(new Error(`Archivo ${suffix} demasiado pequeño (${stats.size} bytes). Google Drive pudo haber bloqueado la descarga.`));
         } else {
-          console.log(`  ✓ ${suffix} descargado: ${path.basename(tempFile)} (${(stats.size / 1024).toFixed(1)} KB)`);
+          console.log(`  ✓ ${suffix} listo: ${path.basename(tempFile)} (${(stats.size / 1024).toFixed(1)} KB)`);
           resolve(tempFile);
         }
       });

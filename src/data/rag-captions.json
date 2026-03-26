@@ -1,0 +1,9760 @@
+{
+  "words": [
+    {
+      "word": "Your",
+      "start": 0,
+      "end": 0.417,
+      "speaker": "Host"
+    },
+    {
+      "word": "AI",
+      "start": 0.417,
+      "end": 0.833,
+      "speaker": "Host"
+    },
+    {
+      "word": "chatbot",
+      "start": 0.833,
+      "end": 1.25,
+      "speaker": "Host"
+    },
+    {
+      "word": "just",
+      "start": 1.25,
+      "end": 1.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "made",
+      "start": 1.667,
+      "end": 2.083,
+      "speaker": "Host"
+    },
+    {
+      "word": "up",
+      "start": 2.083,
+      "end": 2.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 2.5,
+      "end": 2.917,
+      "speaker": "Host"
+    },
+    {
+      "word": "company",
+      "start": 2.917,
+      "end": 3.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "policy",
+      "start": 3.333,
+      "end": 3.75,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 3.75,
+      "end": 4.167,
+      "speaker": "Host"
+    },
+    {
+      "word": "doesn't",
+      "start": 4.167,
+      "end": 4.583,
+      "speaker": "Host"
+    },
+    {
+      "word": "exist.",
+      "start": 4.583,
+      "end": 5,
+      "speaker": "Host"
+    },
+    {
+      "word": "It",
+      "start": 5,
+      "end": 5.438,
+      "speaker": "Host"
+    },
+    {
+      "word": "told",
+      "start": 5.438,
+      "end": 5.875,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 5.875,
+      "end": 6.313,
+      "speaker": "Host"
+    },
+    {
+      "word": "customer",
+      "start": 6.313,
+      "end": 6.75,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 6.75,
+      "end": 7.188,
+      "speaker": "Host"
+    },
+    {
+      "word": "refunds",
+      "start": 7.188,
+      "end": 7.625,
+      "speaker": "Host"
+    },
+    {
+      "word": "take",
+      "start": 7.625,
+      "end": 8.063,
+      "speaker": "Host"
+    },
+    {
+      "word": "14",
+      "start": 8.063,
+      "end": 8.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "days",
+      "start": 8.5,
+      "end": 8.938,
+      "speaker": "Host"
+    },
+    {
+      "word": "when",
+      "start": 8.938,
+      "end": 9.375,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 9.375,
+      "end": 9.813,
+      "speaker": "Host"
+    },
+    {
+      "word": "actual",
+      "start": 9.813,
+      "end": 10.25,
+      "speaker": "Host"
+    },
+    {
+      "word": "policy",
+      "start": 10.25,
+      "end": 10.688,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 10.688,
+      "end": 11.125,
+      "speaker": "Host"
+    },
+    {
+      "word": "3",
+      "start": 11.125,
+      "end": 11.563,
+      "speaker": "Host"
+    },
+    {
+      "word": "days.",
+      "start": 11.563,
+      "end": 12,
+      "speaker": "Host"
+    },
+    {
+      "word": "It",
+      "start": 12,
+      "end": 12.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "sounded",
+      "start": 12.571,
+      "end": 13.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "confident.",
+      "start": 13.143,
+      "end": 13.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "It",
+      "start": 13.714,
+      "end": 14.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "was",
+      "start": 14.286,
+      "end": 14.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "completely",
+      "start": 14.857,
+      "end": 15.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "wrong.",
+      "start": 15.429,
+      "end": 16,
+      "speaker": "Host"
+    },
+    {
+      "word": "And",
+      "start": 16,
+      "end": 16.364,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 16.364,
+      "end": 16.727,
+      "speaker": "Host"
+    },
+    {
+      "word": "only",
+      "start": 16.727,
+      "end": 17.091,
+      "speaker": "Host"
+    },
+    {
+      "word": "found",
+      "start": 17.091,
+      "end": 17.455,
+      "speaker": "Host"
+    },
+    {
+      "word": "out",
+      "start": 17.455,
+      "end": 17.818,
+      "speaker": "Host"
+    },
+    {
+      "word": "because",
+      "start": 17.818,
+      "end": 18.182,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 18.182,
+      "end": 18.545,
+      "speaker": "Host"
+    },
+    {
+      "word": "customer",
+      "start": 18.545,
+      "end": 18.909,
+      "speaker": "Host"
+    },
+    {
+      "word": "complained",
+      "start": 18.909,
+      "end": 19.273,
+      "speaker": "Host"
+    },
+    {
+      "word": "on",
+      "start": 19.273,
+      "end": 19.636,
+      "speaker": "Host"
+    },
+    {
+      "word": "Twitter.",
+      "start": 19.636,
+      "end": 20,
+      "speaker": "Host"
+    },
+    {
+      "word": "This",
+      "start": 20,
+      "end": 20.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 20.4,
+      "end": 20.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 20.8,
+      "end": 21.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "hallucination",
+      "start": 21.2,
+      "end": 21.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "problem.",
+      "start": 21.6,
+      "end": 22,
+      "speaker": "Host"
+    },
+    {
+      "word": "And",
+      "start": 22,
+      "end": 22.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "if",
+      "start": 22.5,
+      "end": 23,
+      "speaker": "Host"
+    },
+    {
+      "word": "you're",
+      "start": 23,
+      "end": 23.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "building",
+      "start": 23.5,
+      "end": 24,
+      "speaker": "Host"
+    },
+    {
+      "word": "with",
+      "start": 24,
+      "end": 24.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "LLMs",
+      "start": 24.5,
+      "end": 25,
+      "speaker": "Host"
+    },
+    {
+      "word": "in",
+      "start": 25,
+      "end": 25.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "2025,",
+      "start": 25.5,
+      "end": 26,
+      "speaker": "Host"
+    },
+    {
+      "word": "it's",
+      "start": 26,
+      "end": 26.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 26.5,
+      "end": 27,
+      "speaker": "Host"
+    },
+    {
+      "word": "biggest",
+      "start": 27,
+      "end": 27.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "enemy.",
+      "start": 27.5,
+      "end": 28,
+      "speaker": "Host"
+    },
+    {
+      "word": "Today,",
+      "start": 28,
+      "end": 28.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "we're",
+      "start": 28.667,
+      "end": 29.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "solving",
+      "start": 29.333,
+      "end": 30,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 30,
+      "end": 30.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "with",
+      "start": 30.667,
+      "end": 31.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "RAG,",
+      "start": 31.333,
+      "end": 32,
+      "speaker": "Host"
+    },
+    {
+      "word": "Retrieval",
+      "start": 32,
+      "end": 32.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "Augmented",
+      "start": 32.667,
+      "end": 33.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "Generation.",
+      "start": 33.333,
+      "end": 34,
+      "speaker": "Host"
+    },
+    {
+      "word": "This",
+      "start": 34,
+      "end": 34.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "isn't",
+      "start": 34.429,
+      "end": 34.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "just",
+      "start": 34.857,
+      "end": 35.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "another",
+      "start": 35.286,
+      "end": 35.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "buzzword.",
+      "start": 35.714,
+      "end": 36.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "It's",
+      "start": 36.143,
+      "end": 36.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 36.571,
+      "end": 37,
+      "speaker": "Host"
+    },
+    {
+      "word": "difference",
+      "start": 37,
+      "end": 37.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "between",
+      "start": 37.429,
+      "end": 37.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "AI",
+      "start": 37.857,
+      "end": 38.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 38.286,
+      "end": 38.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "makes",
+      "start": 38.714,
+      "end": 39.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "things",
+      "start": 39.143,
+      "end": 39.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "up",
+      "start": 39.571,
+      "end": 40,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 40,
+      "end": 40.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "AI",
+      "start": 40.429,
+      "end": 40.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 40.857,
+      "end": 41.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "actually",
+      "start": 41.286,
+      "end": 41.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "knows",
+      "start": 41.714,
+      "end": 42.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 42.143,
+      "end": 42.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "business.",
+      "start": 42.571,
+      "end": 43,
+      "speaker": "Host"
+    },
+    {
+      "word": "Between",
+      "start": 43,
+      "end": 43.375,
+      "speaker": "Host"
+    },
+    {
+      "word": "demos",
+      "start": 43.375,
+      "end": 43.75,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 43.75,
+      "end": 44.125,
+      "speaker": "Host"
+    },
+    {
+      "word": "impress",
+      "start": 44.125,
+      "end": 44.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 44.5,
+      "end": 44.875,
+      "speaker": "Host"
+    },
+    {
+      "word": "products",
+      "start": 44.875,
+      "end": 45.25,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 45.25,
+      "end": 45.625,
+      "speaker": "Host"
+    },
+    {
+      "word": "ship.",
+      "start": 45.625,
+      "end": 46,
+      "speaker": "Host"
+    },
+    {
+      "word": "If",
+      "start": 46,
+      "end": 46.471,
+      "speaker": "Host"
+    },
+    {
+      "word": "you're",
+      "start": 46.471,
+      "end": 46.941,
+      "speaker": "Host"
+    },
+    {
+      "word": "serious",
+      "start": 46.941,
+      "end": 47.412,
+      "speaker": "Host"
+    },
+    {
+      "word": "about",
+      "start": 47.412,
+      "end": 47.882,
+      "speaker": "Host"
+    },
+    {
+      "word": "putting",
+      "start": 47.882,
+      "end": 48.353,
+      "speaker": "Host"
+    },
+    {
+      "word": "AI",
+      "start": 48.353,
+      "end": 48.824,
+      "speaker": "Host"
+    },
+    {
+      "word": "into",
+      "start": 48.824,
+      "end": 49.294,
+      "speaker": "Host"
+    },
+    {
+      "word": "production,",
+      "start": 49.294,
+      "end": 49.765,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 49.765,
+      "end": 50.235,
+      "speaker": "Host"
+    },
+    {
+      "word": "need",
+      "start": 50.235,
+      "end": 50.706,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 50.706,
+      "end": 51.176,
+      "speaker": "Host"
+    },
+    {
+      "word": "understand",
+      "start": 51.176,
+      "end": 51.647,
+      "speaker": "Host"
+    },
+    {
+      "word": "this",
+      "start": 51.647,
+      "end": 52.118,
+      "speaker": "Host"
+    },
+    {
+      "word": "architecture",
+      "start": 52.118,
+      "end": 52.588,
+      "speaker": "Host"
+    },
+    {
+      "word": "inside",
+      "start": 52.588,
+      "end": 53.059,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 53.059,
+      "end": 53.529,
+      "speaker": "Host"
+    },
+    {
+      "word": "out.",
+      "start": 53.529,
+      "end": 54,
+      "speaker": "Host"
+    },
+    {
+      "word": "So,",
+      "start": 54,
+      "end": 54.435,
+      "speaker": "Host"
+    },
+    {
+      "word": "what",
+      "start": 54.435,
+      "end": 54.87,
+      "speaker": "Host"
+    },
+    {
+      "word": "exactly",
+      "start": 54.87,
+      "end": 55.304,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 55.304,
+      "end": 55.739,
+      "speaker": "Host"
+    },
+    {
+      "word": "RAG?",
+      "start": 55.739,
+      "end": 56.174,
+      "speaker": "Host"
+    },
+    {
+      "word": "At",
+      "start": 56.174,
+      "end": 56.609,
+      "speaker": "Host"
+    },
+    {
+      "word": "its",
+      "start": 56.609,
+      "end": 57.043,
+      "speaker": "Host"
+    },
+    {
+      "word": "core,",
+      "start": 57.043,
+      "end": 57.478,
+      "speaker": "Host"
+    },
+    {
+      "word": "it's",
+      "start": 57.478,
+      "end": 57.913,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 57.913,
+      "end": 58.348,
+      "speaker": "Host"
+    },
+    {
+      "word": "pattern.",
+      "start": 58.348,
+      "end": 58.783,
+      "speaker": "Host"
+    },
+    {
+      "word": "Not",
+      "start": 58.783,
+      "end": 59.217,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 59.217,
+      "end": 59.652,
+      "speaker": "Host"
+    },
+    {
+      "word": "product.",
+      "start": 59.652,
+      "end": 60.087,
+      "speaker": "Host"
+    },
+    {
+      "word": "Not",
+      "start": 60.087,
+      "end": 60.522,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 60.522,
+      "end": 60.957,
+      "speaker": "Host"
+    },
+    {
+      "word": "library.",
+      "start": 60.957,
+      "end": 61.391,
+      "speaker": "Host"
+    },
+    {
+      "word": "Just",
+      "start": 61.391,
+      "end": 61.826,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 61.826,
+      "end": 62.261,
+      "speaker": "Host"
+    },
+    {
+      "word": "smart",
+      "start": 62.261,
+      "end": 62.696,
+      "speaker": "Host"
+    },
+    {
+      "word": "way",
+      "start": 62.696,
+      "end": 63.13,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 63.13,
+      "end": 63.565,
+      "speaker": "Host"
+    },
+    {
+      "word": "building.",
+      "start": 63.565,
+      "end": 64,
+      "speaker": "Host"
+    },
+    {
+      "word": "Instead",
+      "start": 64,
+      "end": 64.375,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 64.375,
+      "end": 64.75,
+      "speaker": "Host"
+    },
+    {
+      "word": "asking",
+      "start": 64.75,
+      "end": 65.125,
+      "speaker": "Host"
+    },
+    {
+      "word": "an",
+      "start": 65.125,
+      "end": 65.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "LLM",
+      "start": 65.5,
+      "end": 65.875,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 65.875,
+      "end": 66.25,
+      "speaker": "Host"
+    },
+    {
+      "word": "answer",
+      "start": 66.25,
+      "end": 66.625,
+      "speaker": "Host"
+    },
+    {
+      "word": "from",
+      "start": 66.625,
+      "end": 67,
+      "speaker": "Host"
+    },
+    {
+      "word": "its",
+      "start": 67,
+      "end": 67.375,
+      "speaker": "Host"
+    },
+    {
+      "word": "training",
+      "start": 67.375,
+      "end": 67.75,
+      "speaker": "Host"
+    },
+    {
+      "word": "memory,",
+      "start": 67.75,
+      "end": 68.125,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 68.125,
+      "end": 68.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "give",
+      "start": 68.5,
+      "end": 68.875,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 68.875,
+      "end": 69.25,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 69.25,
+      "end": 69.625,
+      "speaker": "Host"
+    },
+    {
+      "word": "specific",
+      "start": 69.625,
+      "end": 70,
+      "speaker": "Host"
+    },
+    {
+      "word": "information",
+      "start": 70,
+      "end": 70.375,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 70.375,
+      "end": 70.75,
+      "speaker": "Host"
+    },
+    {
+      "word": "needs,",
+      "start": 70.75,
+      "end": 71.125,
+      "speaker": "Host"
+    },
+    {
+      "word": "right",
+      "start": 71.125,
+      "end": 71.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "when",
+      "start": 71.5,
+      "end": 71.875,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 71.875,
+      "end": 72.25,
+      "speaker": "Host"
+    },
+    {
+      "word": "needs",
+      "start": 72.25,
+      "end": 72.625,
+      "speaker": "Host"
+    },
+    {
+      "word": "it.",
+      "start": 72.625,
+      "end": 73,
+      "speaker": "Host"
+    },
+    {
+      "word": "Think",
+      "start": 73,
+      "end": 73.308,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 73.308,
+      "end": 73.615,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 73.615,
+      "end": 73.923,
+      "speaker": "Host"
+    },
+    {
+      "word": "like",
+      "start": 73.923,
+      "end": 74.231,
+      "speaker": "Host"
+    },
+    {
+      "word": "an",
+      "start": 74.231,
+      "end": 74.538,
+      "speaker": "Host"
+    },
+    {
+      "word": "open",
+      "start": 74.538,
+      "end": 74.846,
+      "speaker": "Host"
+    },
+    {
+      "word": "book",
+      "start": 74.846,
+      "end": 75.154,
+      "speaker": "Host"
+    },
+    {
+      "word": "exam.",
+      "start": 75.154,
+      "end": 75.462,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 75.462,
+      "end": 75.769,
+      "speaker": "Host"
+    },
+    {
+      "word": "student",
+      "start": 75.769,
+      "end": 76.077,
+      "speaker": "Host"
+    },
+    {
+      "word": "doesn't",
+      "start": 76.077,
+      "end": 76.385,
+      "speaker": "Host"
+    },
+    {
+      "word": "memorize",
+      "start": 76.385,
+      "end": 76.692,
+      "speaker": "Host"
+    },
+    {
+      "word": "everything.",
+      "start": 76.692,
+      "end": 77,
+      "speaker": "Host"
+    },
+    {
+      "word": "They",
+      "start": 77,
+      "end": 77.462,
+      "speaker": "Host"
+    },
+    {
+      "word": "bring",
+      "start": 77.462,
+      "end": 77.923,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 77.923,
+      "end": 78.385,
+      "speaker": "Host"
+    },
+    {
+      "word": "textbook,",
+      "start": 78.385,
+      "end": 78.846,
+      "speaker": "Host"
+    },
+    {
+      "word": "find",
+      "start": 78.846,
+      "end": 79.308,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 79.308,
+      "end": 79.769,
+      "speaker": "Host"
+    },
+    {
+      "word": "relevant",
+      "start": 79.769,
+      "end": 80.231,
+      "speaker": "Host"
+    },
+    {
+      "word": "page,",
+      "start": 80.231,
+      "end": 80.692,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 80.692,
+      "end": 81.154,
+      "speaker": "Host"
+    },
+    {
+      "word": "answer",
+      "start": 81.154,
+      "end": 81.615,
+      "speaker": "Host"
+    },
+    {
+      "word": "based",
+      "start": 81.615,
+      "end": 82.077,
+      "speaker": "Host"
+    },
+    {
+      "word": "on",
+      "start": 82.077,
+      "end": 82.538,
+      "speaker": "Host"
+    },
+    {
+      "word": "that.",
+      "start": 82.538,
+      "end": 83,
+      "speaker": "Host"
+    },
+    {
+      "word": "Here's",
+      "start": 83,
+      "end": 83.524,
+      "speaker": "Host"
+    },
+    {
+      "word": "how",
+      "start": 83.524,
+      "end": 84.048,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 84.048,
+      "end": 84.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "actually",
+      "start": 84.571,
+      "end": 85.095,
+      "speaker": "Host"
+    },
+    {
+      "word": "works.",
+      "start": 85.095,
+      "end": 85.619,
+      "speaker": "Host"
+    },
+    {
+      "word": "First,",
+      "start": 85.619,
+      "end": 86.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 86.143,
+      "end": 86.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "take",
+      "start": 86.667,
+      "end": 87.19,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 87.19,
+      "end": 87.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "documents.",
+      "start": 87.714,
+      "end": 88.238,
+      "speaker": "Host"
+    },
+    {
+      "word": "PDFs,",
+      "start": 88.238,
+      "end": 88.762,
+      "speaker": "Host"
+    },
+    {
+      "word": "databases,",
+      "start": 88.762,
+      "end": 89.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "code",
+      "start": 89.286,
+      "end": 89.81,
+      "speaker": "Host"
+    },
+    {
+      "word": "repositories,",
+      "start": 89.81,
+      "end": 90.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "support",
+      "start": 90.333,
+      "end": 90.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "tickets,",
+      "start": 90.857,
+      "end": 91.381,
+      "speaker": "Host"
+    },
+    {
+      "word": "whatever",
+      "start": 91.381,
+      "end": 91.905,
+      "speaker": "Host"
+    },
+    {
+      "word": "matters",
+      "start": 91.905,
+      "end": 92.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 92.429,
+      "end": 92.952,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 92.952,
+      "end": 93.476,
+      "speaker": "Host"
+    },
+    {
+      "word": "application.",
+      "start": 93.476,
+      "end": 94,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 94,
+      "end": 94.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "break",
+      "start": 94.5,
+      "end": 95,
+      "speaker": "Host"
+    },
+    {
+      "word": "these",
+      "start": 95,
+      "end": 95.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "into",
+      "start": 95.5,
+      "end": 96,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunks.",
+      "start": 96,
+      "end": 96.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "Not",
+      "start": 96.5,
+      "end": 97,
+      "speaker": "Host"
+    },
+    {
+      "word": "pages,",
+      "start": 97,
+      "end": 97.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "not",
+      "start": 97.5,
+      "end": 98,
+      "speaker": "Host"
+    },
+    {
+      "word": "files,",
+      "start": 98,
+      "end": 98.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "but",
+      "start": 98.5,
+      "end": 99,
+      "speaker": "Host"
+    },
+    {
+      "word": "semantic",
+      "start": 99,
+      "end": 99.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "pieces.",
+      "start": 99.5,
+      "end": 100,
+      "speaker": "Host"
+    },
+    {
+      "word": "A",
+      "start": 100,
+      "end": 100.448,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunk",
+      "start": 100.448,
+      "end": 100.897,
+      "speaker": "Host"
+    },
+    {
+      "word": "might",
+      "start": 100.897,
+      "end": 101.345,
+      "speaker": "Host"
+    },
+    {
+      "word": "be",
+      "start": 101.345,
+      "end": 101.793,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 101.793,
+      "end": 102.241,
+      "speaker": "Host"
+    },
+    {
+      "word": "paragraph,",
+      "start": 102.241,
+      "end": 102.69,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 102.69,
+      "end": 103.138,
+      "speaker": "Host"
+    },
+    {
+      "word": "function",
+      "start": 103.138,
+      "end": 103.586,
+      "speaker": "Host"
+    },
+    {
+      "word": "definition,",
+      "start": 103.586,
+      "end": 104.034,
+      "speaker": "Host"
+    },
+    {
+      "word": "or",
+      "start": 104.034,
+      "end": 104.483,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 104.483,
+      "end": 104.931,
+      "speaker": "Host"
+    },
+    {
+      "word": "product",
+      "start": 104.931,
+      "end": 105.379,
+      "speaker": "Host"
+    },
+    {
+      "word": "description.",
+      "start": 105.379,
+      "end": 105.828,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 105.828,
+      "end": 106.276,
+      "speaker": "Host"
+    },
+    {
+      "word": "size",
+      "start": 106.276,
+      "end": 106.724,
+      "speaker": "Host"
+    },
+    {
+      "word": "matters.",
+      "start": 106.724,
+      "end": 107.172,
+      "speaker": "Host"
+    },
+    {
+      "word": "Too",
+      "start": 107.172,
+      "end": 107.621,
+      "speaker": "Host"
+    },
+    {
+      "word": "small",
+      "start": 107.621,
+      "end": 108.069,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 108.069,
+      "end": 108.517,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 108.517,
+      "end": 108.966,
+      "speaker": "Host"
+    },
+    {
+      "word": "lose",
+      "start": 108.966,
+      "end": 109.414,
+      "speaker": "Host"
+    },
+    {
+      "word": "context.",
+      "start": 109.414,
+      "end": 109.862,
+      "speaker": "Host"
+    },
+    {
+      "word": "Too",
+      "start": 109.862,
+      "end": 110.31,
+      "speaker": "Host"
+    },
+    {
+      "word": "large",
+      "start": 110.31,
+      "end": 110.759,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 110.759,
+      "end": 111.207,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 111.207,
+      "end": 111.655,
+      "speaker": "Host"
+    },
+    {
+      "word": "dilute",
+      "start": 111.655,
+      "end": 112.103,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 112.103,
+      "end": 112.552,
+      "speaker": "Host"
+    },
+    {
+      "word": "relevance.",
+      "start": 112.552,
+      "end": 113,
+      "speaker": "Host"
+    },
+    {
+      "word": "Then",
+      "start": 113,
+      "end": 113.417,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 113.417,
+      "end": 113.833,
+      "speaker": "Host"
+    },
+    {
+      "word": "convert",
+      "start": 113.833,
+      "end": 114.25,
+      "speaker": "Host"
+    },
+    {
+      "word": "each",
+      "start": 114.25,
+      "end": 114.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunk",
+      "start": 114.667,
+      "end": 115.083,
+      "speaker": "Host"
+    },
+    {
+      "word": "into",
+      "start": 115.083,
+      "end": 115.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 115.5,
+      "end": 115.917,
+      "speaker": "Host"
+    },
+    {
+      "word": "vector.",
+      "start": 115.917,
+      "end": 116.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "This",
+      "start": 116.333,
+      "end": 116.75,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 116.75,
+      "end": 117.167,
+      "speaker": "Host"
+    },
+    {
+      "word": "called",
+      "start": 117.167,
+      "end": 117.583,
+      "speaker": "Host"
+    },
+    {
+      "word": "embedding.",
+      "start": 117.583,
+      "end": 118,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 118,
+      "end": 118.484,
+      "speaker": "Host"
+    },
+    {
+      "word": "send",
+      "start": 118.484,
+      "end": 118.968,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 118.968,
+      "end": 119.452,
+      "speaker": "Host"
+    },
+    {
+      "word": "text",
+      "start": 119.452,
+      "end": 119.935,
+      "speaker": "Host"
+    },
+    {
+      "word": "through",
+      "start": 119.935,
+      "end": 120.419,
+      "speaker": "Host"
+    },
+    {
+      "word": "an",
+      "start": 120.419,
+      "end": 120.903,
+      "speaker": "Host"
+    },
+    {
+      "word": "embedding",
+      "start": 120.903,
+      "end": 121.387,
+      "speaker": "Host"
+    },
+    {
+      "word": "model,",
+      "start": 121.387,
+      "end": 121.871,
+      "speaker": "Host"
+    },
+    {
+      "word": "something",
+      "start": 121.871,
+      "end": 122.355,
+      "speaker": "Host"
+    },
+    {
+      "word": "like",
+      "start": 122.355,
+      "end": 122.839,
+      "speaker": "Host"
+    },
+    {
+      "word": "open",
+      "start": 122.839,
+      "end": 123.323,
+      "speaker": "Host"
+    },
+    {
+      "word": "AIs,",
+      "start": 123.323,
+      "end": 123.806,
+      "speaker": "Host"
+    },
+    {
+      "word": "text",
+      "start": 123.806,
+      "end": 124.29,
+      "speaker": "Host"
+    },
+    {
+      "word": "embedding,",
+      "start": 124.29,
+      "end": 124.774,
+      "speaker": "Host"
+    },
+    {
+      "word": "three",
+      "start": 124.774,
+      "end": 125.258,
+      "speaker": "Host"
+    },
+    {
+      "word": "large,",
+      "start": 125.258,
+      "end": 125.742,
+      "speaker": "Host"
+    },
+    {
+      "word": "or",
+      "start": 125.742,
+      "end": 126.226,
+      "speaker": "Host"
+    },
+    {
+      "word": "open",
+      "start": 126.226,
+      "end": 126.71,
+      "speaker": "Host"
+    },
+    {
+      "word": "source",
+      "start": 126.71,
+      "end": 127.194,
+      "speaker": "Host"
+    },
+    {
+      "word": "alternatives",
+      "start": 127.194,
+      "end": 127.677,
+      "speaker": "Host"
+    },
+    {
+      "word": "like",
+      "start": 127.677,
+      "end": 128.161,
+      "speaker": "Host"
+    },
+    {
+      "word": "BGE",
+      "start": 128.161,
+      "end": 128.645,
+      "speaker": "Host"
+    },
+    {
+      "word": "or",
+      "start": 128.645,
+      "end": 129.129,
+      "speaker": "Host"
+    },
+    {
+      "word": "E5,",
+      "start": 129.129,
+      "end": 129.613,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 129.613,
+      "end": 130.097,
+      "speaker": "Host"
+    },
+    {
+      "word": "get",
+      "start": 130.097,
+      "end": 130.581,
+      "speaker": "Host"
+    },
+    {
+      "word": "back",
+      "start": 130.581,
+      "end": 131.065,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 131.065,
+      "end": 131.548,
+      "speaker": "Host"
+    },
+    {
+      "word": "list",
+      "start": 131.548,
+      "end": 132.032,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 132.032,
+      "end": 132.516,
+      "speaker": "Host"
+    },
+    {
+      "word": "numbers.",
+      "start": 132.516,
+      "end": 133,
+      "speaker": "Host"
+    },
+    {
+      "word": "Hundreds",
+      "start": 133,
+      "end": 133.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 133.4,
+      "end": 133.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "numbers",
+      "start": 133.8,
+      "end": 134.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 134.2,
+      "end": 134.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "capture",
+      "start": 134.6,
+      "end": 135,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 135,
+      "end": 135.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "meaning",
+      "start": 135.4,
+      "end": 135.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 135.8,
+      "end": 136.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 136.2,
+      "end": 136.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "text.",
+      "start": 136.6,
+      "end": 137,
+      "speaker": "Host"
+    },
+    {
+      "word": "How",
+      "start": 137,
+      "end": 137.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "do",
+      "start": 137.4,
+      "end": 137.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "I",
+      "start": 137.8,
+      "end": 138.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "reset",
+      "start": 138.2,
+      "end": 138.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "my",
+      "start": 138.6,
+      "end": 139,
+      "speaker": "Host"
+    },
+    {
+      "word": "password?",
+      "start": 139,
+      "end": 139.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "And",
+      "start": 139.4,
+      "end": 139.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "forgot",
+      "start": 139.8,
+      "end": 140.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "login",
+      "start": 140.2,
+      "end": 140.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "credentials,",
+      "start": 140.6,
+      "end": 141,
+      "speaker": "Host"
+    },
+    {
+      "word": "need",
+      "start": 141,
+      "end": 141.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "help",
+      "start": 141.4,
+      "end": 141.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "accessing",
+      "start": 141.8,
+      "end": 142.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "account,",
+      "start": 142.2,
+      "end": 142.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "will",
+      "start": 142.6,
+      "end": 143,
+      "speaker": "Host"
+    },
+    {
+      "word": "have",
+      "start": 143,
+      "end": 143.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "very",
+      "start": 143.4,
+      "end": 143.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "similar",
+      "start": 143.8,
+      "end": 144.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "vectors",
+      "start": 144.2,
+      "end": 144.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "even",
+      "start": 144.6,
+      "end": 145,
+      "speaker": "Host"
+    },
+    {
+      "word": "though",
+      "start": 145,
+      "end": 145.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 145.4,
+      "end": 145.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "words",
+      "start": 145.8,
+      "end": 146.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "are",
+      "start": 146.2,
+      "end": 146.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "different.",
+      "start": 146.6,
+      "end": 147,
+      "speaker": "Host"
+    },
+    {
+      "word": "That's",
+      "start": 147,
+      "end": 147.524,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 147.524,
+      "end": 148.048,
+      "speaker": "Host"
+    },
+    {
+      "word": "magic.",
+      "start": 148.048,
+      "end": 148.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "Now",
+      "start": 148.571,
+      "end": 149.095,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 149.095,
+      "end": 149.619,
+      "speaker": "Host"
+    },
+    {
+      "word": "store",
+      "start": 149.619,
+      "end": 150.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "these",
+      "start": 150.143,
+      "end": 150.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "vectors",
+      "start": 150.667,
+      "end": 151.19,
+      "speaker": "Host"
+    },
+    {
+      "word": "in",
+      "start": 151.19,
+      "end": 151.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 151.714,
+      "end": 152.238,
+      "speaker": "Host"
+    },
+    {
+      "word": "vector",
+      "start": 152.238,
+      "end": 152.762,
+      "speaker": "Host"
+    },
+    {
+      "word": "database.",
+      "start": 152.762,
+      "end": 153.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "Pinecone,",
+      "start": 153.286,
+      "end": 153.81,
+      "speaker": "Host"
+    },
+    {
+      "word": "Weeviate,",
+      "start": 153.81,
+      "end": 154.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "Chroma,",
+      "start": 154.333,
+      "end": 154.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "PG",
+      "start": 154.857,
+      "end": 155.381,
+      "speaker": "Host"
+    },
+    {
+      "word": "vector",
+      "start": 155.381,
+      "end": 155.905,
+      "speaker": "Host"
+    },
+    {
+      "word": "if",
+      "start": 155.905,
+      "end": 156.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "you're",
+      "start": 156.429,
+      "end": 156.952,
+      "speaker": "Host"
+    },
+    {
+      "word": "using",
+      "start": 156.952,
+      "end": 157.476,
+      "speaker": "Host"
+    },
+    {
+      "word": "Postgres.",
+      "start": 157.476,
+      "end": 158,
+      "speaker": "Host"
+    },
+    {
+      "word": "Your",
+      "start": 158,
+      "end": 158.462,
+      "speaker": "Host"
+    },
+    {
+      "word": "choice",
+      "start": 158.462,
+      "end": 158.923,
+      "speaker": "Host"
+    },
+    {
+      "word": "depends",
+      "start": 158.923,
+      "end": 159.385,
+      "speaker": "Host"
+    },
+    {
+      "word": "on",
+      "start": 159.385,
+      "end": 159.846,
+      "speaker": "Host"
+    },
+    {
+      "word": "scale,",
+      "start": 159.846,
+      "end": 160.308,
+      "speaker": "Host"
+    },
+    {
+      "word": "latency",
+      "start": 160.308,
+      "end": 160.769,
+      "speaker": "Host"
+    },
+    {
+      "word": "requirements,",
+      "start": 160.769,
+      "end": 161.231,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 161.231,
+      "end": 161.692,
+      "speaker": "Host"
+    },
+    {
+      "word": "whether",
+      "start": 161.692,
+      "end": 162.154,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 162.154,
+      "end": 162.615,
+      "speaker": "Host"
+    },
+    {
+      "word": "need",
+      "start": 162.615,
+      "end": 163.077,
+      "speaker": "Host"
+    },
+    {
+      "word": "hybrid",
+      "start": 163.077,
+      "end": 163.538,
+      "speaker": "Host"
+    },
+    {
+      "word": "search.",
+      "start": 163.538,
+      "end": 164,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 164,
+      "end": 164.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "database",
+      "start": 164.5,
+      "end": 165,
+      "speaker": "Host"
+    },
+    {
+      "word": "indexes",
+      "start": 165,
+      "end": 165.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "these",
+      "start": 165.5,
+      "end": 166,
+      "speaker": "Host"
+    },
+    {
+      "word": "vectors",
+      "start": 166,
+      "end": 166.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "so",
+      "start": 166.5,
+      "end": 167,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 167,
+      "end": 167.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "can",
+      "start": 167.5,
+      "end": 168,
+      "speaker": "Host"
+    },
+    {
+      "word": "search",
+      "start": 168,
+      "end": 168.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "them",
+      "start": 168.5,
+      "end": 169,
+      "speaker": "Host"
+    },
+    {
+      "word": "fast.",
+      "start": 169,
+      "end": 169.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "Really",
+      "start": 169.5,
+      "end": 170,
+      "speaker": "Host"
+    },
+    {
+      "word": "fast.",
+      "start": 170,
+      "end": 170.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "Millions",
+      "start": 170.5,
+      "end": 171,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 171,
+      "end": 171.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "documents,",
+      "start": 171.5,
+      "end": 172,
+      "speaker": "Host"
+    },
+    {
+      "word": "millisecond",
+      "start": 172,
+      "end": 172.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieval.",
+      "start": 172.5,
+      "end": 173,
+      "speaker": "Host"
+    },
+    {
+      "word": "Here's",
+      "start": 173,
+      "end": 173.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "where",
+      "start": 173.4,
+      "end": 173.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 173.8,
+      "end": 174.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "gets",
+      "start": 174.2,
+      "end": 174.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "interesting.",
+      "start": 174.6,
+      "end": 175,
+      "speaker": "Host"
+    },
+    {
+      "word": "When",
+      "start": 175,
+      "end": 175.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 175.4,
+      "end": 175.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "user",
+      "start": 175.8,
+      "end": 176.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "asks",
+      "start": 176.2,
+      "end": 176.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 176.6,
+      "end": 177,
+      "speaker": "Host"
+    },
+    {
+      "word": "question,",
+      "start": 177,
+      "end": 177.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 177.4,
+      "end": 177.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "don't",
+      "start": 177.8,
+      "end": 178.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "send",
+      "start": 178.2,
+      "end": 178.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 178.6,
+      "end": 179,
+      "speaker": "Host"
+    },
+    {
+      "word": "question",
+      "start": 179,
+      "end": 179.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "straight",
+      "start": 179.4,
+      "end": 179.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 179.8,
+      "end": 180.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 180.2,
+      "end": 180.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "LLM.",
+      "start": 180.6,
+      "end": 181,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 181,
+      "end": 181.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "embed",
+      "start": 181.4,
+      "end": 181.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 181.8,
+      "end": 182.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "question",
+      "start": 182.2,
+      "end": 182.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "first",
+      "start": 182.6,
+      "end": 183,
+      "speaker": "Host"
+    },
+    {
+      "word": "using",
+      "start": 183,
+      "end": 183.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 183.4,
+      "end": 183.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "same",
+      "start": 183.8,
+      "end": 184.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "embedding",
+      "start": 184.2,
+      "end": 184.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "model.",
+      "start": 184.6,
+      "end": 185,
+      "speaker": "Host"
+    },
+    {
+      "word": "Now",
+      "start": 185,
+      "end": 185.476,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 185.476,
+      "end": 185.952,
+      "speaker": "Host"
+    },
+    {
+      "word": "have",
+      "start": 185.952,
+      "end": 186.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "two",
+      "start": 186.429,
+      "end": 186.905,
+      "speaker": "Host"
+    },
+    {
+      "word": "vectors,",
+      "start": 186.905,
+      "end": 187.381,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 187.381,
+      "end": 187.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "query",
+      "start": 187.857,
+      "end": 188.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "vector",
+      "start": 188.333,
+      "end": 188.81,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 188.81,
+      "end": 189.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "thousands",
+      "start": 189.286,
+      "end": 189.762,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 189.762,
+      "end": 190.238,
+      "speaker": "Host"
+    },
+    {
+      "word": "document",
+      "start": 190.238,
+      "end": 190.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "vectors.",
+      "start": 190.714,
+      "end": 191.19,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 191.19,
+      "end": 191.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "calculate",
+      "start": 191.667,
+      "end": 192.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "similarity",
+      "start": 192.143,
+      "end": 192.619,
+      "speaker": "Host"
+    },
+    {
+      "word": "between",
+      "start": 192.619,
+      "end": 193.095,
+      "speaker": "Host"
+    },
+    {
+      "word": "them,",
+      "start": 193.095,
+      "end": 193.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "usually",
+      "start": 193.571,
+      "end": 194.048,
+      "speaker": "Host"
+    },
+    {
+      "word": "cosine",
+      "start": 194.048,
+      "end": 194.524,
+      "speaker": "Host"
+    },
+    {
+      "word": "similarity.",
+      "start": 194.524,
+      "end": 195,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 195,
+      "end": 195.393,
+      "speaker": "Host"
+    },
+    {
+      "word": "database",
+      "start": 195.393,
+      "end": 195.786,
+      "speaker": "Host"
+    },
+    {
+      "word": "returns",
+      "start": 195.786,
+      "end": 196.179,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 196.179,
+      "end": 196.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "top",
+      "start": 196.571,
+      "end": 196.964,
+      "speaker": "Host"
+    },
+    {
+      "word": "K",
+      "start": 196.964,
+      "end": 197.357,
+      "speaker": "Host"
+    },
+    {
+      "word": "most",
+      "start": 197.357,
+      "end": 197.75,
+      "speaker": "Host"
+    },
+    {
+      "word": "relevant",
+      "start": 197.75,
+      "end": 198.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunks,",
+      "start": 198.143,
+      "end": 198.536,
+      "speaker": "Host"
+    },
+    {
+      "word": "three",
+      "start": 198.536,
+      "end": 198.929,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 198.929,
+      "end": 199.321,
+      "speaker": "Host"
+    },
+    {
+      "word": "five",
+      "start": 199.321,
+      "end": 199.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunks,",
+      "start": 199.714,
+      "end": 200.107,
+      "speaker": "Host"
+    },
+    {
+      "word": "typically,",
+      "start": 200.107,
+      "end": 200.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "depending",
+      "start": 200.5,
+      "end": 200.893,
+      "speaker": "Host"
+    },
+    {
+      "word": "on",
+      "start": 200.893,
+      "end": 201.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 201.286,
+      "end": 201.679,
+      "speaker": "Host"
+    },
+    {
+      "word": "context",
+      "start": 201.679,
+      "end": 202.071,
+      "speaker": "Host"
+    },
+    {
+      "word": "window",
+      "start": 202.071,
+      "end": 202.464,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 202.464,
+      "end": 202.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "how",
+      "start": 202.857,
+      "end": 203.25,
+      "speaker": "Host"
+    },
+    {
+      "word": "much",
+      "start": 203.25,
+      "end": 203.643,
+      "speaker": "Host"
+    },
+    {
+      "word": "text",
+      "start": 203.643,
+      "end": 204.036,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 204.036,
+      "end": 204.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "can",
+      "start": 204.429,
+      "end": 204.821,
+      "speaker": "Host"
+    },
+    {
+      "word": "afford",
+      "start": 204.821,
+      "end": 205.214,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 205.214,
+      "end": 205.607,
+      "speaker": "Host"
+    },
+    {
+      "word": "send.",
+      "start": 205.607,
+      "end": 206,
+      "speaker": "Host"
+    },
+    {
+      "word": "Only",
+      "start": 206,
+      "end": 206.478,
+      "speaker": "Host"
+    },
+    {
+      "word": "now",
+      "start": 206.478,
+      "end": 206.957,
+      "speaker": "Host"
+    },
+    {
+      "word": "do",
+      "start": 206.957,
+      "end": 207.435,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 207.435,
+      "end": 207.913,
+      "speaker": "Host"
+    },
+    {
+      "word": "involve",
+      "start": 207.913,
+      "end": 208.391,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 208.391,
+      "end": 208.87,
+      "speaker": "Host"
+    },
+    {
+      "word": "LLM.",
+      "start": 208.87,
+      "end": 209.348,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 209.348,
+      "end": 209.826,
+      "speaker": "Host"
+    },
+    {
+      "word": "construct",
+      "start": 209.826,
+      "end": 210.304,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 210.304,
+      "end": 210.783,
+      "speaker": "Host"
+    },
+    {
+      "word": "prompt",
+      "start": 210.783,
+      "end": 211.261,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 211.261,
+      "end": 211.739,
+      "speaker": "Host"
+    },
+    {
+      "word": "includes",
+      "start": 211.739,
+      "end": 212.217,
+      "speaker": "Host"
+    },
+    {
+      "word": "those",
+      "start": 212.217,
+      "end": 212.696,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieved",
+      "start": 212.696,
+      "end": 213.174,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunks",
+      "start": 213.174,
+      "end": 213.652,
+      "speaker": "Host"
+    },
+    {
+      "word": "as",
+      "start": 213.652,
+      "end": 214.13,
+      "speaker": "Host"
+    },
+    {
+      "word": "context",
+      "start": 214.13,
+      "end": 214.609,
+      "speaker": "Host"
+    },
+    {
+      "word": "plus",
+      "start": 214.609,
+      "end": 215.087,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 215.087,
+      "end": 215.565,
+      "speaker": "Host"
+    },
+    {
+      "word": "original",
+      "start": 215.565,
+      "end": 216.043,
+      "speaker": "Host"
+    },
+    {
+      "word": "user",
+      "start": 216.043,
+      "end": 216.522,
+      "speaker": "Host"
+    },
+    {
+      "word": "question.",
+      "start": 216.522,
+      "end": 217,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 217,
+      "end": 217.409,
+      "speaker": "Host"
+    },
+    {
+      "word": "tell",
+      "start": 217.409,
+      "end": 217.818,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 217.818,
+      "end": 218.227,
+      "speaker": "Host"
+    },
+    {
+      "word": "model",
+      "start": 218.227,
+      "end": 218.636,
+      "speaker": "Host"
+    },
+    {
+      "word": "something",
+      "start": 218.636,
+      "end": 219.045,
+      "speaker": "Host"
+    },
+    {
+      "word": "like",
+      "start": 219.045,
+      "end": 219.455,
+      "speaker": "Host"
+    },
+    {
+      "word": "answer",
+      "start": 219.455,
+      "end": 219.864,
+      "speaker": "Host"
+    },
+    {
+      "word": "base",
+      "start": 219.864,
+      "end": 220.273,
+      "speaker": "Host"
+    },
+    {
+      "word": "only",
+      "start": 220.273,
+      "end": 220.682,
+      "speaker": "Host"
+    },
+    {
+      "word": "on",
+      "start": 220.682,
+      "end": 221.091,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 221.091,
+      "end": 221.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "provided",
+      "start": 221.5,
+      "end": 221.909,
+      "speaker": "Host"
+    },
+    {
+      "word": "context.",
+      "start": 221.909,
+      "end": 222.318,
+      "speaker": "Host"
+    },
+    {
+      "word": "If",
+      "start": 222.318,
+      "end": 222.727,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 222.727,
+      "end": 223.136,
+      "speaker": "Host"
+    },
+    {
+      "word": "answer",
+      "start": 223.136,
+      "end": 223.545,
+      "speaker": "Host"
+    },
+    {
+      "word": "isn't",
+      "start": 223.545,
+      "end": 223.955,
+      "speaker": "Host"
+    },
+    {
+      "word": "there,",
+      "start": 223.955,
+      "end": 224.364,
+      "speaker": "Host"
+    },
+    {
+      "word": "say,",
+      "start": 224.364,
+      "end": 224.773,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 224.773,
+      "end": 225.182,
+      "speaker": "Host"
+    },
+    {
+      "word": "don't",
+      "start": 225.182,
+      "end": 225.591,
+      "speaker": "Host"
+    },
+    {
+      "word": "know.",
+      "start": 225.591,
+      "end": 226,
+      "speaker": "Host"
+    },
+    {
+      "word": "This",
+      "start": 226,
+      "end": 226.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "instruction",
+      "start": 226.5,
+      "end": 227,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 227,
+      "end": 227.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "critical.",
+      "start": 227.5,
+      "end": 228,
+      "speaker": "Host"
+    },
+    {
+      "word": "It",
+      "start": 228,
+      "end": 228.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "sets",
+      "start": 228.5,
+      "end": 229,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 229,
+      "end": 229.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "boundaries.",
+      "start": 229.5,
+      "end": 230,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 230,
+      "end": 230.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "model",
+      "start": 230.5,
+      "end": 231,
+      "speaker": "Host"
+    },
+    {
+      "word": "generates",
+      "start": 231,
+      "end": 231.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 231.5,
+      "end": 232,
+      "speaker": "Host"
+    },
+    {
+      "word": "response",
+      "start": 232,
+      "end": 232.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "grounded",
+      "start": 232.5,
+      "end": 233,
+      "speaker": "Host"
+    },
+    {
+      "word": "in",
+      "start": 233,
+      "end": 233.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 233.5,
+      "end": 234,
+      "speaker": "Host"
+    },
+    {
+      "word": "actual",
+      "start": 234,
+      "end": 234.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "documents,",
+      "start": 234.5,
+      "end": 235,
+      "speaker": "Host"
+    },
+    {
+      "word": "not",
+      "start": 235,
+      "end": 235.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "its",
+      "start": 235.5,
+      "end": 236,
+      "speaker": "Host"
+    },
+    {
+      "word": "training",
+      "start": 236,
+      "end": 236.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "data,",
+      "start": 236.5,
+      "end": 237,
+      "speaker": "Host"
+    },
+    {
+      "word": "not",
+      "start": 237,
+      "end": 237.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "generic",
+      "start": 237.5,
+      "end": 238,
+      "speaker": "Host"
+    },
+    {
+      "word": "knowledge,",
+      "start": 238,
+      "end": 238.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 238.5,
+      "end": 239,
+      "speaker": "Host"
+    },
+    {
+      "word": "specific",
+      "start": 239,
+      "end": 239.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "current",
+      "start": 239.5,
+      "end": 240,
+      "speaker": "Host"
+    },
+    {
+      "word": "verified",
+      "start": 240,
+      "end": 240.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "information.",
+      "start": 240.5,
+      "end": 241,
+      "speaker": "Host"
+    },
+    {
+      "word": "That's",
+      "start": 241,
+      "end": 241.483,
+      "speaker": "Host"
+    },
+    {
+      "word": "RAG",
+      "start": 241.483,
+      "end": 241.966,
+      "speaker": "Host"
+    },
+    {
+      "word": "in",
+      "start": 241.966,
+      "end": 242.448,
+      "speaker": "Host"
+    },
+    {
+      "word": "action.",
+      "start": 242.448,
+      "end": 242.931,
+      "speaker": "Host"
+    },
+    {
+      "word": "Now,",
+      "start": 242.931,
+      "end": 243.414,
+      "speaker": "Host"
+    },
+    {
+      "word": "let's",
+      "start": 243.414,
+      "end": 243.897,
+      "speaker": "Host"
+    },
+    {
+      "word": "talk",
+      "start": 243.897,
+      "end": 244.379,
+      "speaker": "Host"
+    },
+    {
+      "word": "about",
+      "start": 244.379,
+      "end": 244.862,
+      "speaker": "Host"
+    },
+    {
+      "word": "why",
+      "start": 244.862,
+      "end": 245.345,
+      "speaker": "Host"
+    },
+    {
+      "word": "this",
+      "start": 245.345,
+      "end": 245.828,
+      "speaker": "Host"
+    },
+    {
+      "word": "matters",
+      "start": 245.828,
+      "end": 246.31,
+      "speaker": "Host"
+    },
+    {
+      "word": "for",
+      "start": 246.31,
+      "end": 246.793,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 246.793,
+      "end": 247.276,
+      "speaker": "Host"
+    },
+    {
+      "word": "architecture.",
+      "start": 247.276,
+      "end": 247.759,
+      "speaker": "Host"
+    },
+    {
+      "word": "Traditional",
+      "start": 247.759,
+      "end": 248.241,
+      "speaker": "Host"
+    },
+    {
+      "word": "fine",
+      "start": 248.241,
+      "end": 248.724,
+      "speaker": "Host"
+    },
+    {
+      "word": "tuning",
+      "start": 248.724,
+      "end": 249.207,
+      "speaker": "Host"
+    },
+    {
+      "word": "teaches",
+      "start": 249.207,
+      "end": 249.69,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 249.69,
+      "end": 250.172,
+      "speaker": "Host"
+    },
+    {
+      "word": "model",
+      "start": 250.172,
+      "end": 250.655,
+      "speaker": "Host"
+    },
+    {
+      "word": "new",
+      "start": 250.655,
+      "end": 251.138,
+      "speaker": "Host"
+    },
+    {
+      "word": "knowledge",
+      "start": 251.138,
+      "end": 251.621,
+      "speaker": "Host"
+    },
+    {
+      "word": "permanently,",
+      "start": 251.621,
+      "end": 252.103,
+      "speaker": "Host"
+    },
+    {
+      "word": "but",
+      "start": 252.103,
+      "end": 252.586,
+      "speaker": "Host"
+    },
+    {
+      "word": "it's",
+      "start": 252.586,
+      "end": 253.069,
+      "speaker": "Host"
+    },
+    {
+      "word": "expensive,",
+      "start": 253.069,
+      "end": 253.552,
+      "speaker": "Host"
+    },
+    {
+      "word": "slow,",
+      "start": 253.552,
+      "end": 254.034,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 254.034,
+      "end": 254.517,
+      "speaker": "Host"
+    },
+    {
+      "word": "static.",
+      "start": 254.517,
+      "end": 255,
+      "speaker": "Host"
+    },
+    {
+      "word": "Update",
+      "start": 255,
+      "end": 255.419,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 255.419,
+      "end": 255.839,
+      "speaker": "Host"
+    },
+    {
+      "word": "product",
+      "start": 255.839,
+      "end": 256.258,
+      "speaker": "Host"
+    },
+    {
+      "word": "pricing",
+      "start": 256.258,
+      "end": 256.677,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 256.677,
+      "end": 257.097,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 257.097,
+      "end": 257.516,
+      "speaker": "Host"
+    },
+    {
+      "word": "need",
+      "start": 257.516,
+      "end": 257.935,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 257.935,
+      "end": 258.355,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrain.",
+      "start": 258.355,
+      "end": 258.774,
+      "speaker": "Host"
+    },
+    {
+      "word": "RAG",
+      "start": 258.774,
+      "end": 259.194,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 259.194,
+      "end": 259.613,
+      "speaker": "Host"
+    },
+    {
+      "word": "dynamic.",
+      "start": 259.613,
+      "end": 260.032,
+      "speaker": "Host"
+    },
+    {
+      "word": "Your",
+      "start": 260.032,
+      "end": 260.452,
+      "speaker": "Host"
+    },
+    {
+      "word": "knowledge",
+      "start": 260.452,
+      "end": 260.871,
+      "speaker": "Host"
+    },
+    {
+      "word": "base",
+      "start": 260.871,
+      "end": 261.29,
+      "speaker": "Host"
+    },
+    {
+      "word": "changes.",
+      "start": 261.29,
+      "end": 261.71,
+      "speaker": "Host"
+    },
+    {
+      "word": "Just",
+      "start": 261.71,
+      "end": 262.129,
+      "speaker": "Host"
+    },
+    {
+      "word": "add",
+      "start": 262.129,
+      "end": 262.548,
+      "speaker": "Host"
+    },
+    {
+      "word": "new",
+      "start": 262.548,
+      "end": 262.968,
+      "speaker": "Host"
+    },
+    {
+      "word": "documents",
+      "start": 262.968,
+      "end": 263.387,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 263.387,
+      "end": 263.806,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 263.806,
+      "end": 264.226,
+      "speaker": "Host"
+    },
+    {
+      "word": "vector",
+      "start": 264.226,
+      "end": 264.645,
+      "speaker": "Host"
+    },
+    {
+      "word": "store.",
+      "start": 264.645,
+      "end": 265.065,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 265.065,
+      "end": 265.484,
+      "speaker": "Host"
+    },
+    {
+      "word": "next",
+      "start": 265.484,
+      "end": 265.903,
+      "speaker": "Host"
+    },
+    {
+      "word": "query",
+      "start": 265.903,
+      "end": 266.323,
+      "speaker": "Host"
+    },
+    {
+      "word": "picks",
+      "start": 266.323,
+      "end": 266.742,
+      "speaker": "Host"
+    },
+    {
+      "word": "them",
+      "start": 266.742,
+      "end": 267.161,
+      "speaker": "Host"
+    },
+    {
+      "word": "up",
+      "start": 267.161,
+      "end": 267.581,
+      "speaker": "Host"
+    },
+    {
+      "word": "immediately.",
+      "start": 267.581,
+      "end": 268,
+      "speaker": "Host"
+    },
+    {
+      "word": "No",
+      "start": 268,
+      "end": 268.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "retraining,",
+      "start": 268.5,
+      "end": 269,
+      "speaker": "Host"
+    },
+    {
+      "word": "no",
+      "start": 269,
+      "end": 269.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "downtime.",
+      "start": 269.5,
+      "end": 270,
+      "speaker": "Host"
+    },
+    {
+      "word": "RAG",
+      "start": 270,
+      "end": 270.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "also",
+      "start": 270.5,
+      "end": 271,
+      "speaker": "Host"
+    },
+    {
+      "word": "gives",
+      "start": 271,
+      "end": 271.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 271.5,
+      "end": 272,
+      "speaker": "Host"
+    },
+    {
+      "word": "something",
+      "start": 272,
+      "end": 272.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "precious,",
+      "start": 272.5,
+      "end": 273,
+      "speaker": "Host"
+    },
+    {
+      "word": "attribution.",
+      "start": 273,
+      "end": 273.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "Because",
+      "start": 273.5,
+      "end": 274,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 274,
+      "end": 274.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "know",
+      "start": 274.5,
+      "end": 275,
+      "speaker": "Host"
+    },
+    {
+      "word": "exactly",
+      "start": 275,
+      "end": 275.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "which",
+      "start": 275.5,
+      "end": 276,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunks",
+      "start": 276,
+      "end": 276.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "were",
+      "start": 276.5,
+      "end": 277,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieved,",
+      "start": 277,
+      "end": 277.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 277.5,
+      "end": 278,
+      "speaker": "Host"
+    },
+    {
+      "word": "can",
+      "start": 278,
+      "end": 278.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "show",
+      "start": 278.5,
+      "end": 279,
+      "speaker": "Host"
+    },
+    {
+      "word": "users",
+      "start": 279,
+      "end": 279.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "where",
+      "start": 279.5,
+      "end": 280,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 280,
+      "end": 280.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "information",
+      "start": 280.5,
+      "end": 281,
+      "speaker": "Host"
+    },
+    {
+      "word": "came",
+      "start": 281,
+      "end": 281.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "from.",
+      "start": 281.5,
+      "end": 282,
+      "speaker": "Host"
+    },
+    {
+      "word": "According",
+      "start": 282,
+      "end": 282.488,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 282.488,
+      "end": 282.976,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 282.976,
+      "end": 283.463,
+      "speaker": "Host"
+    },
+    {
+      "word": "policies",
+      "start": 283.463,
+      "end": 283.951,
+      "speaker": "Host"
+    },
+    {
+      "word": "document",
+      "start": 283.951,
+      "end": 284.439,
+      "speaker": "Host"
+    },
+    {
+      "word": "from",
+      "start": 284.439,
+      "end": 284.927,
+      "speaker": "Host"
+    },
+    {
+      "word": "March",
+      "start": 284.927,
+      "end": 285.415,
+      "speaker": "Host"
+    },
+    {
+      "word": "2024,",
+      "start": 285.415,
+      "end": 285.902,
+      "speaker": "Host"
+    },
+    {
+      "word": "this",
+      "start": 285.902,
+      "end": 286.39,
+      "speaker": "Host"
+    },
+    {
+      "word": "builds",
+      "start": 286.39,
+      "end": 286.878,
+      "speaker": "Host"
+    },
+    {
+      "word": "trust.",
+      "start": 286.878,
+      "end": 287.366,
+      "speaker": "Host"
+    },
+    {
+      "word": "It",
+      "start": 287.366,
+      "end": 287.854,
+      "speaker": "Host"
+    },
+    {
+      "word": "lets",
+      "start": 287.854,
+      "end": 288.341,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 288.341,
+      "end": 288.829,
+      "speaker": "Host"
+    },
+    {
+      "word": "verify",
+      "start": 288.829,
+      "end": 289.317,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 289.317,
+      "end": 289.805,
+      "speaker": "Host"
+    },
+    {
+      "word": "AI",
+      "start": 289.805,
+      "end": 290.293,
+      "speaker": "Host"
+    },
+    {
+      "word": "isn't",
+      "start": 290.293,
+      "end": 290.78,
+      "speaker": "Host"
+    },
+    {
+      "word": "hallucinating.",
+      "start": 290.78,
+      "end": 291.268,
+      "speaker": "Host"
+    },
+    {
+      "word": "It",
+      "start": 291.268,
+      "end": 291.756,
+      "speaker": "Host"
+    },
+    {
+      "word": "gives",
+      "start": 291.756,
+      "end": 292.244,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 292.244,
+      "end": 292.732,
+      "speaker": "Host"
+    },
+    {
+      "word": "audit",
+      "start": 292.732,
+      "end": 293.22,
+      "speaker": "Host"
+    },
+    {
+      "word": "trails",
+      "start": 293.22,
+      "end": 293.707,
+      "speaker": "Host"
+    },
+    {
+      "word": "for",
+      "start": 293.707,
+      "end": 294.195,
+      "speaker": "Host"
+    },
+    {
+      "word": "compliance,",
+      "start": 294.195,
+      "end": 294.683,
+      "speaker": "Host"
+    },
+    {
+      "word": "but",
+      "start": 294.683,
+      "end": 295.171,
+      "speaker": "Host"
+    },
+    {
+      "word": "RAG",
+      "start": 295.171,
+      "end": 295.659,
+      "speaker": "Host"
+    },
+    {
+      "word": "isn't",
+      "start": 295.659,
+      "end": 296.146,
+      "speaker": "Host"
+    },
+    {
+      "word": "magic.",
+      "start": 296.146,
+      "end": 296.634,
+      "speaker": "Host"
+    },
+    {
+      "word": "It",
+      "start": 296.634,
+      "end": 297.122,
+      "speaker": "Host"
+    },
+    {
+      "word": "fails",
+      "start": 297.122,
+      "end": 297.61,
+      "speaker": "Host"
+    },
+    {
+      "word": "in",
+      "start": 297.61,
+      "end": 298.098,
+      "speaker": "Host"
+    },
+    {
+      "word": "predictable",
+      "start": 298.098,
+      "end": 298.585,
+      "speaker": "Host"
+    },
+    {
+      "word": "ways,",
+      "start": 298.585,
+      "end": 299.073,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 299.073,
+      "end": 299.561,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 299.561,
+      "end": 300.049,
+      "speaker": "Host"
+    },
+    {
+      "word": "need",
+      "start": 300.049,
+      "end": 300.537,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 300.537,
+      "end": 301.024,
+      "speaker": "Host"
+    },
+    {
+      "word": "know",
+      "start": 301.024,
+      "end": 301.512,
+      "speaker": "Host"
+    },
+    {
+      "word": "them.",
+      "start": 301.512,
+      "end": 302,
+      "speaker": "Host"
+    },
+    {
+      "word": "First,",
+      "start": 302,
+      "end": 302.556,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieval",
+      "start": 302.556,
+      "end": 303.111,
+      "speaker": "Host"
+    },
+    {
+      "word": "quality",
+      "start": 303.111,
+      "end": 303.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 303.667,
+      "end": 304.222,
+      "speaker": "Host"
+    },
+    {
+      "word": "everything.",
+      "start": 304.222,
+      "end": 304.778,
+      "speaker": "Host"
+    },
+    {
+      "word": "If",
+      "start": 304.778,
+      "end": 305.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 305.333,
+      "end": 305.889,
+      "speaker": "Host"
+    },
+    {
+      "word": "embedding",
+      "start": 305.889,
+      "end": 306.444,
+      "speaker": "Host"
+    },
+    {
+      "word": "model",
+      "start": 306.444,
+      "end": 307,
+      "speaker": "Host"
+    },
+    {
+      "word": "doesn't",
+      "start": 307,
+      "end": 307.556,
+      "speaker": "Host"
+    },
+    {
+      "word": "capture",
+      "start": 307.556,
+      "end": 308.111,
+      "speaker": "Host"
+    },
+    {
+      "word": "semantic",
+      "start": 308.111,
+      "end": 308.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "meaning",
+      "start": 308.667,
+      "end": 309.222,
+      "speaker": "Host"
+    },
+    {
+      "word": "well,",
+      "start": 309.222,
+      "end": 309.778,
+      "speaker": "Host"
+    },
+    {
+      "word": "you'll",
+      "start": 309.778,
+      "end": 310.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieve",
+      "start": 310.333,
+      "end": 310.889,
+      "speaker": "Host"
+    },
+    {
+      "word": "irrelevant",
+      "start": 310.889,
+      "end": 311.444,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunks.",
+      "start": 311.444,
+      "end": 312,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 312,
+      "end": 312.414,
+      "speaker": "Host"
+    },
+    {
+      "word": "LLM",
+      "start": 312.414,
+      "end": 312.828,
+      "speaker": "Host"
+    },
+    {
+      "word": "will",
+      "start": 312.828,
+      "end": 313.241,
+      "speaker": "Host"
+    },
+    {
+      "word": "try",
+      "start": 313.241,
+      "end": 313.655,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 313.655,
+      "end": 314.069,
+      "speaker": "Host"
+    },
+    {
+      "word": "answer",
+      "start": 314.069,
+      "end": 314.483,
+      "speaker": "Host"
+    },
+    {
+      "word": "from",
+      "start": 314.483,
+      "end": 314.897,
+      "speaker": "Host"
+    },
+    {
+      "word": "garbage",
+      "start": 314.897,
+      "end": 315.31,
+      "speaker": "Host"
+    },
+    {
+      "word": "context",
+      "start": 315.31,
+      "end": 315.724,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 315.724,
+      "end": 316.138,
+      "speaker": "Host"
+    },
+    {
+      "word": "give",
+      "start": 316.138,
+      "end": 316.552,
+      "speaker": "Host"
+    },
+    {
+      "word": "garbage",
+      "start": 316.552,
+      "end": 316.966,
+      "speaker": "Host"
+    },
+    {
+      "word": "answers.",
+      "start": 316.966,
+      "end": 317.379,
+      "speaker": "Host"
+    },
+    {
+      "word": "Choose",
+      "start": 317.379,
+      "end": 317.793,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 317.793,
+      "end": 318.207,
+      "speaker": "Host"
+    },
+    {
+      "word": "embedding",
+      "start": 318.207,
+      "end": 318.621,
+      "speaker": "Host"
+    },
+    {
+      "word": "model",
+      "start": 318.621,
+      "end": 319.034,
+      "speaker": "Host"
+    },
+    {
+      "word": "carefully.",
+      "start": 319.034,
+      "end": 319.448,
+      "speaker": "Host"
+    },
+    {
+      "word": "Test",
+      "start": 319.448,
+      "end": 319.862,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 319.862,
+      "end": 320.276,
+      "speaker": "Host"
+    },
+    {
+      "word": "on",
+      "start": 320.276,
+      "end": 320.69,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 320.69,
+      "end": 321.103,
+      "speaker": "Host"
+    },
+    {
+      "word": "actual",
+      "start": 321.103,
+      "end": 321.517,
+      "speaker": "Host"
+    },
+    {
+      "word": "data.",
+      "start": 321.517,
+      "end": 321.931,
+      "speaker": "Host"
+    },
+    {
+      "word": "Don't",
+      "start": 321.931,
+      "end": 322.345,
+      "speaker": "Host"
+    },
+    {
+      "word": "just",
+      "start": 322.345,
+      "end": 322.759,
+      "speaker": "Host"
+    },
+    {
+      "word": "use",
+      "start": 322.759,
+      "end": 323.172,
+      "speaker": "Host"
+    },
+    {
+      "word": "whatever's",
+      "start": 323.172,
+      "end": 323.586,
+      "speaker": "Host"
+    },
+    {
+      "word": "cheapest.",
+      "start": 323.586,
+      "end": 324,
+      "speaker": "Host"
+    },
+    {
+      "word": "Second,",
+      "start": 324,
+      "end": 324.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunking",
+      "start": 324.5,
+      "end": 325,
+      "speaker": "Host"
+    },
+    {
+      "word": "strategy",
+      "start": 325,
+      "end": 325.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "matters",
+      "start": 325.5,
+      "end": 326,
+      "speaker": "Host"
+    },
+    {
+      "word": "more",
+      "start": 326,
+      "end": 326.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "than",
+      "start": 326.5,
+      "end": 327,
+      "speaker": "Host"
+    },
+    {
+      "word": "people",
+      "start": 327,
+      "end": 327.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "think.",
+      "start": 327.5,
+      "end": 328,
+      "speaker": "Host"
+    },
+    {
+      "word": "Split",
+      "start": 328,
+      "end": 328.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 328.5,
+      "end": 329,
+      "speaker": "Host"
+    },
+    {
+      "word": "code",
+      "start": 329,
+      "end": 329.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "function",
+      "start": 329.5,
+      "end": 330,
+      "speaker": "Host"
+    },
+    {
+      "word": "in",
+      "start": 330,
+      "end": 330.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 330.5,
+      "end": 331,
+      "speaker": "Host"
+    },
+    {
+      "word": "wrong",
+      "start": 331,
+      "end": 331.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "place",
+      "start": 331.5,
+      "end": 332,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 332,
+      "end": 332.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 332.5,
+      "end": 333,
+      "speaker": "Host"
+    },
+    {
+      "word": "lose",
+      "start": 333,
+      "end": 333.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 333.5,
+      "end": 334,
+      "speaker": "Host"
+    },
+    {
+      "word": "variable",
+      "start": 334,
+      "end": 334.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "definitions.",
+      "start": 334.5,
+      "end": 335,
+      "speaker": "Host"
+    },
+    {
+      "word": "Cut",
+      "start": 335,
+      "end": 335.577,
+      "speaker": "Host"
+    },
+    {
+      "word": "across",
+      "start": 335.577,
+      "end": 336.154,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 336.154,
+      "end": 336.731,
+      "speaker": "Host"
+    },
+    {
+      "word": "sentence",
+      "start": 336.731,
+      "end": 337.308,
+      "speaker": "Host"
+    },
+    {
+      "word": "boundary",
+      "start": 337.308,
+      "end": 337.885,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 337.885,
+      "end": 338.462,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 338.462,
+      "end": 339.038,
+      "speaker": "Host"
+    },
+    {
+      "word": "destroy",
+      "start": 339.038,
+      "end": 339.615,
+      "speaker": "Host"
+    },
+    {
+      "word": "meaning.",
+      "start": 339.615,
+      "end": 340.192,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 340.192,
+      "end": 340.769,
+      "speaker": "Host"
+    },
+    {
+      "word": "need",
+      "start": 340.769,
+      "end": 341.346,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 341.346,
+      "end": 341.923,
+      "speaker": "Host"
+    },
+    {
+      "word": "experiment",
+      "start": 341.923,
+      "end": 342.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "with",
+      "start": 342.5,
+      "end": 343.077,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunk",
+      "start": 343.077,
+      "end": 343.654,
+      "speaker": "Host"
+    },
+    {
+      "word": "sizes.",
+      "start": 343.654,
+      "end": 344.231,
+      "speaker": "Host"
+    },
+    {
+      "word": "200",
+      "start": 344.231,
+      "end": 344.808,
+      "speaker": "Host"
+    },
+    {
+      "word": "tokens,",
+      "start": 344.808,
+      "end": 345.385,
+      "speaker": "Host"
+    },
+    {
+      "word": "500",
+      "start": 345.385,
+      "end": 345.962,
+      "speaker": "Host"
+    },
+    {
+      "word": "tokens,",
+      "start": 345.962,
+      "end": 346.538,
+      "speaker": "Host"
+    },
+    {
+      "word": "1000",
+      "start": 346.538,
+      "end": 347.115,
+      "speaker": "Host"
+    },
+    {
+      "word": "tokens,",
+      "start": 347.115,
+      "end": 347.692,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 347.692,
+      "end": 348.269,
+      "speaker": "Host"
+    },
+    {
+      "word": "overlap",
+      "start": 348.269,
+      "end": 348.846,
+      "speaker": "Host"
+    },
+    {
+      "word": "between",
+      "start": 348.846,
+      "end": 349.423,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunks.",
+      "start": 349.423,
+      "end": 350,
+      "speaker": "Host"
+    },
+    {
+      "word": "Overlap",
+      "start": 350,
+      "end": 351,
+      "speaker": "Host"
+    },
+    {
+      "word": "helps",
+      "start": 351,
+      "end": 352,
+      "speaker": "Host"
+    },
+    {
+      "word": "preserve",
+      "start": 352,
+      "end": 353,
+      "speaker": "Host"
+    },
+    {
+      "word": "context",
+      "start": 353,
+      "end": 354,
+      "speaker": "Host"
+    },
+    {
+      "word": "at",
+      "start": 354,
+      "end": 355,
+      "speaker": "Host"
+    },
+    {
+      "word": "boundaries.",
+      "start": 355,
+      "end": 356,
+      "speaker": "Host"
+    },
+    {
+      "word": "Third,",
+      "start": 356,
+      "end": 356.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 356.4,
+      "end": 356.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "context",
+      "start": 356.8,
+      "end": 357.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "window",
+      "start": 357.2,
+      "end": 357.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 357.6,
+      "end": 358,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 358,
+      "end": 358.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "budget",
+      "start": 358.4,
+      "end": 358.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 358.8,
+      "end": 359.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "can't",
+      "start": 359.2,
+      "end": 359.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "exceed.",
+      "start": 359.6,
+      "end": 360,
+      "speaker": "Host"
+    },
+    {
+      "word": "GPT-4",
+      "start": 360,
+      "end": 360.478,
+      "speaker": "Host"
+    },
+    {
+      "word": "Turbo",
+      "start": 360.478,
+      "end": 360.957,
+      "speaker": "Host"
+    },
+    {
+      "word": "handles",
+      "start": 360.957,
+      "end": 361.435,
+      "speaker": "Host"
+    },
+    {
+      "word": "128,000",
+      "start": 361.435,
+      "end": 361.913,
+      "speaker": "Host"
+    },
+    {
+      "word": "tokens,",
+      "start": 361.913,
+      "end": 362.391,
+      "speaker": "Host"
+    },
+    {
+      "word": "but",
+      "start": 362.391,
+      "end": 362.87,
+      "speaker": "Host"
+    },
+    {
+      "word": "more",
+      "start": 362.87,
+      "end": 363.348,
+      "speaker": "Host"
+    },
+    {
+      "word": "context",
+      "start": 363.348,
+      "end": 363.826,
+      "speaker": "Host"
+    },
+    {
+      "word": "means",
+      "start": 363.826,
+      "end": 364.304,
+      "speaker": "Host"
+    },
+    {
+      "word": "higher",
+      "start": 364.304,
+      "end": 364.783,
+      "speaker": "Host"
+    },
+    {
+      "word": "latency",
+      "start": 364.783,
+      "end": 365.261,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 365.261,
+      "end": 365.739,
+      "speaker": "Host"
+    },
+    {
+      "word": "cost.",
+      "start": 365.739,
+      "end": 366.217,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 366.217,
+      "end": 366.696,
+      "speaker": "Host"
+    },
+    {
+      "word": "can't",
+      "start": 366.696,
+      "end": 367.174,
+      "speaker": "Host"
+    },
+    {
+      "word": "dump",
+      "start": 367.174,
+      "end": 367.652,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 367.652,
+      "end": 368.13,
+      "speaker": "Host"
+    },
+    {
+      "word": "entire",
+      "start": 368.13,
+      "end": 368.609,
+      "speaker": "Host"
+    },
+    {
+      "word": "knowledge",
+      "start": 368.609,
+      "end": 369.087,
+      "speaker": "Host"
+    },
+    {
+      "word": "base",
+      "start": 369.087,
+      "end": 369.565,
+      "speaker": "Host"
+    },
+    {
+      "word": "into",
+      "start": 369.565,
+      "end": 370.043,
+      "speaker": "Host"
+    },
+    {
+      "word": "every",
+      "start": 370.043,
+      "end": 370.522,
+      "speaker": "Host"
+    },
+    {
+      "word": "prompt.",
+      "start": 370.522,
+      "end": 371,
+      "speaker": "Host"
+    },
+    {
+      "word": "That's",
+      "start": 371,
+      "end": 371.52,
+      "speaker": "Host"
+    },
+    {
+      "word": "why",
+      "start": 371.52,
+      "end": 372.04,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieval",
+      "start": 372.04,
+      "end": 372.56,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 372.56,
+      "end": 373.08,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 373.08,
+      "end": 373.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "bottleneck.",
+      "start": 373.6,
+      "end": 374.12,
+      "speaker": "Host"
+    },
+    {
+      "word": "If",
+      "start": 374.12,
+      "end": 374.64,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 374.64,
+      "end": 375.16,
+      "speaker": "Host"
+    },
+    {
+      "word": "retriever",
+      "start": 375.16,
+      "end": 375.68,
+      "speaker": "Host"
+    },
+    {
+      "word": "misses",
+      "start": 375.68,
+      "end": 376.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 376.2,
+      "end": 376.72,
+      "speaker": "Host"
+    },
+    {
+      "word": "relevant",
+      "start": 376.72,
+      "end": 377.24,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunk,",
+      "start": 377.24,
+      "end": 377.76,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 377.76,
+      "end": 378.28,
+      "speaker": "Host"
+    },
+    {
+      "word": "LLM",
+      "start": 378.28,
+      "end": 378.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "can't",
+      "start": 378.8,
+      "end": 379.32,
+      "speaker": "Host"
+    },
+    {
+      "word": "save",
+      "start": 379.32,
+      "end": 379.84,
+      "speaker": "Host"
+    },
+    {
+      "word": "you.",
+      "start": 379.84,
+      "end": 380.36,
+      "speaker": "Host"
+    },
+    {
+      "word": "No",
+      "start": 380.36,
+      "end": 380.88,
+      "speaker": "Host"
+    },
+    {
+      "word": "amount",
+      "start": 380.88,
+      "end": 381.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 381.4,
+      "end": 381.92,
+      "speaker": "Host"
+    },
+    {
+      "word": "prompting",
+      "start": 381.92,
+      "end": 382.44,
+      "speaker": "Host"
+    },
+    {
+      "word": "fixes",
+      "start": 382.44,
+      "end": 382.96,
+      "speaker": "Host"
+    },
+    {
+      "word": "missing",
+      "start": 382.96,
+      "end": 383.48,
+      "speaker": "Host"
+    },
+    {
+      "word": "information.",
+      "start": 383.48,
+      "end": 384,
+      "speaker": "Host"
+    },
+    {
+      "word": "Let's",
+      "start": 384,
+      "end": 384.406,
+      "speaker": "Host"
+    },
+    {
+      "word": "look",
+      "start": 384.406,
+      "end": 384.813,
+      "speaker": "Host"
+    },
+    {
+      "word": "at",
+      "start": 384.813,
+      "end": 385.219,
+      "speaker": "Host"
+    },
+    {
+      "word": "real",
+      "start": 385.219,
+      "end": 385.625,
+      "speaker": "Host"
+    },
+    {
+      "word": "implementations.",
+      "start": 385.625,
+      "end": 386.031,
+      "speaker": "Host"
+    },
+    {
+      "word": "Customer",
+      "start": 386.031,
+      "end": 386.438,
+      "speaker": "Host"
+    },
+    {
+      "word": "support",
+      "start": 386.438,
+      "end": 386.844,
+      "speaker": "Host"
+    },
+    {
+      "word": "chatbots",
+      "start": 386.844,
+      "end": 387.25,
+      "speaker": "Host"
+    },
+    {
+      "word": "are",
+      "start": 387.25,
+      "end": 387.656,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 387.656,
+      "end": 388.063,
+      "speaker": "Host"
+    },
+    {
+      "word": "classic",
+      "start": 388.063,
+      "end": 388.469,
+      "speaker": "Host"
+    },
+    {
+      "word": "use",
+      "start": 388.469,
+      "end": 388.875,
+      "speaker": "Host"
+    },
+    {
+      "word": "case.",
+      "start": 388.875,
+      "end": 389.281,
+      "speaker": "Host"
+    },
+    {
+      "word": "Instead",
+      "start": 389.281,
+      "end": 389.688,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 389.688,
+      "end": 390.094,
+      "speaker": "Host"
+    },
+    {
+      "word": "training",
+      "start": 390.094,
+      "end": 390.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 390.5,
+      "end": 390.906,
+      "speaker": "Host"
+    },
+    {
+      "word": "model",
+      "start": 390.906,
+      "end": 391.313,
+      "speaker": "Host"
+    },
+    {
+      "word": "on",
+      "start": 391.313,
+      "end": 391.719,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 391.719,
+      "end": 392.125,
+      "speaker": "Host"
+    },
+    {
+      "word": "help",
+      "start": 392.125,
+      "end": 392.531,
+      "speaker": "Host"
+    },
+    {
+      "word": "center,",
+      "start": 392.531,
+      "end": 392.938,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 392.938,
+      "end": 393.344,
+      "speaker": "Host"
+    },
+    {
+      "word": "index",
+      "start": 393.344,
+      "end": 393.75,
+      "speaker": "Host"
+    },
+    {
+      "word": "every",
+      "start": 393.75,
+      "end": 394.156,
+      "speaker": "Host"
+    },
+    {
+      "word": "article,",
+      "start": 394.156,
+      "end": 394.563,
+      "speaker": "Host"
+    },
+    {
+      "word": "every",
+      "start": 394.563,
+      "end": 394.969,
+      "speaker": "Host"
+    },
+    {
+      "word": "resolved",
+      "start": 394.969,
+      "end": 395.375,
+      "speaker": "Host"
+    },
+    {
+      "word": "ticket,",
+      "start": 395.375,
+      "end": 395.781,
+      "speaker": "Host"
+    },
+    {
+      "word": "every",
+      "start": 395.781,
+      "end": 396.188,
+      "speaker": "Host"
+    },
+    {
+      "word": "product",
+      "start": 396.188,
+      "end": 396.594,
+      "speaker": "Host"
+    },
+    {
+      "word": "manual.",
+      "start": 396.594,
+      "end": 397,
+      "speaker": "Host"
+    },
+    {
+      "word": "When",
+      "start": 397,
+      "end": 397.444,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 397.444,
+      "end": 397.889,
+      "speaker": "Host"
+    },
+    {
+      "word": "customer",
+      "start": 397.889,
+      "end": 398.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "asks",
+      "start": 398.333,
+      "end": 398.778,
+      "speaker": "Host"
+    },
+    {
+      "word": "about",
+      "start": 398.778,
+      "end": 399.222,
+      "speaker": "Host"
+    },
+    {
+      "word": "return",
+      "start": 399.222,
+      "end": 399.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "shipping",
+      "start": 399.667,
+      "end": 400.111,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 400.111,
+      "end": 400.556,
+      "speaker": "Host"
+    },
+    {
+      "word": "Germany,",
+      "start": 400.556,
+      "end": 401,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 401,
+      "end": 401.444,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieve",
+      "start": 401.444,
+      "end": 401.889,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 401.889,
+      "end": 402.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "EU",
+      "start": 402.333,
+      "end": 402.778,
+      "speaker": "Host"
+    },
+    {
+      "word": "shipping",
+      "start": 402.778,
+      "end": 403.222,
+      "speaker": "Host"
+    },
+    {
+      "word": "policy",
+      "start": 403.222,
+      "end": 403.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 403.667,
+      "end": 404.111,
+      "speaker": "Host"
+    },
+    {
+      "word": "generate",
+      "start": 404.111,
+      "end": 404.556,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 404.556,
+      "end": 405,
+      "speaker": "Host"
+    },
+    {
+      "word": "precise",
+      "start": 405,
+      "end": 405.444,
+      "speaker": "Host"
+    },
+    {
+      "word": "answer.",
+      "start": 405.444,
+      "end": 405.889,
+      "speaker": "Host"
+    },
+    {
+      "word": "Not",
+      "start": 405.889,
+      "end": 406.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 406.333,
+      "end": 406.778,
+      "speaker": "Host"
+    },
+    {
+      "word": "generic",
+      "start": 406.778,
+      "end": 407.222,
+      "speaker": "Host"
+    },
+    {
+      "word": "check",
+      "start": 407.222,
+      "end": 407.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "our",
+      "start": 407.667,
+      "end": 408.111,
+      "speaker": "Host"
+    },
+    {
+      "word": "website",
+      "start": 408.111,
+      "end": 408.556,
+      "speaker": "Host"
+    },
+    {
+      "word": "response.",
+      "start": 408.556,
+      "end": 409,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 409,
+      "end": 409.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "specific",
+      "start": 409.429,
+      "end": 409.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "answer",
+      "start": 409.857,
+      "end": 410.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "with",
+      "start": 410.286,
+      "end": 410.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 410.714,
+      "end": 411.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "specific",
+      "start": 411.143,
+      "end": 411.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "link.",
+      "start": 411.571,
+      "end": 412,
+      "speaker": "Host"
+    },
+    {
+      "word": "Internal",
+      "start": 412,
+      "end": 412.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "knowledge",
+      "start": 412.429,
+      "end": 412.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "bases",
+      "start": 412.857,
+      "end": 413.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "are",
+      "start": 413.286,
+      "end": 413.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "another",
+      "start": 413.714,
+      "end": 414.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "killer",
+      "start": 414.143,
+      "end": 414.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "app.",
+      "start": 414.571,
+      "end": 415,
+      "speaker": "Host"
+    },
+    {
+      "word": "Engineering",
+      "start": 415,
+      "end": 415.478,
+      "speaker": "Host"
+    },
+    {
+      "word": "teams",
+      "start": 415.478,
+      "end": 415.957,
+      "speaker": "Host"
+    },
+    {
+      "word": "at",
+      "start": 415.957,
+      "end": 416.435,
+      "speaker": "Host"
+    },
+    {
+      "word": "Google,",
+      "start": 416.435,
+      "end": 416.913,
+      "speaker": "Host"
+    },
+    {
+      "word": "Spotify,",
+      "start": 416.913,
+      "end": 417.391,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 417.391,
+      "end": 417.87,
+      "speaker": "Host"
+    },
+    {
+      "word": "Shopify",
+      "start": 417.87,
+      "end": 418.348,
+      "speaker": "Host"
+    },
+    {
+      "word": "use",
+      "start": 418.348,
+      "end": 418.826,
+      "speaker": "Host"
+    },
+    {
+      "word": "RAG",
+      "start": 418.826,
+      "end": 419.304,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 419.304,
+      "end": 419.783,
+      "speaker": "Host"
+    },
+    {
+      "word": "search",
+      "start": 419.783,
+      "end": 420.261,
+      "speaker": "Host"
+    },
+    {
+      "word": "millions",
+      "start": 420.261,
+      "end": 420.739,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 420.739,
+      "end": 421.217,
+      "speaker": "Host"
+    },
+    {
+      "word": "documents.",
+      "start": 421.217,
+      "end": 421.696,
+      "speaker": "Host"
+    },
+    {
+      "word": "How",
+      "start": 421.696,
+      "end": 422.174,
+      "speaker": "Host"
+    },
+    {
+      "word": "do",
+      "start": 422.174,
+      "end": 422.652,
+      "speaker": "Host"
+    },
+    {
+      "word": "we",
+      "start": 422.652,
+      "end": 423.13,
+      "speaker": "Host"
+    },
+    {
+      "word": "handle",
+      "start": 423.13,
+      "end": 423.609,
+      "speaker": "Host"
+    },
+    {
+      "word": "OAuth",
+      "start": 423.609,
+      "end": 424.087,
+      "speaker": "Host"
+    },
+    {
+      "word": "in",
+      "start": 424.087,
+      "end": 424.565,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 424.565,
+      "end": 425.043,
+      "speaker": "Host"
+    },
+    {
+      "word": "payments",
+      "start": 425.043,
+      "end": 425.522,
+      "speaker": "Host"
+    },
+    {
+      "word": "microservice?",
+      "start": 425.522,
+      "end": 426,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 426,
+      "end": 426.455,
+      "speaker": "Host"
+    },
+    {
+      "word": "system",
+      "start": 426.455,
+      "end": 426.909,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieves",
+      "start": 426.909,
+      "end": 427.364,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 427.364,
+      "end": 427.818,
+      "speaker": "Host"
+    },
+    {
+      "word": "actual",
+      "start": 427.818,
+      "end": 428.273,
+      "speaker": "Host"
+    },
+    {
+      "word": "implementation",
+      "start": 428.273,
+      "end": 428.727,
+      "speaker": "Host"
+    },
+    {
+      "word": "docs,",
+      "start": 428.727,
+      "end": 429.182,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 429.182,
+      "end": 429.636,
+      "speaker": "Host"
+    },
+    {
+      "word": "API",
+      "start": 429.636,
+      "end": 430.091,
+      "speaker": "Host"
+    },
+    {
+      "word": "reference,",
+      "start": 430.091,
+      "end": 430.545,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 430.545,
+      "end": 431,
+      "speaker": "Host"
+    },
+    {
+      "word": "recent",
+      "start": 431,
+      "end": 431.455,
+      "speaker": "Host"
+    },
+    {
+      "word": "slack",
+      "start": 431.455,
+      "end": 431.909,
+      "speaker": "Host"
+    },
+    {
+      "word": "threads",
+      "start": 431.909,
+      "end": 432.364,
+      "speaker": "Host"
+    },
+    {
+      "word": "where",
+      "start": 432.364,
+      "end": 432.818,
+      "speaker": "Host"
+    },
+    {
+      "word": "engineers",
+      "start": 432.818,
+      "end": 433.273,
+      "speaker": "Host"
+    },
+    {
+      "word": "discussed",
+      "start": 433.273,
+      "end": 433.727,
+      "speaker": "Host"
+    },
+    {
+      "word": "edge",
+      "start": 433.727,
+      "end": 434.182,
+      "speaker": "Host"
+    },
+    {
+      "word": "cases.",
+      "start": 434.182,
+      "end": 434.636,
+      "speaker": "Host"
+    },
+    {
+      "word": "It",
+      "start": 434.636,
+      "end": 435.091,
+      "speaker": "Host"
+    },
+    {
+      "word": "synthesizes",
+      "start": 435.091,
+      "end": 435.545,
+      "speaker": "Host"
+    },
+    {
+      "word": "this",
+      "start": 435.545,
+      "end": 436,
+      "speaker": "Host"
+    },
+    {
+      "word": "into",
+      "start": 436,
+      "end": 436.455,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 436.455,
+      "end": 436.909,
+      "speaker": "Host"
+    },
+    {
+      "word": "working",
+      "start": 436.909,
+      "end": 437.364,
+      "speaker": "Host"
+    },
+    {
+      "word": "answer",
+      "start": 437.364,
+      "end": 437.818,
+      "speaker": "Host"
+    },
+    {
+      "word": "with",
+      "start": 437.818,
+      "end": 438.273,
+      "speaker": "Host"
+    },
+    {
+      "word": "sources.",
+      "start": 438.273,
+      "end": 438.727,
+      "speaker": "Host"
+    },
+    {
+      "word": "Code",
+      "start": 438.727,
+      "end": 439.182,
+      "speaker": "Host"
+    },
+    {
+      "word": "generation",
+      "start": 439.182,
+      "end": 439.636,
+      "speaker": "Host"
+    },
+    {
+      "word": "benefits",
+      "start": 439.636,
+      "end": 440.091,
+      "speaker": "Host"
+    },
+    {
+      "word": "massively",
+      "start": 440.091,
+      "end": 440.545,
+      "speaker": "Host"
+    },
+    {
+      "word": "too.",
+      "start": 440.545,
+      "end": 441,
+      "speaker": "Host"
+    },
+    {
+      "word": "Tools",
+      "start": 441,
+      "end": 441.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "like",
+      "start": 441.429,
+      "end": 441.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "GitHub",
+      "start": 441.857,
+      "end": 442.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "Copilot",
+      "start": 442.286,
+      "end": 442.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "use",
+      "start": 442.714,
+      "end": 443.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "Retrieval",
+      "start": 443.143,
+      "end": 443.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 443.571,
+      "end": 444,
+      "speaker": "Host"
+    },
+    {
+      "word": "find",
+      "start": 444,
+      "end": 444.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "similar",
+      "start": 444.429,
+      "end": 444.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "code",
+      "start": 444.857,
+      "end": 445.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "in",
+      "start": 445.286,
+      "end": 445.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 445.714,
+      "end": 446.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "repository.",
+      "start": 446.143,
+      "end": 446.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "Ask",
+      "start": 446.571,
+      "end": 447,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 447,
+      "end": 447.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 447.429,
+      "end": 447.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "implement",
+      "start": 447.857,
+      "end": 448.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 448.286,
+      "end": 448.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "new",
+      "start": 448.714,
+      "end": 449.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "endpoint",
+      "start": 449.143,
+      "end": 449.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 449.571,
+      "end": 450,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 450,
+      "end": 450.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieves",
+      "start": 450.429,
+      "end": 450.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "existing",
+      "start": 450.857,
+      "end": 451.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "endpoints",
+      "start": 451.286,
+      "end": 451.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "with",
+      "start": 451.714,
+      "end": 452.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "similar",
+      "start": 452.143,
+      "end": 452.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "patterns.",
+      "start": 452.571,
+      "end": 453,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 453,
+      "end": 453.44,
+      "speaker": "Host"
+    },
+    {
+      "word": "generated",
+      "start": 453.44,
+      "end": 453.88,
+      "speaker": "Host"
+    },
+    {
+      "word": "code",
+      "start": 453.88,
+      "end": 454.32,
+      "speaker": "Host"
+    },
+    {
+      "word": "matches",
+      "start": 454.32,
+      "end": 454.76,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 454.76,
+      "end": 455.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "conventions,",
+      "start": 455.2,
+      "end": 455.64,
+      "speaker": "Host"
+    },
+    {
+      "word": "uses",
+      "start": 455.64,
+      "end": 456.08,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 456.08,
+      "end": 456.52,
+      "speaker": "Host"
+    },
+    {
+      "word": "internal",
+      "start": 456.52,
+      "end": 456.96,
+      "speaker": "Host"
+    },
+    {
+      "word": "libraries,",
+      "start": 456.96,
+      "end": 457.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "follows",
+      "start": 457.4,
+      "end": 457.84,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 457.84,
+      "end": 458.28,
+      "speaker": "Host"
+    },
+    {
+      "word": "error",
+      "start": 458.28,
+      "end": 458.72,
+      "speaker": "Host"
+    },
+    {
+      "word": "handling",
+      "start": 458.72,
+      "end": 459.16,
+      "speaker": "Host"
+    },
+    {
+      "word": "patterns.",
+      "start": 459.16,
+      "end": 459.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "It's",
+      "start": 459.6,
+      "end": 460.04,
+      "speaker": "Host"
+    },
+    {
+      "word": "not",
+      "start": 460.04,
+      "end": 460.48,
+      "speaker": "Host"
+    },
+    {
+      "word": "generic",
+      "start": 460.48,
+      "end": 460.92,
+      "speaker": "Host"
+    },
+    {
+      "word": "stack",
+      "start": 460.92,
+      "end": 461.36,
+      "speaker": "Host"
+    },
+    {
+      "word": "overflow",
+      "start": 461.36,
+      "end": 461.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "code.",
+      "start": 461.8,
+      "end": 462.24,
+      "speaker": "Host"
+    },
+    {
+      "word": "It's",
+      "start": 462.24,
+      "end": 462.68,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 462.68,
+      "end": 463.12,
+      "speaker": "Host"
+    },
+    {
+      "word": "code",
+      "start": 463.12,
+      "end": 463.56,
+      "speaker": "Host"
+    },
+    {
+      "word": "style.",
+      "start": 463.56,
+      "end": 464,
+      "speaker": "Host"
+    },
+    {
+      "word": "But",
+      "start": 464,
+      "end": 464.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "here's",
+      "start": 464.5,
+      "end": 465,
+      "speaker": "Host"
+    },
+    {
+      "word": "where",
+      "start": 465,
+      "end": 465.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "developers",
+      "start": 465.5,
+      "end": 466,
+      "speaker": "Host"
+    },
+    {
+      "word": "stumble.",
+      "start": 466,
+      "end": 466.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "They",
+      "start": 466.5,
+      "end": 467,
+      "speaker": "Host"
+    },
+    {
+      "word": "think",
+      "start": 467,
+      "end": 467.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "RAG",
+      "start": 467.5,
+      "end": 468,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 468,
+      "end": 468.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "just",
+      "start": 468.5,
+      "end": 469,
+      "speaker": "Host"
+    },
+    {
+      "word": "add",
+      "start": 469,
+      "end": 469.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 469.5,
+      "end": 470,
+      "speaker": "Host"
+    },
+    {
+      "word": "vector",
+      "start": 470,
+      "end": 470.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "database",
+      "start": 470.5,
+      "end": 471,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 471,
+      "end": 471.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "you're",
+      "start": 471.5,
+      "end": 472,
+      "speaker": "Host"
+    },
+    {
+      "word": "done.",
+      "start": 472,
+      "end": 472.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "It's",
+      "start": 472.5,
+      "end": 473,
+      "speaker": "Host"
+    },
+    {
+      "word": "not.",
+      "start": 473,
+      "end": 473.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 473.5,
+      "end": 474,
+      "speaker": "Host"
+    },
+    {
+      "word": "need",
+      "start": 474,
+      "end": 474.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "re-ranking.",
+      "start": 474.5,
+      "end": 475,
+      "speaker": "Host"
+    },
+    {
+      "word": "Initial",
+      "start": 475,
+      "end": 475.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "Retrieval",
+      "start": 475.5,
+      "end": 476,
+      "speaker": "Host"
+    },
+    {
+      "word": "gives",
+      "start": 476,
+      "end": 476.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 476.5,
+      "end": 477,
+      "speaker": "Host"
+    },
+    {
+      "word": "candidate",
+      "start": 477,
+      "end": 477.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunks,",
+      "start": 477.5,
+      "end": 478,
+      "speaker": "Host"
+    },
+    {
+      "word": "but",
+      "start": 478,
+      "end": 478.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 478.5,
+      "end": 479,
+      "speaker": "Host"
+    },
+    {
+      "word": "dedicated",
+      "start": 479,
+      "end": 479.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "re-ranking",
+      "start": 479.5,
+      "end": 480,
+      "speaker": "Host"
+    },
+    {
+      "word": "model,",
+      "start": 480,
+      "end": 480.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "like",
+      "start": 480.5,
+      "end": 481,
+      "speaker": "Host"
+    },
+    {
+      "word": "cohere",
+      "start": 481,
+      "end": 481.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "re-rank",
+      "start": 481.5,
+      "end": 482,
+      "speaker": "Host"
+    },
+    {
+      "word": "or",
+      "start": 482,
+      "end": 482.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "cross",
+      "start": 482.5,
+      "end": 483,
+      "speaker": "Host"
+    },
+    {
+      "word": "encoders,",
+      "start": 483,
+      "end": 483.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "can",
+      "start": 483.5,
+      "end": 484,
+      "speaker": "Host"
+    },
+    {
+      "word": "improve",
+      "start": 484,
+      "end": 484.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "relevance",
+      "start": 484.5,
+      "end": 485,
+      "speaker": "Host"
+    },
+    {
+      "word": "by",
+      "start": 485,
+      "end": 485.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "20-30%.",
+      "start": 485.5,
+      "end": 486,
+      "speaker": "Host"
+    },
+    {
+      "word": "These",
+      "start": 486,
+      "end": 486.414,
+      "speaker": "Host"
+    },
+    {
+      "word": "models",
+      "start": 486.414,
+      "end": 486.828,
+      "speaker": "Host"
+    },
+    {
+      "word": "are",
+      "start": 486.828,
+      "end": 487.241,
+      "speaker": "Host"
+    },
+    {
+      "word": "slower",
+      "start": 487.241,
+      "end": 487.655,
+      "speaker": "Host"
+    },
+    {
+      "word": "but",
+      "start": 487.655,
+      "end": 488.069,
+      "speaker": "Host"
+    },
+    {
+      "word": "more",
+      "start": 488.069,
+      "end": 488.483,
+      "speaker": "Host"
+    },
+    {
+      "word": "accurate.",
+      "start": 488.483,
+      "end": 488.897,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 488.897,
+      "end": 489.31,
+      "speaker": "Host"
+    },
+    {
+      "word": "use",
+      "start": 489.31,
+      "end": 489.724,
+      "speaker": "Host"
+    },
+    {
+      "word": "them",
+      "start": 489.724,
+      "end": 490.138,
+      "speaker": "Host"
+    },
+    {
+      "word": "on",
+      "start": 490.138,
+      "end": 490.552,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 490.552,
+      "end": 490.966,
+      "speaker": "Host"
+    },
+    {
+      "word": "top",
+      "start": 490.966,
+      "end": 491.379,
+      "speaker": "Host"
+    },
+    {
+      "word": "100",
+      "start": 491.379,
+      "end": 491.793,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieved",
+      "start": 491.793,
+      "end": 492.207,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunks",
+      "start": 492.207,
+      "end": 492.621,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 492.621,
+      "end": 493.034,
+      "speaker": "Host"
+    },
+    {
+      "word": "find",
+      "start": 493.034,
+      "end": 493.448,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 493.448,
+      "end": 493.862,
+      "speaker": "Host"
+    },
+    {
+      "word": "actual",
+      "start": 493.862,
+      "end": 494.276,
+      "speaker": "Host"
+    },
+    {
+      "word": "best",
+      "start": 494.276,
+      "end": 494.69,
+      "speaker": "Host"
+    },
+    {
+      "word": "5.",
+      "start": 494.69,
+      "end": 495.103,
+      "speaker": "Host"
+    },
+    {
+      "word": "It's",
+      "start": 495.103,
+      "end": 495.517,
+      "speaker": "Host"
+    },
+    {
+      "word": "worth",
+      "start": 495.517,
+      "end": 495.931,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 495.931,
+      "end": 496.345,
+      "speaker": "Host"
+    },
+    {
+      "word": "latency",
+      "start": 496.345,
+      "end": 496.759,
+      "speaker": "Host"
+    },
+    {
+      "word": "hit",
+      "start": 496.759,
+      "end": 497.172,
+      "speaker": "Host"
+    },
+    {
+      "word": "for",
+      "start": 497.172,
+      "end": 497.586,
+      "speaker": "Host"
+    },
+    {
+      "word": "quality.",
+      "start": 497.586,
+      "end": 498,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 498,
+      "end": 498.486,
+      "speaker": "Host"
+    },
+    {
+      "word": "need",
+      "start": 498.486,
+      "end": 498.973,
+      "speaker": "Host"
+    },
+    {
+      "word": "query",
+      "start": 498.973,
+      "end": 499.459,
+      "speaker": "Host"
+    },
+    {
+      "word": "rewriting.",
+      "start": 499.459,
+      "end": 499.946,
+      "speaker": "Host"
+    },
+    {
+      "word": "Users",
+      "start": 499.946,
+      "end": 500.432,
+      "speaker": "Host"
+    },
+    {
+      "word": "ask",
+      "start": 500.432,
+      "end": 500.919,
+      "speaker": "Host"
+    },
+    {
+      "word": "vague",
+      "start": 500.919,
+      "end": 501.405,
+      "speaker": "Host"
+    },
+    {
+      "word": "questions.",
+      "start": 501.405,
+      "end": 501.892,
+      "speaker": "Host"
+    },
+    {
+      "word": "How",
+      "start": 501.892,
+      "end": 502.378,
+      "speaker": "Host"
+    },
+    {
+      "word": "does",
+      "start": 502.378,
+      "end": 502.865,
+      "speaker": "Host"
+    },
+    {
+      "word": "this",
+      "start": 502.865,
+      "end": 503.351,
+      "speaker": "Host"
+    },
+    {
+      "word": "work?",
+      "start": 503.351,
+      "end": 503.838,
+      "speaker": "Host"
+    },
+    {
+      "word": "Work",
+      "start": 503.838,
+      "end": 504.324,
+      "speaker": "Host"
+    },
+    {
+      "word": "what?",
+      "start": 504.324,
+      "end": 504.811,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 504.811,
+      "end": 505.297,
+      "speaker": "Host"
+    },
+    {
+      "word": "system,",
+      "start": 505.297,
+      "end": 505.784,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 505.784,
+      "end": 506.27,
+      "speaker": "Host"
+    },
+    {
+      "word": "feature,",
+      "start": 506.27,
+      "end": 506.757,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 506.757,
+      "end": 507.243,
+      "speaker": "Host"
+    },
+    {
+      "word": "APE?",
+      "start": 507.243,
+      "end": 507.73,
+      "speaker": "Host"
+    },
+    {
+      "word": "Use",
+      "start": 507.73,
+      "end": 508.216,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 508.216,
+      "end": 508.703,
+      "speaker": "Host"
+    },
+    {
+      "word": "small",
+      "start": 508.703,
+      "end": 509.189,
+      "speaker": "Host"
+    },
+    {
+      "word": "LLM",
+      "start": 509.189,
+      "end": 509.676,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 509.676,
+      "end": 510.162,
+      "speaker": "Host"
+    },
+    {
+      "word": "expand",
+      "start": 510.162,
+      "end": 510.649,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 510.649,
+      "end": 511.135,
+      "speaker": "Host"
+    },
+    {
+      "word": "query",
+      "start": 511.135,
+      "end": 511.622,
+      "speaker": "Host"
+    },
+    {
+      "word": "into",
+      "start": 511.622,
+      "end": 512.108,
+      "speaker": "Host"
+    },
+    {
+      "word": "multiple",
+      "start": 512.108,
+      "end": 512.595,
+      "speaker": "Host"
+    },
+    {
+      "word": "formulations.",
+      "start": 512.595,
+      "end": 513.081,
+      "speaker": "Host"
+    },
+    {
+      "word": "How",
+      "start": 513.081,
+      "end": 513.568,
+      "speaker": "Host"
+    },
+    {
+      "word": "does",
+      "start": 513.568,
+      "end": 514.054,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 514.054,
+      "end": 514.541,
+      "speaker": "Host"
+    },
+    {
+      "word": "authentication",
+      "start": 514.541,
+      "end": 515.027,
+      "speaker": "Host"
+    },
+    {
+      "word": "system",
+      "start": 515.027,
+      "end": 515.514,
+      "speaker": "Host"
+    },
+    {
+      "word": "work?",
+      "start": 515.514,
+      "end": 516,
+      "speaker": "Host"
+    },
+    {
+      "word": "Explain",
+      "start": 516,
+      "end": 516.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 516.5,
+      "end": 517,
+      "speaker": "Host"
+    },
+    {
+      "word": "login",
+      "start": 517,
+      "end": 517.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "feature.",
+      "start": 517.5,
+      "end": 518,
+      "speaker": "Host"
+    },
+    {
+      "word": "A",
+      "start": 518,
+      "end": 518.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "PI",
+      "start": 518.5,
+      "end": 519,
+      "speaker": "Host"
+    },
+    {
+      "word": "authentication",
+      "start": 519,
+      "end": 519.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "documentation.",
+      "start": 519.5,
+      "end": 520,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 520,
+      "end": 520.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieve",
+      "start": 520.5,
+      "end": 521,
+      "speaker": "Host"
+    },
+    {
+      "word": "against",
+      "start": 521,
+      "end": 521.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "all",
+      "start": 521.5,
+      "end": 522,
+      "speaker": "Host"
+    },
+    {
+      "word": "variants",
+      "start": 522,
+      "end": 522.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 522.5,
+      "end": 523,
+      "speaker": "Host"
+    },
+    {
+      "word": "merge",
+      "start": 523,
+      "end": 523.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "results.",
+      "start": 523.5,
+      "end": 524,
+      "speaker": "Host"
+    },
+    {
+      "word": "More",
+      "start": 524,
+      "end": 524.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "coverage?",
+      "start": 524.5,
+      "end": 525,
+      "speaker": "Host"
+    },
+    {
+      "word": "Better",
+      "start": 525,
+      "end": 525.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "recall.",
+      "start": 525.5,
+      "end": 526,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 526,
+      "end": 526.63,
+      "speaker": "Host"
+    },
+    {
+      "word": "need",
+      "start": 526.63,
+      "end": 527.259,
+      "speaker": "Host"
+    },
+    {
+      "word": "hybrid",
+      "start": 527.259,
+      "end": 527.889,
+      "speaker": "Host"
+    },
+    {
+      "word": "search.",
+      "start": 527.889,
+      "end": 528.519,
+      "speaker": "Host"
+    },
+    {
+      "word": "Vectors",
+      "start": 528.519,
+      "end": 529.148,
+      "speaker": "Host"
+    },
+    {
+      "word": "capture",
+      "start": 529.148,
+      "end": 529.778,
+      "speaker": "Host"
+    },
+    {
+      "word": "semantic",
+      "start": 529.778,
+      "end": 530.407,
+      "speaker": "Host"
+    },
+    {
+      "word": "similarity",
+      "start": 530.407,
+      "end": 531.037,
+      "speaker": "Host"
+    },
+    {
+      "word": "but",
+      "start": 531.037,
+      "end": 531.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "miss",
+      "start": 531.667,
+      "end": 532.296,
+      "speaker": "Host"
+    },
+    {
+      "word": "exact",
+      "start": 532.296,
+      "end": 532.926,
+      "speaker": "Host"
+    },
+    {
+      "word": "matches.",
+      "start": 532.926,
+      "end": 533.556,
+      "speaker": "Host"
+    },
+    {
+      "word": "If",
+      "start": 533.556,
+      "end": 534.185,
+      "speaker": "Host"
+    },
+    {
+      "word": "someone",
+      "start": 534.185,
+      "end": 534.815,
+      "speaker": "Host"
+    },
+    {
+      "word": "searches",
+      "start": 534.815,
+      "end": 535.444,
+      "speaker": "Host"
+    },
+    {
+      "word": "for",
+      "start": 535.444,
+      "end": 536.074,
+      "speaker": "Host"
+    },
+    {
+      "word": "error",
+      "start": 536.074,
+      "end": 536.704,
+      "speaker": "Host"
+    },
+    {
+      "word": "code",
+      "start": 536.704,
+      "end": 537.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "4023,",
+      "start": 537.333,
+      "end": 537.963,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 537.963,
+      "end": 538.593,
+      "speaker": "Host"
+    },
+    {
+      "word": "want",
+      "start": 538.593,
+      "end": 539.222,
+      "speaker": "Host"
+    },
+    {
+      "word": "exact",
+      "start": 539.222,
+      "end": 539.852,
+      "speaker": "Host"
+    },
+    {
+      "word": "matches.",
+      "start": 539.852,
+      "end": 540.481,
+      "speaker": "Host"
+    },
+    {
+      "word": "Not",
+      "start": 540.481,
+      "end": 541.111,
+      "speaker": "Host"
+    },
+    {
+      "word": "semantically,",
+      "start": 541.111,
+      "end": 541.741,
+      "speaker": "Host"
+    },
+    {
+      "word": "similar",
+      "start": 541.741,
+      "end": 542.37,
+      "speaker": "Host"
+    },
+    {
+      "word": "errors.",
+      "start": 542.37,
+      "end": 543,
+      "speaker": "Host"
+    },
+    {
+      "word": "Combine",
+      "start": 543,
+      "end": 543.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "vector",
+      "start": 543.6,
+      "end": 544.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "similarity",
+      "start": 544.2,
+      "end": 544.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "with",
+      "start": 544.8,
+      "end": 545.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "traditional",
+      "start": 545.4,
+      "end": 546,
+      "speaker": "Host"
+    },
+    {
+      "word": "keyword",
+      "start": 546,
+      "end": 546.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "search,",
+      "start": 546.6,
+      "end": 547.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "BM25",
+      "start": 547.2,
+      "end": 547.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "or",
+      "start": 547.8,
+      "end": 548.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "full",
+      "start": 548.4,
+      "end": 549,
+      "speaker": "Host"
+    },
+    {
+      "word": "text",
+      "start": 549,
+      "end": 549.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "search,",
+      "start": 549.6,
+      "end": 550.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 550.2,
+      "end": 550.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "merge",
+      "start": 550.8,
+      "end": 551.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 551.4,
+      "end": 552,
+      "speaker": "Host"
+    },
+    {
+      "word": "results.",
+      "start": 552,
+      "end": 552.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "Best",
+      "start": 552.6,
+      "end": 553.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 553.2,
+      "end": 553.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "both",
+      "start": 553.8,
+      "end": 554.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "worlds.",
+      "start": 554.4,
+      "end": 555,
+      "speaker": "Host"
+    },
+    {
+      "word": "And",
+      "start": 555,
+      "end": 555.432,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 555.432,
+      "end": 555.865,
+      "speaker": "Host"
+    },
+    {
+      "word": "need",
+      "start": 555.865,
+      "end": 556.297,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 556.297,
+      "end": 556.73,
+      "speaker": "Host"
+    },
+    {
+      "word": "handle",
+      "start": 556.73,
+      "end": 557.162,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 557.162,
+      "end": 557.595,
+      "speaker": "Host"
+    },
+    {
+      "word": "no-good",
+      "start": 557.595,
+      "end": 558.027,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieval",
+      "start": 558.027,
+      "end": 558.459,
+      "speaker": "Host"
+    },
+    {
+      "word": "case.",
+      "start": 558.459,
+      "end": 558.892,
+      "speaker": "Host"
+    },
+    {
+      "word": "Sometimes",
+      "start": 558.892,
+      "end": 559.324,
+      "speaker": "Host"
+    },
+    {
+      "word": "nothing",
+      "start": 559.324,
+      "end": 559.757,
+      "speaker": "Host"
+    },
+    {
+      "word": "in",
+      "start": 559.757,
+      "end": 560.189,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 560.189,
+      "end": 560.622,
+      "speaker": "Host"
+    },
+    {
+      "word": "knowledge",
+      "start": 560.622,
+      "end": 561.054,
+      "speaker": "Host"
+    },
+    {
+      "word": "base",
+      "start": 561.054,
+      "end": 561.486,
+      "speaker": "Host"
+    },
+    {
+      "word": "answers",
+      "start": 561.486,
+      "end": 561.919,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 561.919,
+      "end": 562.351,
+      "speaker": "Host"
+    },
+    {
+      "word": "question.",
+      "start": 562.351,
+      "end": 562.784,
+      "speaker": "Host"
+    },
+    {
+      "word": "Your",
+      "start": 562.784,
+      "end": 563.216,
+      "speaker": "Host"
+    },
+    {
+      "word": "system",
+      "start": 563.216,
+      "end": 563.649,
+      "speaker": "Host"
+    },
+    {
+      "word": "needs",
+      "start": 563.649,
+      "end": 564.081,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 564.081,
+      "end": 564.514,
+      "speaker": "Host"
+    },
+    {
+      "word": "detect",
+      "start": 564.514,
+      "end": 564.946,
+      "speaker": "Host"
+    },
+    {
+      "word": "this.",
+      "start": 564.946,
+      "end": 565.378,
+      "speaker": "Host"
+    },
+    {
+      "word": "Confidence",
+      "start": 565.378,
+      "end": 565.811,
+      "speaker": "Host"
+    },
+    {
+      "word": "scores.",
+      "start": 565.811,
+      "end": 566.243,
+      "speaker": "Host"
+    },
+    {
+      "word": "Distance",
+      "start": 566.243,
+      "end": 566.676,
+      "speaker": "Host"
+    },
+    {
+      "word": "thresholds.",
+      "start": 566.676,
+      "end": 567.108,
+      "speaker": "Host"
+    },
+    {
+      "word": "When",
+      "start": 567.108,
+      "end": 567.541,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieval",
+      "start": 567.541,
+      "end": 567.973,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 567.973,
+      "end": 568.405,
+      "speaker": "Host"
+    },
+    {
+      "word": "weak,",
+      "start": 568.405,
+      "end": 568.838,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 568.838,
+      "end": 569.27,
+      "speaker": "Host"
+    },
+    {
+      "word": "don't",
+      "start": 569.27,
+      "end": 569.703,
+      "speaker": "Host"
+    },
+    {
+      "word": "fake",
+      "start": 569.703,
+      "end": 570.135,
+      "speaker": "Host"
+    },
+    {
+      "word": "an",
+      "start": 570.135,
+      "end": 570.568,
+      "speaker": "Host"
+    },
+    {
+      "word": "answer.",
+      "start": 570.568,
+      "end": 571,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 571,
+      "end": 571.391,
+      "speaker": "Host"
+    },
+    {
+      "word": "escalate",
+      "start": 571.391,
+      "end": 571.783,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 571.783,
+      "end": 572.174,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 572.174,
+      "end": 572.565,
+      "speaker": "Host"
+    },
+    {
+      "word": "human.",
+      "start": 572.565,
+      "end": 572.957,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 572.957,
+      "end": 573.348,
+      "speaker": "Host"
+    },
+    {
+      "word": "say,",
+      "start": 573.348,
+      "end": 573.739,
+      "speaker": "Host"
+    },
+    {
+      "word": "I",
+      "start": 573.739,
+      "end": 574.13,
+      "speaker": "Host"
+    },
+    {
+      "word": "don't",
+      "start": 574.13,
+      "end": 574.522,
+      "speaker": "Host"
+    },
+    {
+      "word": "have",
+      "start": 574.522,
+      "end": 574.913,
+      "speaker": "Host"
+    },
+    {
+      "word": "information",
+      "start": 574.913,
+      "end": 575.304,
+      "speaker": "Host"
+    },
+    {
+      "word": "about",
+      "start": 575.304,
+      "end": 575.696,
+      "speaker": "Host"
+    },
+    {
+      "word": "that.",
+      "start": 575.696,
+      "end": 576.087,
+      "speaker": "Host"
+    },
+    {
+      "word": "This",
+      "start": 576.087,
+      "end": 576.478,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 576.478,
+      "end": 576.87,
+      "speaker": "Host"
+    },
+    {
+      "word": "hard",
+      "start": 576.87,
+      "end": 577.261,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 577.261,
+      "end": 577.652,
+      "speaker": "Host"
+    },
+    {
+      "word": "get",
+      "start": 577.652,
+      "end": 578.043,
+      "speaker": "Host"
+    },
+    {
+      "word": "right,",
+      "start": 578.043,
+      "end": 578.435,
+      "speaker": "Host"
+    },
+    {
+      "word": "but",
+      "start": 578.435,
+      "end": 578.826,
+      "speaker": "Host"
+    },
+    {
+      "word": "essential",
+      "start": 578.826,
+      "end": 579.217,
+      "speaker": "Host"
+    },
+    {
+      "word": "for",
+      "start": 579.217,
+      "end": 579.609,
+      "speaker": "Host"
+    },
+    {
+      "word": "production.",
+      "start": 579.609,
+      "end": 580,
+      "speaker": "Host"
+    },
+    {
+      "word": "Let's",
+      "start": 580,
+      "end": 580.556,
+      "speaker": "Host"
+    },
+    {
+      "word": "talk",
+      "start": 580.556,
+      "end": 581.111,
+      "speaker": "Host"
+    },
+    {
+      "word": "tools",
+      "start": 581.111,
+      "end": 581.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 581.667,
+      "end": 582.222,
+      "speaker": "Host"
+    },
+    {
+      "word": "versions",
+      "start": 582.222,
+      "end": 582.778,
+      "speaker": "Host"
+    },
+    {
+      "word": "as",
+      "start": 582.778,
+      "end": 583.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 583.333,
+      "end": 583.889,
+      "speaker": "Host"
+    },
+    {
+      "word": "early",
+      "start": 583.889,
+      "end": 584.444,
+      "speaker": "Host"
+    },
+    {
+      "word": "2025.",
+      "start": 584.444,
+      "end": 585,
+      "speaker": "Host"
+    },
+    {
+      "word": "For",
+      "start": 585,
+      "end": 585.556,
+      "speaker": "Host"
+    },
+    {
+      "word": "embeddings,",
+      "start": 585.556,
+      "end": 586.111,
+      "speaker": "Host"
+    },
+    {
+      "word": "OpenAI's",
+      "start": 586.111,
+      "end": 586.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "text",
+      "start": 586.667,
+      "end": 587.222,
+      "speaker": "Host"
+    },
+    {
+      "word": "embedding",
+      "start": 587.222,
+      "end": 587.778,
+      "speaker": "Host"
+    },
+    {
+      "word": "3",
+      "start": 587.778,
+      "end": 588.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "large",
+      "start": 588.333,
+      "end": 588.889,
+      "speaker": "Host"
+    },
+    {
+      "word": "leads",
+      "start": 588.889,
+      "end": 589.444,
+      "speaker": "Host"
+    },
+    {
+      "word": "on",
+      "start": 589.444,
+      "end": 590,
+      "speaker": "Host"
+    },
+    {
+      "word": "benchmarks",
+      "start": 590,
+      "end": 590.556,
+      "speaker": "Host"
+    },
+    {
+      "word": "but",
+      "start": 590.556,
+      "end": 591.111,
+      "speaker": "Host"
+    },
+    {
+      "word": "costs",
+      "start": 591.111,
+      "end": 591.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "per",
+      "start": 591.667,
+      "end": 592.222,
+      "speaker": "Host"
+    },
+    {
+      "word": "token.",
+      "start": 592.222,
+      "end": 592.778,
+      "speaker": "Host"
+    },
+    {
+      "word": "Open",
+      "start": 592.778,
+      "end": 593.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "source",
+      "start": 593.333,
+      "end": 593.889,
+      "speaker": "Host"
+    },
+    {
+      "word": "models",
+      "start": 593.889,
+      "end": 594.444,
+      "speaker": "Host"
+    },
+    {
+      "word": "like",
+      "start": 594.444,
+      "end": 595,
+      "speaker": "Host"
+    },
+    {
+      "word": "BGEM3",
+      "start": 595,
+      "end": 595.556,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 595.556,
+      "end": 596.111,
+      "speaker": "Host"
+    },
+    {
+      "word": "E5",
+      "start": 596.111,
+      "end": 596.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "Meastrawl",
+      "start": 596.667,
+      "end": 597.222,
+      "speaker": "Host"
+    },
+    {
+      "word": "match",
+      "start": 597.222,
+      "end": 597.778,
+      "speaker": "Host"
+    },
+    {
+      "word": "quality",
+      "start": 597.778,
+      "end": 598.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "for",
+      "start": 598.333,
+      "end": 598.889,
+      "speaker": "Host"
+    },
+    {
+      "word": "self-hosted",
+      "start": 598.889,
+      "end": 599.444,
+      "speaker": "Host"
+    },
+    {
+      "word": "deployments.",
+      "start": 599.444,
+      "end": 600,
+      "speaker": "Host"
+    },
+    {
+      "word": "For",
+      "start": 600,
+      "end": 600.528,
+      "speaker": "Host"
+    },
+    {
+      "word": "vector",
+      "start": 600.528,
+      "end": 601.056,
+      "speaker": "Host"
+    },
+    {
+      "word": "databases,",
+      "start": 601.056,
+      "end": 601.583,
+      "speaker": "Host"
+    },
+    {
+      "word": "Pinecone",
+      "start": 601.583,
+      "end": 602.111,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 602.111,
+      "end": 602.639,
+      "speaker": "Host"
+    },
+    {
+      "word": "WeV8",
+      "start": 602.639,
+      "end": 603.167,
+      "speaker": "Host"
+    },
+    {
+      "word": "dominate",
+      "start": 603.167,
+      "end": 603.694,
+      "speaker": "Host"
+    },
+    {
+      "word": "managed",
+      "start": 603.694,
+      "end": 604.222,
+      "speaker": "Host"
+    },
+    {
+      "word": "solutions.",
+      "start": 604.222,
+      "end": 604.75,
+      "speaker": "Host"
+    },
+    {
+      "word": "Chroma",
+      "start": 604.75,
+      "end": 605.278,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 605.278,
+      "end": 605.806,
+      "speaker": "Host"
+    },
+    {
+      "word": "Milvus",
+      "start": 605.806,
+      "end": 606.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "are",
+      "start": 606.333,
+      "end": 606.861,
+      "speaker": "Host"
+    },
+    {
+      "word": "solid",
+      "start": 606.861,
+      "end": 607.389,
+      "speaker": "Host"
+    },
+    {
+      "word": "open",
+      "start": 607.389,
+      "end": 607.917,
+      "speaker": "Host"
+    },
+    {
+      "word": "source",
+      "start": 607.917,
+      "end": 608.444,
+      "speaker": "Host"
+    },
+    {
+      "word": "options.",
+      "start": 608.444,
+      "end": 608.972,
+      "speaker": "Host"
+    },
+    {
+      "word": "LangChain",
+      "start": 608.972,
+      "end": 609.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 609.5,
+      "end": 610.028,
+      "speaker": "Host"
+    },
+    {
+      "word": "Llama",
+      "start": 610.028,
+      "end": 610.556,
+      "speaker": "Host"
+    },
+    {
+      "word": "Index",
+      "start": 610.556,
+      "end": 611.083,
+      "speaker": "Host"
+    },
+    {
+      "word": "remain",
+      "start": 611.083,
+      "end": 611.611,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 611.611,
+      "end": 612.139,
+      "speaker": "Host"
+    },
+    {
+      "word": "popular",
+      "start": 612.139,
+      "end": 612.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "orchestration",
+      "start": 612.667,
+      "end": 613.194,
+      "speaker": "Host"
+    },
+    {
+      "word": "frameworks,",
+      "start": 613.194,
+      "end": 613.722,
+      "speaker": "Host"
+    },
+    {
+      "word": "though",
+      "start": 613.722,
+      "end": 614.25,
+      "speaker": "Host"
+    },
+    {
+      "word": "many",
+      "start": 614.25,
+      "end": 614.778,
+      "speaker": "Host"
+    },
+    {
+      "word": "teams",
+      "start": 614.778,
+      "end": 615.306,
+      "speaker": "Host"
+    },
+    {
+      "word": "are",
+      "start": 615.306,
+      "end": 615.833,
+      "speaker": "Host"
+    },
+    {
+      "word": "moving",
+      "start": 615.833,
+      "end": 616.361,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 616.361,
+      "end": 616.889,
+      "speaker": "Host"
+    },
+    {
+      "word": "custom",
+      "start": 616.889,
+      "end": 617.417,
+      "speaker": "Host"
+    },
+    {
+      "word": "pipelines",
+      "start": 617.417,
+      "end": 617.944,
+      "speaker": "Host"
+    },
+    {
+      "word": "for",
+      "start": 617.944,
+      "end": 618.472,
+      "speaker": "Host"
+    },
+    {
+      "word": "control.",
+      "start": 618.472,
+      "end": 619,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 619,
+      "end": 619.558,
+      "speaker": "Host"
+    },
+    {
+      "word": "LLM",
+      "start": 619.558,
+      "end": 620.116,
+      "speaker": "Host"
+    },
+    {
+      "word": "choice",
+      "start": 620.116,
+      "end": 620.674,
+      "speaker": "Host"
+    },
+    {
+      "word": "depends",
+      "start": 620.674,
+      "end": 621.233,
+      "speaker": "Host"
+    },
+    {
+      "word": "on",
+      "start": 621.233,
+      "end": 621.791,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 621.791,
+      "end": 622.349,
+      "speaker": "Host"
+    },
+    {
+      "word": "context",
+      "start": 622.349,
+      "end": 622.907,
+      "speaker": "Host"
+    },
+    {
+      "word": "needs.",
+      "start": 622.907,
+      "end": 623.465,
+      "speaker": "Host"
+    },
+    {
+      "word": "Claude3",
+      "start": 623.465,
+      "end": 624.023,
+      "speaker": "Host"
+    },
+    {
+      "word": "Opus",
+      "start": 624.023,
+      "end": 624.581,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 624.581,
+      "end": 625.14,
+      "speaker": "Host"
+    },
+    {
+      "word": "GPT4",
+      "start": 625.14,
+      "end": 625.698,
+      "speaker": "Host"
+    },
+    {
+      "word": "Turbo",
+      "start": 625.698,
+      "end": 626.256,
+      "speaker": "Host"
+    },
+    {
+      "word": "handle",
+      "start": 626.256,
+      "end": 626.814,
+      "speaker": "Host"
+    },
+    {
+      "word": "massive",
+      "start": 626.814,
+      "end": 627.372,
+      "speaker": "Host"
+    },
+    {
+      "word": "contexts",
+      "start": 627.372,
+      "end": 627.93,
+      "speaker": "Host"
+    },
+    {
+      "word": "well.",
+      "start": 627.93,
+      "end": 628.488,
+      "speaker": "Host"
+    },
+    {
+      "word": "For",
+      "start": 628.488,
+      "end": 629.047,
+      "speaker": "Host"
+    },
+    {
+      "word": "smaller",
+      "start": 629.047,
+      "end": 629.605,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieved",
+      "start": 629.605,
+      "end": 630.163,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunks,",
+      "start": 630.163,
+      "end": 630.721,
+      "speaker": "Host"
+    },
+    {
+      "word": "GPT3.5",
+      "start": 630.721,
+      "end": 631.279,
+      "speaker": "Host"
+    },
+    {
+      "word": "or",
+      "start": 631.279,
+      "end": 631.837,
+      "speaker": "Host"
+    },
+    {
+      "word": "Claude3",
+      "start": 631.837,
+      "end": 632.395,
+      "speaker": "Host"
+    },
+    {
+      "word": "Haiku",
+      "start": 632.395,
+      "end": 632.953,
+      "speaker": "Host"
+    },
+    {
+      "word": "are",
+      "start": 632.953,
+      "end": 633.512,
+      "speaker": "Host"
+    },
+    {
+      "word": "faster",
+      "start": 633.512,
+      "end": 634.07,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 634.07,
+      "end": 634.628,
+      "speaker": "Host"
+    },
+    {
+      "word": "cheaper.",
+      "start": 634.628,
+      "end": 635.186,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 635.186,
+      "end": 635.744,
+      "speaker": "Host"
+    },
+    {
+      "word": "can",
+      "start": 635.744,
+      "end": 636.302,
+      "speaker": "Host"
+    },
+    {
+      "word": "even",
+      "start": 636.302,
+      "end": 636.86,
+      "speaker": "Host"
+    },
+    {
+      "word": "use",
+      "start": 636.86,
+      "end": 637.419,
+      "speaker": "Host"
+    },
+    {
+      "word": "local",
+      "start": 637.419,
+      "end": 637.977,
+      "speaker": "Host"
+    },
+    {
+      "word": "models",
+      "start": 637.977,
+      "end": 638.535,
+      "speaker": "Host"
+    },
+    {
+      "word": "like",
+      "start": 638.535,
+      "end": 639.093,
+      "speaker": "Host"
+    },
+    {
+      "word": "Llama3",
+      "start": 639.093,
+      "end": 639.651,
+      "speaker": "Host"
+    },
+    {
+      "word": "if",
+      "start": 639.651,
+      "end": 640.209,
+      "speaker": "Host"
+    },
+    {
+      "word": "latency",
+      "start": 640.209,
+      "end": 640.767,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 640.767,
+      "end": 641.326,
+      "speaker": "Host"
+    },
+    {
+      "word": "privacy",
+      "start": 641.326,
+      "end": 641.884,
+      "speaker": "Host"
+    },
+    {
+      "word": "are",
+      "start": 641.884,
+      "end": 642.442,
+      "speaker": "Host"
+    },
+    {
+      "word": "paramount.",
+      "start": 642.442,
+      "end": 643,
+      "speaker": "Host"
+    },
+    {
+      "word": "Here's",
+      "start": 643,
+      "end": 643.475,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 643.475,
+      "end": 643.949,
+      "speaker": "Host"
+    },
+    {
+      "word": "action",
+      "start": 643.949,
+      "end": 644.424,
+      "speaker": "Host"
+    },
+    {
+      "word": "plan.",
+      "start": 644.424,
+      "end": 644.898,
+      "speaker": "Host"
+    },
+    {
+      "word": "Don't",
+      "start": 644.898,
+      "end": 645.373,
+      "speaker": "Host"
+    },
+    {
+      "word": "build",
+      "start": 645.373,
+      "end": 645.847,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 645.847,
+      "end": 646.322,
+      "speaker": "Host"
+    },
+    {
+      "word": "full",
+      "start": 646.322,
+      "end": 646.797,
+      "speaker": "Host"
+    },
+    {
+      "word": "RAG",
+      "start": 646.797,
+      "end": 647.271,
+      "speaker": "Host"
+    },
+    {
+      "word": "system",
+      "start": 647.271,
+      "end": 647.746,
+      "speaker": "Host"
+    },
+    {
+      "word": "today.",
+      "start": 647.746,
+      "end": 648.22,
+      "speaker": "Host"
+    },
+    {
+      "word": "Start",
+      "start": 648.22,
+      "end": 648.695,
+      "speaker": "Host"
+    },
+    {
+      "word": "smaller.",
+      "start": 648.695,
+      "end": 649.169,
+      "speaker": "Host"
+    },
+    {
+      "word": "Take",
+      "start": 649.169,
+      "end": 649.644,
+      "speaker": "Host"
+    },
+    {
+      "word": "one",
+      "start": 649.644,
+      "end": 650.119,
+      "speaker": "Host"
+    },
+    {
+      "word": "document",
+      "start": 650.119,
+      "end": 650.593,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 650.593,
+      "end": 651.068,
+      "speaker": "Host"
+    },
+    {
+      "word": "matters.",
+      "start": 651.068,
+      "end": 651.542,
+      "speaker": "Host"
+    },
+    {
+      "word": "Your",
+      "start": 651.542,
+      "end": 652.017,
+      "speaker": "Host"
+    },
+    {
+      "word": "API",
+      "start": 652.017,
+      "end": 652.492,
+      "speaker": "Host"
+    },
+    {
+      "word": "documentation,",
+      "start": 652.492,
+      "end": 652.966,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 652.966,
+      "end": 653.441,
+      "speaker": "Host"
+    },
+    {
+      "word": "team",
+      "start": 653.441,
+      "end": 653.915,
+      "speaker": "Host"
+    },
+    {
+      "word": "handbook,",
+      "start": 653.915,
+      "end": 654.39,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 654.39,
+      "end": 654.864,
+      "speaker": "Host"
+    },
+    {
+      "word": "most",
+      "start": 654.864,
+      "end": 655.339,
+      "speaker": "Host"
+    },
+    {
+      "word": "common",
+      "start": 655.339,
+      "end": 655.814,
+      "speaker": "Host"
+    },
+    {
+      "word": "support",
+      "start": 655.814,
+      "end": 656.288,
+      "speaker": "Host"
+    },
+    {
+      "word": "article.",
+      "start": 656.288,
+      "end": 656.763,
+      "speaker": "Host"
+    },
+    {
+      "word": "Chunk",
+      "start": 656.763,
+      "end": 657.237,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 657.237,
+      "end": 657.712,
+      "speaker": "Host"
+    },
+    {
+      "word": "manually.",
+      "start": 657.712,
+      "end": 658.186,
+      "speaker": "Host"
+    },
+    {
+      "word": "Embed",
+      "start": 658.186,
+      "end": 658.661,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 658.661,
+      "end": 659.136,
+      "speaker": "Host"
+    },
+    {
+      "word": "using",
+      "start": 659.136,
+      "end": 659.61,
+      "speaker": "Host"
+    },
+    {
+      "word": "OpenAI's",
+      "start": 659.61,
+      "end": 660.085,
+      "speaker": "Host"
+    },
+    {
+      "word": "API.",
+      "start": 660.085,
+      "end": 660.559,
+      "speaker": "Host"
+    },
+    {
+      "word": "Stored",
+      "start": 660.559,
+      "end": 661.034,
+      "speaker": "Host"
+    },
+    {
+      "word": "in",
+      "start": 661.034,
+      "end": 661.508,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 661.508,
+      "end": 661.983,
+      "speaker": "Host"
+    },
+    {
+      "word": "simple",
+      "start": 661.983,
+      "end": 662.458,
+      "speaker": "Host"
+    },
+    {
+      "word": "vector",
+      "start": 662.458,
+      "end": 662.932,
+      "speaker": "Host"
+    },
+    {
+      "word": "store.",
+      "start": 662.932,
+      "end": 663.407,
+      "speaker": "Host"
+    },
+    {
+      "word": "Build",
+      "start": 663.407,
+      "end": 663.881,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 663.881,
+      "end": 664.356,
+      "speaker": "Host"
+    },
+    {
+      "word": "query",
+      "start": 664.356,
+      "end": 664.831,
+      "speaker": "Host"
+    },
+    {
+      "word": "endpoint",
+      "start": 664.831,
+      "end": 665.305,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 665.305,
+      "end": 665.78,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieves",
+      "start": 665.78,
+      "end": 666.254,
+      "speaker": "Host"
+    },
+    {
+      "word": "and",
+      "start": 666.254,
+      "end": 666.729,
+      "speaker": "Host"
+    },
+    {
+      "word": "generates.",
+      "start": 666.729,
+      "end": 667.203,
+      "speaker": "Host"
+    },
+    {
+      "word": "Feel",
+      "start": 667.203,
+      "end": 667.678,
+      "speaker": "Host"
+    },
+    {
+      "word": "where",
+      "start": 667.678,
+      "end": 668.153,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 668.153,
+      "end": 668.627,
+      "speaker": "Host"
+    },
+    {
+      "word": "breaks.",
+      "start": 668.627,
+      "end": 669.102,
+      "speaker": "Host"
+    },
+    {
+      "word": "That's",
+      "start": 669.102,
+      "end": 669.576,
+      "speaker": "Host"
+    },
+    {
+      "word": "how",
+      "start": 669.576,
+      "end": 670.051,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 670.051,
+      "end": 670.525,
+      "speaker": "Host"
+    },
+    {
+      "word": "learn.",
+      "start": 670.525,
+      "end": 671,
+      "speaker": "Host"
+    },
+    {
+      "word": "Then",
+      "start": 671,
+      "end": 671.548,
+      "speaker": "Host"
+    },
+    {
+      "word": "iterate.",
+      "start": 671.548,
+      "end": 672.097,
+      "speaker": "Host"
+    },
+    {
+      "word": "Add",
+      "start": 672.097,
+      "end": 672.645,
+      "speaker": "Host"
+    },
+    {
+      "word": "re-ranking.",
+      "start": 672.645,
+      "end": 673.194,
+      "speaker": "Host"
+    },
+    {
+      "word": "Try",
+      "start": 673.194,
+      "end": 673.742,
+      "speaker": "Host"
+    },
+    {
+      "word": "different",
+      "start": 673.742,
+      "end": 674.29,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunk",
+      "start": 674.29,
+      "end": 674.839,
+      "speaker": "Host"
+    },
+    {
+      "word": "sizes.",
+      "start": 674.839,
+      "end": 675.387,
+      "speaker": "Host"
+    },
+    {
+      "word": "Implement",
+      "start": 675.387,
+      "end": 675.935,
+      "speaker": "Host"
+    },
+    {
+      "word": "hybrid",
+      "start": 675.935,
+      "end": 676.484,
+      "speaker": "Host"
+    },
+    {
+      "word": "search.",
+      "start": 676.484,
+      "end": 677.032,
+      "speaker": "Host"
+    },
+    {
+      "word": "Measure",
+      "start": 677.032,
+      "end": 677.581,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieval",
+      "start": 677.581,
+      "end": 678.129,
+      "speaker": "Host"
+    },
+    {
+      "word": "accuracy",
+      "start": 678.129,
+      "end": 678.677,
+      "speaker": "Host"
+    },
+    {
+      "word": "with",
+      "start": 678.677,
+      "end": 679.226,
+      "speaker": "Host"
+    },
+    {
+      "word": "real",
+      "start": 679.226,
+      "end": 679.774,
+      "speaker": "Host"
+    },
+    {
+      "word": "user",
+      "start": 679.774,
+      "end": 680.323,
+      "speaker": "Host"
+    },
+    {
+      "word": "queries.",
+      "start": 680.323,
+      "end": 680.871,
+      "speaker": "Host"
+    },
+    {
+      "word": "RAG",
+      "start": 680.871,
+      "end": 681.419,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 681.419,
+      "end": 681.968,
+      "speaker": "Host"
+    },
+    {
+      "word": "an",
+      "start": 681.968,
+      "end": 682.516,
+      "speaker": "Host"
+    },
+    {
+      "word": "optimization",
+      "start": 682.516,
+      "end": 683.065,
+      "speaker": "Host"
+    },
+    {
+      "word": "problem.",
+      "start": 683.065,
+      "end": 683.613,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 683.613,
+      "end": 684.161,
+      "speaker": "Host"
+    },
+    {
+      "word": "architecture",
+      "start": 684.161,
+      "end": 684.71,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 684.71,
+      "end": 685.258,
+      "speaker": "Host"
+    },
+    {
+      "word": "simple.",
+      "start": 685.258,
+      "end": 685.806,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 685.806,
+      "end": 686.355,
+      "speaker": "Host"
+    },
+    {
+      "word": "execution",
+      "start": 686.355,
+      "end": 686.903,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 686.903,
+      "end": 687.452,
+      "speaker": "Host"
+    },
+    {
+      "word": "nuanced.",
+      "start": 687.452,
+      "end": 688,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 688,
+      "end": 688.463,
+      "speaker": "Host"
+    },
+    {
+      "word": "future",
+      "start": 688.463,
+      "end": 688.927,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 688.927,
+      "end": 689.39,
+      "speaker": "Host"
+    },
+    {
+      "word": "AI",
+      "start": 689.39,
+      "end": 689.854,
+      "speaker": "Host"
+    },
+    {
+      "word": "applications",
+      "start": 689.854,
+      "end": 690.317,
+      "speaker": "Host"
+    },
+    {
+      "word": "isn't",
+      "start": 690.317,
+      "end": 690.78,
+      "speaker": "Host"
+    },
+    {
+      "word": "models",
+      "start": 690.78,
+      "end": 691.244,
+      "speaker": "Host"
+    },
+    {
+      "word": "with",
+      "start": 691.244,
+      "end": 691.707,
+      "speaker": "Host"
+    },
+    {
+      "word": "bigger",
+      "start": 691.707,
+      "end": 692.171,
+      "speaker": "Host"
+    },
+    {
+      "word": "memories.",
+      "start": 692.171,
+      "end": 692.634,
+      "speaker": "Host"
+    },
+    {
+      "word": "It's",
+      "start": 692.634,
+      "end": 693.098,
+      "speaker": "Host"
+    },
+    {
+      "word": "models",
+      "start": 693.098,
+      "end": 693.561,
+      "speaker": "Host"
+    },
+    {
+      "word": "with",
+      "start": 693.561,
+      "end": 694.024,
+      "speaker": "Host"
+    },
+    {
+      "word": "better",
+      "start": 694.024,
+      "end": 694.488,
+      "speaker": "Host"
+    },
+    {
+      "word": "access",
+      "start": 694.488,
+      "end": 694.951,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 694.951,
+      "end": 695.415,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 695.415,
+      "end": 695.878,
+      "speaker": "Host"
+    },
+    {
+      "word": "right",
+      "start": 695.878,
+      "end": 696.341,
+      "speaker": "Host"
+    },
+    {
+      "word": "information",
+      "start": 696.341,
+      "end": 696.805,
+      "speaker": "Host"
+    },
+    {
+      "word": "at",
+      "start": 696.805,
+      "end": 697.268,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 697.268,
+      "end": 697.732,
+      "speaker": "Host"
+    },
+    {
+      "word": "right",
+      "start": 697.732,
+      "end": 698.195,
+      "speaker": "Host"
+    },
+    {
+      "word": "time.",
+      "start": 698.195,
+      "end": 698.659,
+      "speaker": "Host"
+    },
+    {
+      "word": "RAG",
+      "start": 698.659,
+      "end": 699.122,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 699.122,
+      "end": 699.585,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 699.585,
+      "end": 700.049,
+      "speaker": "Host"
+    },
+    {
+      "word": "bridge.",
+      "start": 700.049,
+      "end": 700.512,
+      "speaker": "Host"
+    },
+    {
+      "word": "It",
+      "start": 700.512,
+      "end": 700.976,
+      "speaker": "Host"
+    },
+    {
+      "word": "turns",
+      "start": 700.976,
+      "end": 701.439,
+      "speaker": "Host"
+    },
+    {
+      "word": "generic",
+      "start": 701.439,
+      "end": 701.902,
+      "speaker": "Host"
+    },
+    {
+      "word": "AI",
+      "start": 701.902,
+      "end": 702.366,
+      "speaker": "Host"
+    },
+    {
+      "word": "into",
+      "start": 702.366,
+      "end": 702.829,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 702.829,
+      "end": 703.293,
+      "speaker": "Host"
+    },
+    {
+      "word": "AI.",
+      "start": 703.293,
+      "end": 703.756,
+      "speaker": "Host"
+    },
+    {
+      "word": "It",
+      "start": 703.756,
+      "end": 704.22,
+      "speaker": "Host"
+    },
+    {
+      "word": "makes",
+      "start": 704.22,
+      "end": 704.683,
+      "speaker": "Host"
+    },
+    {
+      "word": "hallucinations",
+      "start": 704.683,
+      "end": 705.146,
+      "speaker": "Host"
+    },
+    {
+      "word": "rare",
+      "start": 705.146,
+      "end": 705.61,
+      "speaker": "Host"
+    },
+    {
+      "word": "instead",
+      "start": 705.61,
+      "end": 706.073,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 706.073,
+      "end": 706.537,
+      "speaker": "Host"
+    },
+    {
+      "word": "inevitable.",
+      "start": 706.537,
+      "end": 707,
+      "speaker": "Host"
+    },
+    {
+      "word": "It",
+      "start": 707,
+      "end": 707.609,
+      "speaker": "Host"
+    },
+    {
+      "word": "gives",
+      "start": 707.609,
+      "end": 708.217,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 708.217,
+      "end": 708.826,
+      "speaker": "Host"
+    },
+    {
+      "word": "control",
+      "start": 708.826,
+      "end": 709.435,
+      "speaker": "Host"
+    },
+    {
+      "word": "in",
+      "start": 709.435,
+      "end": 710.043,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 710.043,
+      "end": 710.652,
+      "speaker": "Host"
+    },
+    {
+      "word": "field",
+      "start": 710.652,
+      "end": 711.261,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 711.261,
+      "end": 711.87,
+      "speaker": "Host"
+    },
+    {
+      "word": "often",
+      "start": 711.87,
+      "end": 712.478,
+      "speaker": "Host"
+    },
+    {
+      "word": "feels",
+      "start": 712.478,
+      "end": 713.087,
+      "speaker": "Host"
+    },
+    {
+      "word": "like",
+      "start": 713.087,
+      "end": 713.696,
+      "speaker": "Host"
+    },
+    {
+      "word": "magic.",
+      "start": 713.696,
+      "end": 714.304,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 714.304,
+      "end": 714.913,
+      "speaker": "Host"
+    },
+    {
+      "word": "now",
+      "start": 714.913,
+      "end": 715.522,
+      "speaker": "Host"
+    },
+    {
+      "word": "understand",
+      "start": 715.522,
+      "end": 716.13,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 716.13,
+      "end": 716.739,
+      "speaker": "Host"
+    },
+    {
+      "word": "full",
+      "start": 716.739,
+      "end": 717.348,
+      "speaker": "Host"
+    },
+    {
+      "word": "pipeline.",
+      "start": 717.348,
+      "end": 717.957,
+      "speaker": "Host"
+    },
+    {
+      "word": "Ingestion,",
+      "start": 717.957,
+      "end": 718.565,
+      "speaker": "Host"
+    },
+    {
+      "word": "chunking,",
+      "start": 718.565,
+      "end": 719.174,
+      "speaker": "Host"
+    },
+    {
+      "word": "embedding,",
+      "start": 719.174,
+      "end": 719.783,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieval,",
+      "start": 719.783,
+      "end": 720.391,
+      "speaker": "Host"
+    },
+    {
+      "word": "generation.",
+      "start": 720.391,
+      "end": 721,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 721,
+      "end": 721.46,
+      "speaker": "Host"
+    },
+    {
+      "word": "know",
+      "start": 721.46,
+      "end": 721.92,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 721.92,
+      "end": 722.38,
+      "speaker": "Host"
+    },
+    {
+      "word": "trade-offs.",
+      "start": 722.38,
+      "end": 722.84,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 722.84,
+      "end": 723.3,
+      "speaker": "Host"
+    },
+    {
+      "word": "know",
+      "start": 723.3,
+      "end": 723.76,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 723.76,
+      "end": 724.22,
+      "speaker": "Host"
+    },
+    {
+      "word": "failure",
+      "start": 724.22,
+      "end": 724.68,
+      "speaker": "Host"
+    },
+    {
+      "word": "modes.",
+      "start": 724.68,
+      "end": 725.14,
+      "speaker": "Host"
+    },
+    {
+      "word": "You",
+      "start": 725.14,
+      "end": 725.6,
+      "speaker": "Host"
+    },
+    {
+      "word": "know",
+      "start": 725.6,
+      "end": 726.06,
+      "speaker": "Host"
+    },
+    {
+      "word": "what",
+      "start": 726.06,
+      "end": 726.52,
+      "speaker": "Host"
+    },
+    {
+      "word": "separates",
+      "start": 726.52,
+      "end": 726.98,
+      "speaker": "Host"
+    },
+    {
+      "word": "toy",
+      "start": 726.98,
+      "end": 727.44,
+      "speaker": "Host"
+    },
+    {
+      "word": "demos",
+      "start": 727.44,
+      "end": 727.9,
+      "speaker": "Host"
+    },
+    {
+      "word": "from",
+      "start": 727.9,
+      "end": 728.36,
+      "speaker": "Host"
+    },
+    {
+      "word": "production",
+      "start": 728.36,
+      "end": 728.82,
+      "speaker": "Host"
+    },
+    {
+      "word": "systems.",
+      "start": 728.82,
+      "end": 729.28,
+      "speaker": "Host"
+    },
+    {
+      "word": "So",
+      "start": 729.28,
+      "end": 729.74,
+      "speaker": "Host"
+    },
+    {
+      "word": "here's",
+      "start": 729.74,
+      "end": 730.2,
+      "speaker": "Host"
+    },
+    {
+      "word": "what",
+      "start": 730.2,
+      "end": 730.66,
+      "speaker": "Host"
+    },
+    {
+      "word": "you",
+      "start": 730.66,
+      "end": 731.12,
+      "speaker": "Host"
+    },
+    {
+      "word": "do.",
+      "start": 731.12,
+      "end": 731.58,
+      "speaker": "Host"
+    },
+    {
+      "word": "Open",
+      "start": 731.58,
+      "end": 732.04,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 732.04,
+      "end": 732.5,
+      "speaker": "Host"
+    },
+    {
+      "word": "editor.",
+      "start": 732.5,
+      "end": 732.96,
+      "speaker": "Host"
+    },
+    {
+      "word": "Pick",
+      "start": 732.96,
+      "end": 733.42,
+      "speaker": "Host"
+    },
+    {
+      "word": "one",
+      "start": 733.42,
+      "end": 733.88,
+      "speaker": "Host"
+    },
+    {
+      "word": "knowledge",
+      "start": 733.88,
+      "end": 734.34,
+      "speaker": "Host"
+    },
+    {
+      "word": "source",
+      "start": 734.34,
+      "end": 734.8,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 734.8,
+      "end": 735.26,
+      "speaker": "Host"
+    },
+    {
+      "word": "team",
+      "start": 735.26,
+      "end": 735.72,
+      "speaker": "Host"
+    },
+    {
+      "word": "struggles",
+      "start": 735.72,
+      "end": 736.18,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 736.18,
+      "end": 736.64,
+      "speaker": "Host"
+    },
+    {
+      "word": "search.",
+      "start": 736.64,
+      "end": 737.1,
+      "speaker": "Host"
+    },
+    {
+      "word": "Build",
+      "start": 737.1,
+      "end": 737.56,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 737.56,
+      "end": 738.02,
+      "speaker": "Host"
+    },
+    {
+      "word": "RAG",
+      "start": 738.02,
+      "end": 738.48,
+      "speaker": "Host"
+    },
+    {
+      "word": "prototype",
+      "start": 738.48,
+      "end": 738.94,
+      "speaker": "Host"
+    },
+    {
+      "word": "this",
+      "start": 738.94,
+      "end": 739.4,
+      "speaker": "Host"
+    },
+    {
+      "word": "week.",
+      "start": 739.4,
+      "end": 739.86,
+      "speaker": "Host"
+    },
+    {
+      "word": "Not",
+      "start": 739.86,
+      "end": 740.32,
+      "speaker": "Host"
+    },
+    {
+      "word": "perfect.",
+      "start": 740.32,
+      "end": 740.78,
+      "speaker": "Host"
+    },
+    {
+      "word": "Just",
+      "start": 740.78,
+      "end": 741.24,
+      "speaker": "Host"
+    },
+    {
+      "word": "working.",
+      "start": 741.24,
+      "end": 741.7,
+      "speaker": "Host"
+    },
+    {
+      "word": "Show",
+      "start": 741.7,
+      "end": 742.16,
+      "speaker": "Host"
+    },
+    {
+      "word": "it",
+      "start": 742.16,
+      "end": 742.62,
+      "speaker": "Host"
+    },
+    {
+      "word": "to",
+      "start": 742.62,
+      "end": 743.08,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 743.08,
+      "end": 743.54,
+      "speaker": "Host"
+    },
+    {
+      "word": "team.",
+      "start": 743.54,
+      "end": 744,
+      "speaker": "Host"
+    },
+    {
+      "word": "Watch",
+      "start": 744,
+      "end": 744.159,
+      "speaker": "Host"
+    },
+    {
+      "word": "their",
+      "start": 744.159,
+      "end": 744.317,
+      "speaker": "Host"
+    },
+    {
+      "word": "reaction",
+      "start": 744.317,
+      "end": 744.476,
+      "speaker": "Host"
+    },
+    {
+      "word": "when",
+      "start": 744.476,
+      "end": 744.635,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 744.635,
+      "end": 744.794,
+      "speaker": "Host"
+    },
+    {
+      "word": "AI",
+      "start": 744.794,
+      "end": 744.952,
+      "speaker": "Host"
+    },
+    {
+      "word": "actually",
+      "start": 744.952,
+      "end": 745.111,
+      "speaker": "Host"
+    },
+    {
+      "word": "knows",
+      "start": 745.111,
+      "end": 745.27,
+      "speaker": "Host"
+    },
+    {
+      "word": "your",
+      "start": 745.27,
+      "end": 745.429,
+      "speaker": "Host"
+    },
+    {
+      "word": "internal",
+      "start": 745.429,
+      "end": 745.587,
+      "speaker": "Host"
+    },
+    {
+      "word": "tools.",
+      "start": 745.587,
+      "end": 745.746,
+      "speaker": "Host"
+    },
+    {
+      "word": "The",
+      "start": 745.746,
+      "end": 745.905,
+      "speaker": "Host"
+    },
+    {
+      "word": "developers",
+      "start": 745.905,
+      "end": 746.063,
+      "speaker": "Host"
+    },
+    {
+      "word": "who",
+      "start": 746.063,
+      "end": 746.222,
+      "speaker": "Host"
+    },
+    {
+      "word": "master",
+      "start": 746.222,
+      "end": 746.381,
+      "speaker": "Host"
+    },
+    {
+      "word": "RAG",
+      "start": 746.381,
+      "end": 746.54,
+      "speaker": "Host"
+    },
+    {
+      "word": "today",
+      "start": 746.54,
+      "end": 746.698,
+      "speaker": "Host"
+    },
+    {
+      "word": "will",
+      "start": 746.698,
+      "end": 746.857,
+      "speaker": "Host"
+    },
+    {
+      "word": "architect",
+      "start": 746.857,
+      "end": 747.016,
+      "speaker": "Host"
+    },
+    {
+      "word": "the",
+      "start": 747.016,
+      "end": 747.175,
+      "speaker": "Host"
+    },
+    {
+      "word": "intelligent",
+      "start": 747.175,
+      "end": 747.333,
+      "speaker": "Host"
+    },
+    {
+      "word": "applications",
+      "start": 747.333,
+      "end": 747.492,
+      "speaker": "Host"
+    },
+    {
+      "word": "of",
+      "start": 747.492,
+      "end": 747.651,
+      "speaker": "Host"
+    },
+    {
+      "word": "tomorrow.",
+      "start": 747.651,
+      "end": 747.81,
+      "speaker": "Host"
+    },
+    {
+      "word": "That",
+      "start": 747.81,
+      "end": 747.968,
+      "speaker": "Host"
+    },
+    {
+      "word": "developer",
+      "start": 747.968,
+      "end": 748.127,
+      "speaker": "Host"
+    },
+    {
+      "word": "is",
+      "start": 748.127,
+      "end": 748.286,
+      "speaker": "Host"
+    },
+    {
+      "word": "you.",
+      "start": 748.286,
+      "end": 748.444,
+      "speaker": "Host"
+    },
+    {
+      "word": "Drop",
+      "start": 748.444,
+      "end": 748.603,
+      "speaker": "Host"
+    },
+    {
+      "word": "a",
+      "start": 748.603,
+      "end": 748.762,
+      "speaker": "Host"
+    },
+    {
+      "word": "comment",
+      "start": 748.762,
+      "end": 748.921,
+      "speaker": "Host"
+    },
+    {
+      "word": "with",
+      "start": 748.921,
+      "end": 749.079,
+      "speaker": "Host"
+    },
+    {
+      "word": "what",
+      "start": 749.079,
+      "end": 749.238,
+      "speaker": "Host"
+    },
+    {
+      "word": "knowledge",
+      "start": 749.238,
+      "end": 749.397,
+      "speaker": "Host"
+    },
+    {
+      "word": "source",
+      "start": 749.397,
+      "end": 749.556,
+      "speaker": "Host"
+    },
+    {
+      "word": "you'd",
+      "start": 749.556,
+      "end": 749.714,
+      "speaker": "Host"
+    },
+    {
+      "word": "ragify",
+      "start": 749.714,
+      "end": 749.873,
+      "speaker": "Host"
+    },
+    {
+      "word": "first.",
+      "start": 749.873,
+      "end": 750.032,
+      "speaker": "Host"
+    },
+    {
+      "word": "Share",
+      "start": 750.032,
+      "end": 750.19,
+      "speaker": "Host"
+    },
+    {
+      "word": "this",
+      "start": 750.19,
+      "end": 750.349,
+      "speaker": "Host"
+    },
+    {
+      "word": "with",
+      "start": 750.349,
+      "end": 750.508,
+      "speaker": "Host"
+    },
+    {
+      "word": "someone",
+      "start": 750.508,
+      "end": 750.667,
+      "speaker": "Host"
+    },
+    {
+      "word": "who's",
+      "start": 750.667,
+      "end": 750.825,
+      "speaker": "Host"
+    },
+    {
+      "word": "still",
+      "start": 750.825,
+      "end": 750.984,
+      "speaker": "Host"
+    },
+    {
+      "word": "fine-tuning",
+      "start": 750.984,
+      "end": 751.143,
+      "speaker": "Host"
+    },
+    {
+      "word": "models",
+      "start": 751.143,
+      "end": 751.302,
+      "speaker": "Host"
+    },
+    {
+      "word": "when",
+      "start": 751.302,
+      "end": 751.46,
+      "speaker": "Host"
+    },
+    {
+      "word": "they",
+      "start": 751.46,
+      "end": 751.619,
+      "speaker": "Host"
+    },
+    {
+      "word": "should",
+      "start": 751.619,
+      "end": 751.778,
+      "speaker": "Host"
+    },
+    {
+      "word": "be",
+      "start": 751.778,
+      "end": 751.937,
+      "speaker": "Host"
+    },
+    {
+      "word": "retrieving.",
+      "start": 751.937,
+      "end": 752.095,
+      "speaker": "Host"
+    },
+    {
+      "word": "And",
+      "start": 752.095,
+      "end": 752.254,
+      "speaker": "Host"
+    },
+    {
+      "word": "then",
+      "start": 752.254,
+      "end": 752.413,
+      "speaker": "Host"
+    },
+    {
+      "word": "go",
+      "start": 752.413,
+      "end": 752.571,
+      "speaker": "Host"
+    },
+    {
+      "word": "build",
+      "start": 752.571,
+      "end": 752.73,
+      "speaker": "Host"
+    },
+    {
+      "word": "something",
+      "start": 752.73,
+      "end": 752.889,
+      "speaker": "Host"
+    },
+    {
+      "word": "that",
+      "start": 752.889,
+      "end": 753.048,
+      "speaker": "Host"
+    },
+    {
+      "word": "actually",
+      "start": 753.048,
+      "end": 753.206,
+      "speaker": "Host"
+    },
+    {
+      "word": "knows",
+      "start": 753.206,
+      "end": 753.365,
+      "speaker": "Host"
+    },
+    {
+      "word": "what",
+      "start": 753.365,
+      "end": 753.524,
+      "speaker": "Host"
+    },
+    {
+      "word": "it's",
+      "start": 753.524,
+      "end": 753.683,
+      "speaker": "Host"
+    },
+    {
+      "word": "talking",
+      "start": 753.683,
+      "end": 753.841,
+      "speaker": "Host"
+    },
+    {
+      "word": "about.",
+      "start": 753.841,
+      "end": 754,
+      "speaker": "Host"
+    }
+  ]
+}

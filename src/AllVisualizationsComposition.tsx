@@ -1,7 +1,7 @@
 import { AudioData, useAudioData, visualizeAudio } from "@remotion/media-utils";
 import { Audio, Sequence, useCurrentFrame, useVideoConfig } from "remotion";
-import speechSrc from "../public/speech.mp3";
-import musicSrc from "../public/music.mp3";
+import speechSrc from "/ElevenLabs2.mp3";
+import musicSrc from "/ElevenLabs1.mp3";
 import { BarsVisualization } from "./visualizations/BarsVisualization";
 import { HillsVisualization } from "./visualizations/HillsVisualization";
 import { RadialBarsVisualization } from "./visualizations/RadialBarsVisualization";
@@ -180,7 +180,7 @@ export const AllVisualizationsComposition = () => {
           />
         </div>
 
-        <div
+        {/* <div
           style={{
             position: "absolute",
             left: 530 * 2,
@@ -196,8 +196,8 @@ export const AllVisualizationsComposition = () => {
             roundness={0}
             color="#A9B6C9"
           />
-        </div>
-
+        </div> */}
+        {/* 
         <div
           style={{
             position: "absolute",
@@ -211,9 +211,9 @@ export const AllVisualizationsComposition = () => {
             innerRadius={100}
             color="#DCBC8A"
           />
-        </div>
+        </div> */}
 
-        <div
+        {/* <div
           style={{
             position: "absolute",
             left: 675 * 2,
@@ -276,7 +276,7 @@ export const AllVisualizationsComposition = () => {
             fillColor="rgb(70, 90, 200, 0.2)"
             copies={5}
           />
-        </div>
+        </div> */}
 
         <div
           style={{

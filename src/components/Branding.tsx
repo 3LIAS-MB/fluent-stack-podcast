@@ -66,7 +66,7 @@ export const Branding: React.FC<BrandingProps> = ({ level }) => {
           fontFamily: 'Outfit',
           textTransform: 'uppercase',
           letterSpacing: 1,
-          boxShadow: `0 4px 20px ${LEVEL_ACCENT_COLOR[normalizedLevel]}66, 0 2px 8px rgba(0,0,0,0.4)`,
+          boxShadow: `0 4px 12px ${LEVEL_ACCENT_COLOR[normalizedLevel]}14, 0 2px 4px rgba(0,0,0,0.2)`,
           // boxShadow: `0 4px 12px rgba(0,0,0,0.3)`,
         }}
       >

@@ -4,37 +4,32 @@ import React, { useEffect, useState } from "react";
 import "./styles.css";
 import { PodcastVideo } from "./compositions/PodcastVideo";
 import { Captions, VocabularyItem, EpisodeLevel, EpisodeFormat } from "./types";
+import ragCaptions from "./data/rag-captions.json";
 
 // ── Audio de preview ─────────────────────────────────────────────────────────
-const PREVIEW_AUDIO = 'ElevenLabs2.mp3';
-const PREVIEW_IMAGE = 'background.jpg';
+const PREVIEW_AUDIO = 'ElevenLabs1.mp3';
+const PREVIEW_IMAGE = 'img/solo/background.jpg';
 
 // Preview vocabulary — 5 items por categoría (20 total = 2 páginas) para demo completa
 const defaultVocabulary: VocabularyItem[] = [
   // Technical Terms
-  { term: 'Pull request', definition: 'Propose changes to a codebase for review', category: 'Technical Terms' },
-  { term: 'Merge conflict', definition: 'Incompatible changes in two branches of code', category: 'Technical Terms' },
-  { term: 'Refactor', definition: 'Restructure code without changing its behavior', category: 'Technical Terms' },
-  { term: 'Deploy', definition: 'Release code to a production environment', category: 'Technical Terms' },
-  { term: 'Debug', definition: 'Find and fix errors in code', category: 'Technical Terms' },
-  // Phrasal Verbs
-  { term: 'Run into', definition: 'To encounter a problem unexpectedly', category: 'Phrasal Verbs' },
-  { term: 'Figure out', definition: 'To understand or solve something', category: 'Phrasal Verbs' },
-  { term: 'Break down', definition: 'To stop working or to analyze in detail', category: 'Phrasal Verbs' },
-  { term: 'Set up', definition: 'To configure or prepare something for use', category: 'Phrasal Verbs' },
-  { term: 'Roll back', definition: 'To revert to a previous stable version', category: 'Phrasal Verbs' },
-  // Collocation
-  { term: 'At the end of the day', definition: 'Ultimately; when everything is considered', category: 'Collocation' },
-  { term: 'On the same page', definition: 'Having the same understanding or goal', category: 'Collocation' },
-  { term: 'Under the hood', definition: 'Internal workings behind the interface', category: 'Collocation' },
-  { term: 'Ship a feature', definition: 'Release a new capability to users', category: 'Collocation' },
-  { term: 'Handle edge cases', definition: 'Deal with unusual or extreme scenarios', category: 'Collocation' },
-  // Interview Expressions
-  { term: 'Walk me through', definition: 'Explain step by step how you did something', category: 'Interview Expressions' },
-  { term: 'Talk me through', definition: 'Please explain this to me in detail', category: 'Interview Expressions' },
-  { term: 'How would you approach', definition: 'What is your strategy for solving this?', category: 'Interview Expressions' },
-  { term: 'In my experience', definition: 'Based on what I have seen or done before', category: 'Interview Expressions' },
-  { term: 'The trade-off is', definition: 'The compromise between two options is...', category: 'Interview Expressions' },
+  { term: 'RAG', definition: 'Retrieval Augmented Generation - grounding LLMs in external data', category: 'Technical Terms' },
+  { term: 'LLM', definition: 'Large Language Model - A model trained on massive amounts of text', category: 'Technical Terms' },
+  { term: 'Embedding', definition: 'Converting text into numerical vectors that capture meaning', category: 'Technical Terms' },
+  { term: 'Vector Database', definition: 'Database specialized in storing and searching mathematical vectors', category: 'Technical Terms' },
+  { term: 'Context Window', definition: 'The maximum amount of text an LLM can process at once', category: 'Technical Terms' },
+  // Concepts
+  { term: 'Hallucination', definition: 'When an AI providing false information with confidence', category: 'Concepts' },
+  { term: 'Semantic Search', definition: 'Searching based on meaning rather than just keyword matching', category: 'Concepts' },
+  { term: 'Chunking', definition: 'Breaking large documents into smaller semantic pieces', category: 'Concepts' },
+  { term: 'Re-ranking', definition: 'Refining the relevance of retrieved information chunks', category: 'Concepts' },
+  { term: 'Hybrid Search', definition: 'Combining vector similarity with traditional keyword search', category: 'Concepts' },
+  // Tools & Implementation
+  { term: 'Attribution', definition: 'Citing specific sources for information provided by an AI', category: 'Implementation' },
+  { term: 'Cosine Similarity', definition: 'A metric used to measure how similar two vectors are', category: 'Implementation' },
+  { term: 'Vector Store', definition: 'A system for managing and querying document embeddings', category: 'Implementation' },
+  { term: 'Pinecone', definition: 'A popular managed vector database service', category: 'Implementation' },
+  { term: 'Prompt Engineering', definition: 'Crafting inputs to get the best results from an LLM', category: 'Implementation' },
 ];
 
 const FPS = 30;
@@ -90,8 +85,7 @@ export default function App() {
   useEffect(() => {
     getAudioDurationInSeconds(PREVIEW_AUDIO)
       .then((seconds) => {
-        // Captions distribuidas a lo largo del audio para simular el comportamiento real
-        setCaptions(generatePreviewCaptions(seconds));
+        setCaptions(ragCaptions as Captions);
 
         // Duración total = audioDurationFrames + vocabRecapDuration
         const audioDurationFrames = Math.ceil(seconds * FPS) + AUDIO_BUFFER_FRAMES;
@@ -103,6 +97,7 @@ export default function App() {
       })
       .catch((err: unknown) => {
         console.warn('No se pudo leer la duración del audio, fallback 60s:', err);
+        setCaptions(ragCaptions as Captions);
         const audioDurationFrames = 60 * FPS + AUDIO_BUFFER_FRAMES;
         const pageCount = Math.ceil(defaultVocabulary.length / ITEMS_PER_PAGE);
         setDurationInFrames(audioDurationFrames + pageCount * FRAMES_PER_PAGE);
@@ -123,8 +118,8 @@ export default function App() {
           audioUrl: PREVIEW_AUDIO,
           imageUrl: PREVIEW_IMAGE,
           vocabulary: defaultVocabulary,
-          title: 'API Design Patterns: REST, GraphQL & Beyond',
-          level: 'intermediate' as EpisodeLevel,
+          title: 'Mastering RAG: The Architecture for 2025',
+          level: 'advanced' as EpisodeLevel,
           format: 'solo' as EpisodeFormat,
           captions: captions,
         }}

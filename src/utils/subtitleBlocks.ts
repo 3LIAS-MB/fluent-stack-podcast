@@ -12,8 +12,8 @@ import { Word, SubtitleBlock } from '../types';
  * a la palabra anterior en vez de formar su propio bloque.
  */
 
-const PAUSE_THRESHOLD = 0.45; // segundos de silencio para cortar bloque
-const MAX_WORDS = 6;           // palabras máximas por bloque
+const PAUSE_THRESHOLD = 0.8; // Más relajado para no cortar por pausas naturales cortas
+const MAX_WORDS = 10;          // Más palabras por bloque para mayor estabilidad visual
 
 /** Contracciones que Whisper devuelve como tokens separados */
 const CONTRACTION_PATTERN = /^'(s|t|re|ve|ll|d|m)$/i;
@@ -32,11 +32,15 @@ export function buildSubtitleBlocks(words: Word[]): SubtitleBlock[] {
   for (const w of words) {
     const text = w.word.trim();
 
-    // Ignorar tokens vacíos o de pura puntuación
-    if (!text || PUNCT_ONLY.test(text)) continue;
+    // Ignorar tokens vacíos o de pura puntuación (excepto si el guion es parte de una palabra)
+    if (!text || (PUNCT_ONLY.test(text) && text !== '-')) continue;
 
-    // Unir contracción con la palabra anterior
-    if (CONTRACTION_PATTERN.test(text) && cleaned.length > 0) {
+    const isContraction = CONTRACTION_PATTERN.test(text);
+    const prevEndsWithHyphen = cleaned.length > 0 && cleaned[cleaned.length - 1].word.endsWith('-');
+    const currStartsWithHyphen = text.startsWith('-');
+
+    // Unir contracción o guion con la palabra anterior
+    if ((isContraction || prevEndsWithHyphen || currStartsWithHyphen) && cleaned.length > 0) {
       const prev = cleaned[cleaned.length - 1];
       cleaned[cleaned.length - 1] = {
         ...prev,
@@ -61,8 +65,14 @@ export function buildSubtitleBlocks(words: Word[]): SubtitleBlock[] {
     const pause = curr.start - prev.end;
     const blockFull = currentBlock.length >= MAX_WORDS;
     const prevEndsWithPunct = STRONG_PUNCT.test(prev.word);
+    
+    // No cortamos bloques de menos de 4 palabras a menos que la pausa
+    // sea muy larga (evita palabras huérfanas).
+    const isTooShort = currentBlock.length < 4;
+    const longPause = pause > PAUSE_THRESHOLD;
+    const forcedBreak = pause > PAUSE_THRESHOLD * 2; // Pausa crítica de silencio
 
-    if (pause > PAUSE_THRESHOLD || blockFull || prevEndsWithPunct) {
+    if ((blockFull || forcedBreak || (longPause && !isTooShort) || (prevEndsWithPunct && !isTooShort))) {
       // Cerrar bloque actual
       blocks.push({
         words: currentBlock,

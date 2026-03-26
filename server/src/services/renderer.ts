@@ -88,10 +88,7 @@ export async function renderVideo(
   const vocabDurationFrames = pageCount * FRAMES_PER_PAGE;
   const totalDurationFrames = audioDurationFrames + vocabDurationFrames;
 
-  console.log(`\nDuración calculada:`);
-  console.log(`  Audio: ${(audioDurationFrames / FPS).toFixed(1)}s (${audioDurationFrames} frames)`);
-  console.log(`  Vocab: ${validVocab.length} items → ${pageCount} páginas → ${(vocabDurationFrames / FPS).toFixed(1)}s (${vocabDurationFrames} frames)`);
-  console.log(`  Total: ${(totalDurationFrames / FPS).toFixed(1)}s (${totalDurationFrames} frames)`);
+  console.log(`  🎬 Total: ${(totalDurationFrames / FPS).toFixed(1)}s (${totalDurationFrames} frames)`);
 
   const compositionWithRealDuration = {
     ...composition,
@@ -113,7 +110,7 @@ export async function renderVideo(
     },
   });
 
-  console.log('\nRender completado:', outputPath);
+  console.log(`\n  ✓ Video listo: ${path.basename(outputPath)}`);
   return outputPath;
 }
 

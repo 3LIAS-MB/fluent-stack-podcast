@@ -106,6 +106,7 @@ export const BarsVisualization: React.FC<
   roundness = 2,
   color = 'white',
   placement = 'middle',
+  maxAmplitude,
   maxDb,
   minDb,
 }) => {
@@ -141,6 +142,7 @@ export const BarsVisualization: React.FC<
           roundness={roundness}
           color={color}
           placement={placement}
+          maxAmplitude={maxAmplitude}
         />
       </div>
     );

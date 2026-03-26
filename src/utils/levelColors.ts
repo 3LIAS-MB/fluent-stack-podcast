@@ -10,9 +10,9 @@ import { EpisodeLevel } from '../types';
  *   Advanced   (C1-C2) → Púrpura          — dominio, exclusividad
  */
 export const LEVEL_ACCENT_COLOR: Record<EpisodeLevel, string> = {
-  beginner: '#10B981', // Emerald-500
-  intermediate: '#3B82F6', // Blue-500
-  advanced: '#A855F7', // Purple-500
+  beginner: '#059669',     // Darker Emerald
+  intermediate: '#2563EB', // Darker Blue
+  advanced: '#D46AA6',     // Darker Pink/Rose
 };
 
 // const LEVEL_COLORS: Record<EpisodeLevel, string> = {

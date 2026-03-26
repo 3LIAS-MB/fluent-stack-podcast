@@ -1,9 +1,11 @@
 import React from 'react';
 import {
   Composition,
-  registerRoot
+  registerRoot,
+  staticFile
 } from 'remotion';
 import { loadFont } from '@remotion/google-fonts/Outfit';
+import { z } from 'zod';
 
 const { fontFamily } = loadFont();
 import { PodcastVideo } from './compositions/PodcastVideo';
@@ -70,6 +72,28 @@ const defaultVocabulary: VocabularyItem[] = [
   { term: 'The trade-off is', definition: 'The compromise between two options is...', category: 'Interview Expressions' },
 ];
 
+const PodcastVideoSchema = z.object({
+  audioUrl: z.string(),
+  imageUrl: z.string(),
+  vocabulary: z.array(z.object({
+    term: z.string(),
+    definition: z.string(),
+    example: z.string().optional(),
+    category: z.string().optional(),
+  })),
+  title: z.string(),
+  level: z.enum(['beginner', 'intermediate', 'advanced']),
+  format: z.enum(['solo', 'duo']),
+  captions: z.object({
+    words: z.array(z.object({
+      word: z.string(),
+      start: z.number(),
+      end: z.number(),
+      speaker: z.enum(['Host', 'Alex', 'Sam']),
+    })),
+  }),
+});
+
 // RemotionRoot es el componente raíz: debe devolver JSX con <Composition />
 const RemotionRoot: React.FC = () => {
   // Duración: audio preview (~9.8s ≈ 294 frames) + 2 páginas vocab × 150 frames + buffer
@@ -83,9 +107,10 @@ const RemotionRoot: React.FC = () => {
         fps={30}
         width={1920}
         height={1080}
+        schema={PodcastVideoSchema}
         defaultProps={{
-          audioUrl: 'https://example.com/audio.mp3',
-          imageUrl: 'https://example.com/image.jpg',
+          audioUrl: staticFile('ElevenLabs2.mp3'),
+          imageUrl: staticFile('background.jpg'),
           vocabulary: defaultVocabulary,
           title: 'API Design Patterns: REST, GraphQL & Beyond',
           level: 'intermediate' as EpisodeLevel,
@@ -93,23 +118,24 @@ const RemotionRoot: React.FC = () => {
           captions: defaultCaptions,
         }}
       />
-      <Composition
+      {/* <Composition
         id="PodcastVideoShort"
         component={PodcastVideoShort as any}
         durationInFrames={TOTAL_FRAMES}
         fps={30}
         width={1080}
         height={1920}
+        schema={PodcastVideoSchema}
         defaultProps={{
-          audioUrl: 'https://example.com/audio.mp3',
-          imageUrl: 'https://example.com/image.jpg',
+          audioUrl: staticFile('ElevenLabs2.mp3'),
+          imageUrl: staticFile('background3.jpg'),
           vocabulary: defaultVocabulary,
           title: 'API Design Patterns: REST, GraphQL & Beyond',
           level: 'intermediate' as EpisodeLevel,
           format: 'solo' as EpisodeFormat,
           captions: defaultCaptions,
         }}
-      />
+      /> */}
     </>
   );
 };

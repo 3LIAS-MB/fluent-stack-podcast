@@ -34,7 +34,10 @@ export interface RenderRequest {
 }
 
 export interface RenderResponse {
+  success: boolean;
   status: 'success' | 'error';
+  downloadUrl?: string;
+  fileName?: string;
   outputPath?: string;
   error?: string;
 }

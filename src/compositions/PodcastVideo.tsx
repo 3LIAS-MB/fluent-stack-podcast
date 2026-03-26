@@ -50,10 +50,23 @@ export const PodcastVideo: React.FC<CompositionProps> = ({
 
         <Audio src={audioUrl} />
 
-        <AudioWave audioSrc={audioUrl} heightPercent={8} color={getLevelColor(level)} />
+        <AudioWave
+          audioSrc={audioUrl}
+          heightPercent={8}
+          color={getLevelColor(level)}
+          // Opciones: 'stoic', 'bars-1', 'bars-2', 'bars-3', 'bars-under', 'wave-1', 'wave-2'
+          // variant="stoic"
+          variant="bars-under"
+        />
         {/* <AudioWave audioSrc={audioUrl} heightPercent={8} color="white" /> */}
         {/* <KaraokeSubtitles captions={captions} format={format} /> */}
-        <KaraokeSubtitles captions={captions} format={format} level={level} />
+        <KaraokeSubtitles
+          captions={captions}
+          format={format}
+          level={level}
+          // Opciones: 'classic' (salta palabra a palabra) | 'fill' (llenado progresivo suave)
+          variant="classic"
+        />
 
         <Branding level={level} />
       </Sequence>
