@@ -9,7 +9,7 @@ import { z } from 'zod';
 
 const { fontFamily } = loadFont();
 import { PodcastVideo } from './compositions/PodcastVideo';
-import { PodcastVideoShort } from './compositions/PodcastVideoShort';
+// import { PodcastVideoShort } from './compositions/PodcastVideoShort'; // desactivada por ahora
 import {
   EpisodeLevel,
   EpisodeFormat,
@@ -49,27 +49,167 @@ const defaultCaptions: Captions = {
 };
 
 // Preview vocabulary — 5 items por categoría (20 total = 2 páginas)
-const defaultVocabulary: VocabularyItem[] = [
-  { term: 'Pull request', definition: 'Propose changes to a codebase for review', category: 'Technical Terms' },
-  { term: 'Merge conflict', definition: 'Incompatible changes in two branches of code', category: 'Technical Terms' },
-  { term: 'Refactor', definition: 'Restructure code without changing its behavior', category: 'Technical Terms' },
-  { term: 'Deploy', definition: 'Release code to a production environment', category: 'Technical Terms' },
-  { term: 'Debug', definition: 'Find and fix errors in code', category: 'Technical Terms' },
-  { term: 'Run into', definition: 'To encounter a problem unexpectedly', category: 'Phrasal Verbs' },
-  { term: 'Figure out', definition: 'To understand or solve something', category: 'Phrasal Verbs' },
-  { term: 'Break down', definition: 'To stop working or to analyze in detail', category: 'Phrasal Verbs' },
-  { term: 'Set up', definition: 'To configure or prepare something for use', category: 'Phrasal Verbs' },
-  { term: 'Roll back', definition: 'To revert to a previous stable version', category: 'Phrasal Verbs' },
-  { term: 'At the end of the day', definition: 'Ultimately; when everything is considered', category: 'Collocation' },
-  { term: 'On the same page', definition: 'Having the same understanding or goal', category: 'Collocation' },
-  { term: 'Under the hood', definition: 'Internal workings behind the interface', category: 'Collocation' },
-  { term: 'Ship a feature', definition: 'Release a new capability to users', category: 'Collocation' },
-  { term: 'Handle edge cases', definition: 'Deal with unusual or extreme scenarios', category: 'Collocation' },
-  { term: 'Walk me through', definition: 'Explain step by step how you did something', category: 'Interview Expressions' },
-  { term: 'Talk me through', definition: 'Please explain this to me in detail', category: 'Interview Expressions' },
-  { term: 'How would you approach', definition: 'What is your strategy for solving this?', category: 'Interview Expressions' },
-  { term: 'In my experience', definition: 'Based on what I have seen or done before', category: 'Interview Expressions' },
-  { term: 'The trade-off is', definition: 'The compromise between two options is...', category: 'Interview Expressions' },
+const defaultVocabulary: any[] = [
+  {
+    category: "Technical Terms",
+    items: [
+      { 
+        term: 'Pull request', 
+        phonetic: '/ˈpʊl rɪˌkwɛst/',
+        english: 'Propose changes to a codebase for review', 
+        español: 'Proponer cambios a una base de código para su revisión', 
+        example: 'I submitted a pull request to fix the authentication bug.'
+      },
+      { 
+        term: 'Merge conflict', 
+        phonetic: '/ˈmɜrdʒ ˈkɑnflɪkt/',
+        english: 'Incompatible changes in two branches of code', 
+        español: 'Cambios incompatibles en dos ramas de código', 
+        example: 'We cannot deploy yet because there is a massive merge conflict.'
+      },
+      { 
+        term: 'Refactor', 
+        phonetic: '/riˈfæktər/',
+        english: 'Restructure code without changing its behavior', 
+        español: 'Reestructurar el código sin cambiar su comportamiento', 
+        example: 'We need to refactor this logic to improve performance.' 
+      },
+      { 
+        term: 'Deploy', 
+        phonetic: '/dɪˈplɔɪ/',
+        english: 'Release code to a production environment', 
+        español: 'Lanzar código a un entorno de producción', 
+        example: 'We deploy to production every Friday morning.'
+      },
+      { 
+        term: 'Debug', 
+        phonetic: '/diˈbʌɡ/',
+        english: 'Find and fix errors in code', 
+        español: 'Encontrar y corregir errores en el código',
+        example: 'I spent four hours trying to debug this elusive memory leak.'
+      }
+    ]
+  },
+  {
+    category: "Phrasal Verbs",
+    items: [
+      { 
+        term: 'Run into', 
+        phonetic: '/ˈrʌn ˈɪntu/',
+        english: 'To encounter a problem unexpectedly', 
+        español: 'Encontrarse con un problema inesperadamente', 
+        example: 'I ran into a weird bug yesterday while testing the API.' 
+      },
+      { 
+        term: 'Figure out', 
+        phonetic: '/ˈfɪɡjər ˈaʊt/',
+        english: 'To understand or solve something', 
+        español: 'Entender o resolver algo',
+        example: 'It took me a while to figure out how the database schema works.'
+      },
+      { 
+        term: 'Break down', 
+        phonetic: '/ˈbreɪk ˈdaʊn/',
+        english: 'To stop working or to analyze in detail', 
+        español: 'Dejar de funcionar o analizar en detalle',
+        example: 'Let me break down this complex architecture for you.'
+      },
+      { 
+        term: 'Set up', 
+        phonetic: '/ˈsɛt ˈʌp/',
+        english: 'To configure or prepare something for use', 
+        español: 'Configurar o preparar algo para su uso',
+        example: 'I need to set up my local development environment.'
+      },
+      { 
+        term: 'Roll back', 
+        phonetic: '/ˈroʊl ˈbæk/',
+        english: 'To revert to a previous stable version', 
+        español: 'Volver a una versión estable anterior',
+        example: 'The new release crashed, so we had to roll back immediately.'
+      }
+    ]
+  },
+  {
+    category: "Collocation",
+    items: [
+      { 
+        term: 'At the end of the day', 
+        phonetic: '/ət ði ˈɛnd əv ðə ˈdeɪ/',
+        english: 'Ultimately; when everything is considered', 
+        español: 'Al fin y al cabo; cuando todo se considera',
+        example: 'At the end of the day, user experience matters more than clean code.'
+      },
+      { 
+        term: 'On the same page', 
+        phonetic: '/ɑn ðə ˈseɪm ˈpeɪdʒ/',
+        english: 'Having the same understanding or goal', 
+        español: 'Tener el mismo entendimiento u objetivo', 
+        example: 'Let us have a quick meeting to make sure we are all on the same page.' 
+      },
+      { 
+        term: 'Under the hood', 
+        phonetic: '/ˈʌndər ðə ˈhʊd/',
+        english: 'Internal workings behind the interface', 
+        español: 'Funcionamiento interno detrás de la interfaz', 
+        example: 'The UI is simple, but under the hood, it uses a complex graph database.'
+      },
+      { 
+        term: 'Ship a feature', 
+        phonetic: '/ˈʃɪp ə ˈfitʃər/',
+        english: 'Release a new capability to users', 
+        español: 'Lanzar una nueva función para los usuarios',
+        example: 'We are planning to ship this feature by the end of Q3.'
+      },
+      { 
+        term: 'Handle edge cases', 
+        phonetic: '/ˈhændl ˈɛdʒ ˌkeɪsɪz/',
+        english: 'Deal with unusual or extreme scenarios', 
+        español: 'Lidiar con escenarios inusuales o extremos',
+        example: 'Writing tests helps ensure we handle all potential edge cases.'
+      }
+    ]
+  },
+  {
+    category: "Interview Expressions",
+    items: [
+      { 
+        term: 'Walk me through', 
+        phonetic: '/ˈwɔk mi ˌθru/',
+        english: 'Explain step by step how you did something', 
+        español: 'Explicar paso a paso cómo hiciste algo',
+        example: 'Could you walk me through your decision to use React here?'
+      },
+      { 
+        term: 'Talk me through', 
+        phonetic: '/ˈtɔk mi ˌθru/',
+        english: 'Please explain this to me in detail', 
+        español: 'Por favor, explícame esto en detalle',
+        example: 'Talk me through the steps you took to optimize the database query.'
+      },
+      { 
+        term: 'How would you approach', 
+        phonetic: '/haʊ wʊd ju əˈproʊtʃ/',
+        english: 'What is your strategy for solving this?', 
+        español: '¿Cuál es tu estrategia para resolver esto?',
+        example: 'How would you approach handling millions of concurrent requests?'
+      },
+      { 
+        term: 'In my experience', 
+        phonetic: '/ɪn maɪ ɪkˈspɪriəns/',
+        english: 'Based on what I have seen or done before', 
+        español: 'Según lo que he visto o hecho antes',
+        example: 'In my experience, microservices add unnecessary overhead to small projects.'
+      },
+      { 
+        term: 'The trade-off is', 
+        phonetic: '/ðə ˈtreɪdˌɑf ɪz/',
+        english: 'The compromise between two options is...', 
+        español: 'El compromiso entre dos opciones es...',
+        example: 'The trade-off is that caching improves speed but uses more memory.'
+      }
+    ]
+  }
 ];
 
 const PodcastVideoSchema = z.object({
@@ -96,8 +236,11 @@ const PodcastVideoSchema = z.object({
 
 // RemotionRoot es el componente raíz: debe devolver JSX con <Composition />
 const RemotionRoot: React.FC = () => {
-  // Duración: audio preview (~9.8s ≈ 294 frames) + 2 páginas vocab × 150 frames + buffer
-  const TOTAL_FRAMES = 294 + 2 * 150 + 15;
+  // Calculamos los frames del audio de preview dinámicamente para que si cambia
+  // defaultCaptions, el Studio no quede cortado ni con frames vacíos.
+  const lastWord = defaultCaptions.words[defaultCaptions.words.length - 1];
+  const previewAudioFrames = Math.ceil(lastWord.end * 30) + 15; // +15 buffer
+  const TOTAL_FRAMES = previewAudioFrames + 2 * 150; // 2 páginas × 150 frames (5s)
   return (
     <>
       <Composition

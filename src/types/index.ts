@@ -22,14 +22,24 @@ export interface SubtitleBlock {
 export interface VocabularyItem {
   term: string;
   definition: string;
+  english?: string;
+  español?: string;
+  phonetic?: string;
   example?: string;
   category?: string;  // e.g. "Phrasal Verbs", "Technical Terms", "Interview Expressions", "Collocation"
 }
 
+export interface VocabularyCategory {
+  category: string;
+  items: Partial<VocabularyItem>[];
+}
+
+export type VocabularyInput = VocabularyItem[] | VocabularyCategory[] | any;
+
 export interface EpisodeData {
   audioUrl: string;
   imageUrl: string;
-  vocabulary: VocabularyItem[];
+  vocabulary: VocabularyInput;
   title: string;
   level: EpisodeLevel;
   format: EpisodeFormat;
@@ -39,7 +49,7 @@ export interface EpisodeData {
 export interface RenderRequest {
   audioUrl: string;
   imageUrl: string;
-  vocabulary: VocabularyItem[];
+  vocabulary: VocabularyInput;
   title: string;
   level: EpisodeLevel;
   format: EpisodeFormat;
@@ -55,7 +65,7 @@ export interface RenderResponse {
 export interface CompositionProps {
   audioUrl: string;
   imageUrl: string;
-  vocabulary: VocabularyItem[];
+  vocabulary: VocabularyInput;
   title: string;
   level: EpisodeLevel;
   format: EpisodeFormat;

@@ -36,8 +36,10 @@ export const AudioWave: React.FC<AudioWaveProps> = ({
   }
 
   const barHeight = (height * heightPercent) / 100;
-  const nSamples = 512;
-  const iterations = 12; // Ventana de frames para el suavizado (decay)
+  // const nSamples = 512;
+  // const iterations = 12
+  const nSamples = 256;   // 256 suficiente a 50% canvas; 512 duplica coste sin ganancia visual
+  const iterations = 7;  // ventana de decay; >7 frames es imperceptible
   const decayFactor = 0.82; // Qué tanto "cae" la onda en cada frame
 
   // ── Cálculo de Envolvente Suavizada (Attack Instantáneo / Decay Lento) ──

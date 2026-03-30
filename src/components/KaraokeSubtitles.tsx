@@ -1,35 +1,42 @@
 import { useMemo } from 'react';
 import { useCurrentFrame, useVideoConfig, interpolate } from 'remotion';
-import { Captions, EpisodeLevel } from '../types';
+import { Captions, EpisodeLevel, VocabularyItem } from '../types';
 import { buildSubtitleBlocks } from '../utils/subtitleBlocks';
-import { getLevelColor } from '../utils/levelColors';
+import { getLevelColor, getVibrantColor } from '../utils/levelColors';
+import { useVocabMatch } from '../hooks/useVocabMatch';
 
 interface KaraokeSubtitlesProps {
   captions: Captions;
   format: 'solo' | 'duo';
   level: EpisodeLevel;
-  variant?: 'classic' | 'fill'; // Nueva prop para alternar estilos
+  vocabulary: VocabularyItem[];
+  variant?: 'classic' | 'fill';
 }
 
 const COLORS = {
   Host: '#FFFFFF',
   Alex: '#FFFFFF',
   Sam: '#87CEEB',
-  inactiveWord: 'rgba(255, 255, 255, 0.45)', // Más tenue para resaltar el llenado
+  inactiveWord: 'rgba(255, 255, 255, 0.45)',
 };
 
 export const KaraokeSubtitles: React.FC<KaraokeSubtitlesProps> = ({
   captions,
   format,
   level,
+  vocabulary,
   variant = 'classic',
 }) => {
-  const activeWordColor = getLevelColor(level);
+  const standardColor = getLevelColor(level);
+  const vibrantColor = getVibrantColor(level);
+  
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const currentTime = frame / fps;
 
-  // ... (bloques y encontrar activo - sin cambios)
+  // Obtenemos los matches visibles en el bloque actual
+  const { visibleMatches } = useVocabMatch(captions, vocabulary);
+
   const blocks = useMemo(() => buildSubtitleBlocks(captions.words), [captions.words]);
   if (blocks.length === 0) return null;
 
@@ -48,7 +55,6 @@ export const KaraokeSubtitles: React.FC<KaraokeSubtitlesProps> = ({
   if (activeBlockIndex === -1) return null;
 
   const block = blocks[activeBlockIndex];
-
 
   const FADE_DURATION = 0.12;
   let opacity = 1;
@@ -77,6 +83,14 @@ export const KaraokeSubtitles: React.FC<KaraokeSubtitlesProps> = ({
       }}
     >
       {block.words.map((word, idx) => {
+        // Buscamos si esta palabra forma parte de CUALQUIERA de los matches del bloque
+        const normalizedWord = word.word.toLowerCase().replace(/[.,!?;:]/g, '');
+        const isVocabHighlight = visibleMatches.some(m => 
+          m.item.term.toLowerCase().split(/\s+/).includes(normalizedWord)
+        );
+
+        const activeColor = isVocabHighlight ? vibrantColor : standardColor;
+
         let style: React.CSSProperties = {
           marginRight: idx < block.words.length - 1 ? '16px' : '0',
           fontSize: '44px',
@@ -85,7 +99,7 @@ export const KaraokeSubtitles: React.FC<KaraokeSubtitlesProps> = ({
           letterSpacing: '1px',
           textTransform: 'uppercase',
           lineHeight: 1.2,
-          transition: 'transform 0.1s ease',
+          transition: 'color 0.15s ease',
         };
 
         if (variant === 'classic') {
@@ -93,29 +107,27 @@ export const KaraokeSubtitles: React.FC<KaraokeSubtitlesProps> = ({
 
           style = {
             ...style,
-            color: isActive ? activeWordColor : COLORS.inactiveWord,
+            color: isActive ? activeColor : (isVocabHighlight ? `${vibrantColor}99` : COLORS.inactiveWord),
             textShadow: isActive
-              ? `0 0 24px ${activeWordColor}AA, 2px 2px 6px rgba(0,0,0,0.9)`
-              : '2px 2px 6px rgba(0,0,0,0.9)',
+              ? `0 0 15px ${activeColor}88, 2px 2px 4px rgba(0,0,0,0.8)`
+              : (isVocabHighlight ? `0 0 8px ${vibrantColor}44, 2px 2px 4px rgba(0,0,0,0.4)` : '2px 2px 6px rgba(0,0,0,0.9)'),
           };
         } else {
-          // Lógica de FILL (progresivo)
+          // Lógica de FILL
           const isPassed = currentTime >= word.end;
           const isCurrent = currentTime >= word.start && currentTime < word.end;
           
-          // Calcular el progreso dentro de la palabra (0 a 1)
           const progress = isPassed ? 1 : isCurrent 
-            ? interpolate(currentTime, [word.start, word.end], [0.05, 0.95]) // margen para fluidez
+            ? interpolate(currentTime, [word.start, word.end], [0.05, 0.95])
             : 0;
 
           style = {
             ...style,
-            // Truco de background-clip: text para el llenado
-            backgroundImage: `linear-gradient(to right, ${activeWordColor} ${progress * 100}%, ${COLORS.inactiveWord} ${progress * 100}%)`,
+            backgroundImage: `linear-gradient(to right, ${activeColor} ${progress * 100}%, ${isVocabHighlight ? `${vibrantColor}66` : COLORS.inactiveWord} ${progress * 100}%)`,
             WebkitBackgroundClip: 'text',
             WebkitTextFillColor: 'transparent',
-            color: 'transparent', // fallback
-            filter: progress > 0 ? `drop-shadow(0 0 8px ${activeWordColor}${Math.floor(progress * 150).toString(16).padStart(2, '0')})` : 'none',
+            color: 'transparent',
+            filter: progress > 0 ? `drop-shadow(0 0 ${isVocabHighlight ? '6px' : '4px'} ${activeColor}${Math.floor(progress * (isVocabHighlight ? 120 : 100)).toString(16).padStart(2, '0')})` : 'none',
           };
         }
 

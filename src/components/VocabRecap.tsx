@@ -10,7 +10,7 @@ interface VocabRecapProps {
 }
 
 // ─── Constantes idénticas a vocabImage.ts ──────────────────────────────────────
-const ITEMS_PER_PAGE = 15;
+const ITEMS_PER_PAGE = 8;
 const SECONDS_PER_PAGE = 5;
 const FRAMES_PER_PAGE = SECONDS_PER_PAGE * 30; // 150 frames
 
@@ -32,7 +32,7 @@ const SUBTITLE_Y = 120; // nombre del episodio
 const BRAND_Y = 28;   // branding top-left
 const PAGE_Y = 155;  // indicador de página
 const TABLE_Y = 195;  // primera fila de la tabla
-const ROW_H = 44;   // altura de cada fila
+const ROW_H = 100;   // altura de cada fila
 const COL2_X = 560;  // x absoluta de la columna de definiciones
 
 /**
@@ -48,13 +48,8 @@ export const VocabRecap: React.FC<VocabRecapProps> = ({
   const frame = useCurrentFrame();
   const accentColor = getLevelColor(level);
 
-  // Guard: parsear si Remotion serializa vocabulary como string
-  let parsed: VocabularyItem[] = vocabulary;
-  if (typeof parsed === 'string') {
-    try { parsed = JSON.parse(parsed as unknown as string); } catch { parsed = []; }
-  }
-  const items = Array.isArray(parsed)
-    ? parsed.filter((v) => v.term && v.definition?.trim())
+  const items = Array.isArray(vocabulary)
+    ? vocabulary.filter((v) => v.term && v.definition?.trim())
     : [];
 
   if (items.length === 0) return null;
@@ -78,7 +73,7 @@ export const VocabRecap: React.FC<VocabRecapProps> = ({
     currentPage * ITEMS_PER_PAGE,
     (currentPage + 1) * ITEMS_PER_PAGE
   );
-  const pageLabel = pageCount > 1 ? `Página ${currentPage + 1} / ${pageCount}` : '';
+  const pageLabel = pageCount > 1 ? `Page ${currentPage + 1} of ${pageCount}` : '';
 
   // Construir filas (categorías + items), igual que el loop de vocabImage.ts
   type Row =
@@ -155,9 +150,21 @@ export const VocabRecap: React.FC<VocabRecapProps> = ({
               paddingLeft: 14,
               borderLeft: `4px solid ${accentColor}`,
             }}>
-              <span style={{ color: accentColor, fontSize: FONT_SMALL, fontWeight: 700, letterSpacing: 1 }}>
-                {row.label}
-              </span>
+              <div style={{ position: 'absolute', left: 20 }}>
+                <span style={{ color: accentColor, fontSize: FONT_SMALL, fontWeight: 700, letterSpacing: 1 }}>
+                  {row.label.toUpperCase()}
+                </span>
+              </div>
+              <div style={{ position: 'absolute', left: 550 }}>
+                <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '12px', fontWeight: 600, letterSpacing: 1, textTransform: 'uppercase', lineHeight: '1.2' }}>
+                  DEFINITION
+                </span>
+              </div>
+              <div style={{ position: 'absolute', left: 1150 }}>
+                <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '12px', fontWeight: 600, letterSpacing: 1, textTransform: 'uppercase', lineHeight: '1.2' }}>
+                  EXAMPLE
+                </span>
+              </div>
             </div>
           );
         }
@@ -178,29 +185,56 @@ export const VocabRecap: React.FC<VocabRecapProps> = ({
             {/* Término — columna izquierda */}
             <div style={{
               position: 'absolute',
-              left: 10,
-              width: COL2_X - MARGIN_X - 10,
+              left: 20,
+              width: 500,
               color: accentColor,
               fontSize: FONT_MEDIUM,
               fontWeight: 600,
-              whiteSpace: 'nowrap',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center'
             }}>
-              {item.term}
+              <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{item.term}</span>
+              {item.phonetic && <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '16px', fontFamily: 'monospace', fontWeight: 400, marginTop: '4px' }}>{item.phonetic}</span>}
             </div>
-            {/* Definición — columna derecha */}
+
+            {/* Definición English — columna medio */}
             <div style={{
               position: 'absolute',
-              left: COL2_X - MARGIN_X,
-              right: 0,
-              color: WHITE,
-              fontSize: FONT_MEDIUM,
-              whiteSpace: 'nowrap',
-              overflow: 'hidden',
-              textOverflow: 'ellipsis',
+              left: 550,
+              width: 550,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              height: '100%'
             }}>
-              {item.definition}
+              <div style={{
+                color: WHITE,
+                fontSize: FONT_MEDIUM,
+                lineHeight: '1.2'
+              }}>
+                {item.english || item.definition}
+              </div>
+            </div>
+
+            {/* Example — columna derecha */}
+            <div style={{
+              position: 'absolute',
+              left: 1150,
+              width: 590,
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'center',
+              height: '100%'
+            }}>
+              <div style={{
+                color: 'rgba(255,255,255,0.7)',
+                fontSize: '20px',
+                fontStyle: 'italic',
+                lineHeight: '1.2'
+              }}>
+                {item.example ? `"${item.example}"` : '-'}
+              </div>
             </div>
           </div>
         );

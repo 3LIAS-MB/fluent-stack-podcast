@@ -4,23 +4,26 @@ import { EpisodeLevel } from '../types';
  * Paleta canónica de colores por nivel de inglés.
  * Esta es la fuente única de verdad — todos los componentes
  * deben importar desde aquí, no definir sus propios colores.
- *
- *   Beginner   (A1-A2) → Verde Esmeralda  — calma, "vía libre"
- *   Intermediate (B1-B2) → Azul Eléctrico — confianza profesional
- *   Advanced   (C1-C2) → Púrpura          — dominio, exclusividad
  */
 export const LEVEL_ACCENT_COLOR: Record<EpisodeLevel, string> = {
-  beginner: '#059669',     // Darker Emerald
-  intermediate: '#2563EB', // Darker Blue
-  advanced: '#D46AA6',     // Darker Pink/Rose
+  beginner: '#059669',     // Emerald
+  intermediate: '#2563EB', // Blue
+  advanced: '#D46AA6',     // Pink/Rose (Fluent Stack Brand)
 };
 
-// const LEVEL_COLORS: Record<EpisodeLevel, string> = {
-//   beginner: '#22C55E',
-//   intermediate: '#3B82F6',
-//   advanced: '#EF4444',
-// };
+/**
+ * Versiones "Vibrantes/Neón" para resaltar palabras clave o tarjetas activas.
+ */
+export const LEVEL_VIBRANT_COLOR: Record<EpisodeLevel, string> = {
+  beginner: '#10B981',    // Brighter Emerald
+  intermediate: '#60A5FA', // Electric Blue
+  advanced: '#FF2E97',    // Vibrant Neon Pink
+};
 
-/** Devuelve el color de acento para el nivel dado. */
+/** Devuelve el color de acento estándar para el nivel dado. */
 export const getLevelColor = (level: EpisodeLevel): string =>
   LEVEL_ACCENT_COLOR[level] ?? LEVEL_ACCENT_COLOR.intermediate;
+
+/** Devuelve el color vibrante (resaltado) para el nivel dado. */
+export const getVibrantColor = (level: EpisodeLevel): string =>
+  LEVEL_VIBRANT_COLOR[level] ?? LEVEL_VIBRANT_COLOR.intermediate;

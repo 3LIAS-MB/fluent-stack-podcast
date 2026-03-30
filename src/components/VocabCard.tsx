@@ -1,38 +1,46 @@
-import { useCurrentFrame, useVideoConfig, interpolate, spring } from 'remotion';
-import { VocabularyItem } from '../types';
+import React from 'react';
+import { interpolate, spring, useCurrentFrame, useVideoConfig } from 'remotion';
+import { EpisodeLevel } from '../types';
+import { getLevelColor, getVibrantColor } from '../utils/levelColors';
 
 interface VocabCardProps {
-  vocab: VocabularyItem;
-  delayFrames?: number;
-  displayDurationFrames?: number;
+  term: string;
+  definition: string;
+  category?: string;
+  isVisible: boolean;
+  level: EpisodeLevel;
 }
 
+const BACKGROUND_COLOR = '#0A0A1A';
+
 export const VocabCard: React.FC<VocabCardProps> = ({
-  vocab,
-  delayFrames = 0,
-  displayDurationFrames = 120,
+  term,
+  definition,
+  category = 'Technical Terms',
+  isVisible,
+  level,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  const adjustedFrame = frame - delayFrames;
+  const standardColor = getLevelColor(level);
+  const vibrantColor = getVibrantColor(level);
 
-  if (adjustedFrame < 0) {
-    return null;
-  }
-
-  const progress = spring({
-    frame: adjustedFrame,
+  // Animación de entrada/salida
+  const spr = spring({
+    frame,
     fps,
-    config: { damping: 15, stiffness: 100 },
+    config: {
+      damping: 12,
+      stiffness: 100,
+    },
   });
 
-  const opacity = interpolate(progress, [0, 0.2, 0.8, 1], [0, 1, 1, 0]);
-  const translateY = interpolate(progress, [0, 1], [50, 0]);
+  // Opacidad y desplazamiento
+  const opacity = isVisible ? interpolate(spr, [0, 1], [0, 1]) : interpolate(spr, [0, 1], [1, 0]);
+  const translateY = isVisible ? interpolate(spr, [0, 1], [30, 0]) : interpolate(spr, [0, 1], [0, 15]);
 
-  if (adjustedFrame > displayDurationFrames) {
-    return null;
-  }
+  if (!isVisible && opacity < 0.01) return null;
 
   return (
     <div
@@ -40,50 +48,61 @@ export const VocabCard: React.FC<VocabCardProps> = ({
         position: 'absolute',
         top: '70%',
         left: '50%',
-        top: '50%',
-        transform: `translate(-50%, -50%) translateY(${translateY}px)`,
+        transform: `translateX(-50%) translateY(${translateY}px)`,
+        width: '700px',
+        backgroundColor: BACKGROUND_COLOR,
         opacity,
-        backgroundColor: 'rgba(0, 0, 0, 0.7)',
-        borderRadius: '16px',
-        padding: '32px 48px',
-        border: '1px solid rgba(255, 215, 0, 0.3)',
-        boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)',
-        textAlign: 'center',
-        maxWidth: '600px',
+        // opacity: opacity * 0.95,
+        borderRadius: '12px',
+        padding: '24px 32px',
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '6px',
+        border: `1px solid rgba(255, 255, 255, 0.08)`,
+        borderLeft: `6px solid ${vibrantColor}`,
+        boxShadow: `0 30px 60px rgba(0, 0, 0, 0.6), 0 0 20px ${vibrantColor}22`,
+        fontFamily: 'Outfit',
+        zIndex: 100,
       }}
     >
-      <div
-        style={{
-          color: '#FFD700',
-          fontSize: '32px',
-          fontWeight: 800,
-          marginBottom: '16px',
-          textShadow: '0 0 10px rgba(255, 215, 0, 0.5)',
-        }}
-      >
-        {vocab.term}
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
+        <span
+          style={{
+            color: vibrantColor,
+            fontSize: '34px',
+            fontWeight: 800,
+            textTransform: 'uppercase',
+            letterSpacing: '2px',
+            textShadow: `0 0 15px ${vibrantColor}44`,
+          }}
+        >
+          {term}
+        </span>
+        <span
+          style={{
+            fontSize: '13px',
+            color: 'rgba(255, 255, 255, 0.4)',
+            textTransform: 'uppercase',
+            fontWeight: 700,
+            letterSpacing: '1.5px',
+          }}
+        >
+          {category}
+        </span>
       </div>
+
       <div
         style={{
           color: '#FFFFFF',
-          fontSize: '24px',
-          lineHeight: 1.5,
+          fontSize: '22px',
+          fontWeight: 400,
+          lineHeight: '1.45',
+          marginTop: '4px',
+          opacity: 0.9,
         }}
       >
-        {vocab.definition}
+        {definition}
       </div>
-      {vocab.example && (
-        <div
-          style={{
-            color: '#AAAAAA',
-            fontSize: '18px',
-            fontStyle: 'italic',
-            marginTop: '16px',
-          }}
-        >
-          "{vocab.example}"
-        </div>
-      )}
     </div>
   );
 };

@@ -5,9 +5,10 @@ import { AudioWave } from '../components/AudioWave';
 import { KaraokeSubtitles } from '../components/KaraokeSubtitles';
 import { VocabRecap } from '../components/VocabRecap';
 import { Branding } from '../components/Branding';
+import { normalizeVocabulary } from '../utils/vocabNormalization';
 
 const AUDIO_BUFFER_FRAMES = 15;
-const ITEMS_PER_PAGE = 15;
+const ITEMS_PER_PAGE = 8;
 const FRAMES_PER_PAGE = 150; // 5s × 30fps
 
 export const PodcastVideoShort: React.FC<CompositionProps> = ({
@@ -23,11 +24,7 @@ export const PodcastVideoShort: React.FC<CompositionProps> = ({
     ? Math.ceil(captions.words[captions.words.length - 1].end * 30) + AUDIO_BUFFER_FRAMES
     : 0;
 
-  let parsedVocab: typeof vocabulary = vocabulary;
-  if (typeof parsedVocab === 'string') {
-    try { parsedVocab = JSON.parse(parsedVocab as unknown as string); } catch { parsedVocab = [] as any; }
-  }
-  const safeVocab = Array.isArray(parsedVocab) ? parsedVocab : [];
+  const safeVocab = normalizeVocabulary(vocabulary);
 
   const pageCount = safeVocab.length > 0 ? Math.ceil(safeVocab.length / ITEMS_PER_PAGE) : 0;
   const vocabRecapDuration = pageCount * FRAMES_PER_PAGE;
@@ -47,7 +44,7 @@ export const PodcastVideoShort: React.FC<CompositionProps> = ({
 
         <AudioWave audioSrc={audioUrl} heightPercent={8} color="white" />
 
-        <KaraokeSubtitles captions={captions} format={format} />
+        <KaraokeSubtitles captions={captions} format={format} level={level} vocabulary={safeVocab} />
 
         <Branding level={level} />
       </Sequence>
