@@ -73,18 +73,32 @@ export async function renderVideo(
   // ── Calcular duración total: audio + vocab paginado ─────────────────────
   const FPS = 30;
   const AUDIO_BUFFER_FRAMES = 15;
-  const ITEMS_PER_PAGE = 15;
-  const FRAMES_PER_PAGE = 150; // 5s × 30fps — igual que VocabRecap.tsx y vocabImage.ts
+  const ITEMS_PER_PAGE = 8; // Importante: sincronizado con PodcastVideo.tsx
+  const FRAMES_PER_PAGE = 150; // 5s × 30fps — igual que VocabRecap.tsx
 
   const lastWord = captions.words[captions.words.length - 1];
   const audioDurationFrames = lastWord
     ? Math.ceil(lastWord.end * FPS) + AUDIO_BUFFER_FRAMES
     : 300;
 
-  const validVocab = Array.isArray(data.vocabulary)
-    ? data.vocabulary.filter((v) => v.term && v.definition?.trim())
-    : [];
-  const pageCount = validVocab.length > 0 ? Math.ceil(validVocab.length / ITEMS_PER_PAGE) : 0;
+  let validVocabCount = 0;
+  let rawVocab = data.vocabulary;
+
+  if (typeof rawVocab === 'string') {
+    try { rawVocab = JSON.parse(rawVocab); } catch (e) { rawVocab = []; }
+  }
+
+  if (Array.isArray(rawVocab)) {
+    const rawArr = rawVocab as any[];
+    const isCategory = rawArr.length > 0 && rawArr[0].category !== undefined && Array.isArray(rawArr[0].items);
+    if (isCategory) {
+      validVocabCount = rawArr.reduce((acc: number, cat: any) => acc + (cat.items?.length || 0), 0);
+    } else {
+      validVocabCount = rawArr.length;
+    }
+  }
+
+  const pageCount = validVocabCount > 0 ? Math.ceil(validVocabCount / ITEMS_PER_PAGE) : 0;
   const vocabDurationFrames = pageCount * FRAMES_PER_PAGE;
   const totalDurationFrames = audioDurationFrames + vocabDurationFrames;
 

@@ -1,6 +1,7 @@
 import { useVideoConfig } from 'remotion';
 import { EpisodeLevel } from '../types';
 import { LEVEL_ACCENT_COLOR } from '../utils/levelColors';
+import { MAIN_FONT } from '../utils/fonts';
 
 interface BrandingProps {
   level: EpisodeLevel;
@@ -44,7 +45,7 @@ export const Branding: React.FC<BrandingProps> = ({ level }) => {
             fontSize: Math.round(28 * s),
             fontWeight: 700,
             letterSpacing: 1,
-            fontFamily: 'Outfit',
+            fontFamily: MAIN_FONT,
             textShadow: `${2 * s}px ${2 * s}px ${4 * s}px rgba(0,0,0,0.8)`,
           }}
         >
@@ -63,7 +64,7 @@ export const Branding: React.FC<BrandingProps> = ({ level }) => {
           fontWeight: 700,
           padding: `${Math.round(8 * s)}px ${Math.round(20 * s)}px`,
           borderRadius: Math.round(12 * s),
-          fontFamily: 'Outfit',
+          fontFamily: MAIN_FONT,
           textTransform: 'uppercase',
           letterSpacing: 1,
           boxShadow: `0 4px 12px ${LEVEL_ACCENT_COLOR[normalizedLevel]}14, 0 2px 4px rgba(0,0,0,0.2)`,

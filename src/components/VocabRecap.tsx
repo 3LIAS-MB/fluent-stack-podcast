@@ -1,6 +1,8 @@
+import React from 'react';
 import { AbsoluteFill, interpolate, useCurrentFrame } from 'remotion';
 import { VocabularyItem, EpisodeLevel } from '../types';
 import { getLevelColor, LEVEL_ACCENT_COLOR } from '../utils/levelColors';
+import { MAIN_FONT } from '../utils/fonts';
 
 interface VocabRecapProps {
   vocabulary: VocabularyItem[];
@@ -22,8 +24,8 @@ const CAT_BG = '#0D1B2A';
 
 // Fuentes (mismos tamaños que vocabImage.ts para resolución 1920px)
 const FONT_LARGE = 44;  // "VOCABULARY RECAP"
-const FONT_MEDIUM = 22;  // término / definición
-const FONT_SMALL = 18;  // branding, subtítulo, categorías, página
+const FONT_MEDIUM = 24;  // término / definición
+const FONT_SMALL = 20;  // branding, subtítulo, categorías, página
 
 // Layout — espejando exactamente vocabImage.ts
 const MARGIN_X = 80;
@@ -33,7 +35,7 @@ const BRAND_Y = 28;   // branding top-left
 const PAGE_Y = 155;  // indicador de página
 const TABLE_Y = 195;  // primera fila de la tabla
 const ROW_H = 100;   // altura de cada fila
-const COL2_X = 560;  // x absoluta de la columna de definiciones
+const COL2_X = 560;  // x    de la columna de definiciones
 
 /**
  * VocabRecap — clon visual de vocabImage.ts en React/Remotion.
@@ -104,7 +106,7 @@ export const VocabRecap: React.FC<VocabRecapProps> = ({
   });
 
   return (
-    <AbsoluteFill style={{ backgroundColor: BG, opacity, fontFamily: 'Outfit' }}>
+    <AbsoluteFill style={{ backgroundColor: BG, opacity, fontFamily: MAIN_FONT }}>
 
       {/* ── Branding top-left — vocabImage.ts: x=MARGIN_X, y=28, WHITE@0.6 ── */}
       <div style={abs(BRAND_Y, { left: MARGIN_X, right: undefined, color: `${WHITE}99`, fontSize: FONT_SMALL, letterSpacing: 2, fontWeight: 500 })}>
@@ -130,115 +132,138 @@ export const VocabRecap: React.FC<VocabRecapProps> = ({
         </div>
       )}
 
-      {/* ── Tabla — cada fila posicionada directamente desde AbsoluteFill ── */}
-      {rows.map((row, idx) => {
-        // y absoluta = TABLE_Y + fila * ROW_H (posicionado desde AbsoluteFill, no desde un div contenedor)
-        const rowAbsTop = TABLE_Y + idx * ROW_H;
+      {/* ── Tabla — Grid Layout Autoadaptable ── */}
+      <div style={{
+        position: 'absolute',
+        top: TABLE_Y,
+        left: MARGIN_X,
+        right: MARGIN_X,
+        display: 'grid',
+        // Columnas: 1ra columna adaptable a su contenido (mínimo 320px), y luego 2 columnas de igual tamaño (1.5fr y 1fr)
+        gridTemplateColumns: 'minmax(320px, max-content) 1.5fr 1fr',
+      }}>
+        {rows.map((row, idx) => {
+          if (row.type === 'category') {
+            return (
+              <React.Fragment key={`cat-${row.label}-${idx}`}>
+                {/* Categoría: Título */}
+                <div style={{
+                  height: ROW_H,
+                  backgroundColor: CAT_BG,
+                  display: 'flex',
+                  flexDirection: 'row',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  borderLeft: `4px solid ${accentColor}`,
+                  paddingLeft: 10,
+                  paddingRight: 30,
+                }}>
+                  <span style={{ color: accentColor, fontSize: FONT_SMALL, fontWeight: 700, letterSpacing: 1 }}>
+                    {row.label.toUpperCase()}
+                  </span>
+                </div>
+                {/* Categoría: Cabecera Definición */}
+                <div style={{
+                  height: ROW_H,
+                  backgroundColor: CAT_BG,
+                  display: 'flex',
+                  alignItems: 'center',
+                  paddingLeft: 10,
+                  paddingRight: 30,
+                }}>
+                  <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '18px', fontWeight: 600, letterSpacing: 1, textTransform: 'uppercase', lineHeight: '1.4' }}>
+                    DEFINITION
+                  </span>
+                </div>
+                {/* Categoría: Cabecera Ejemplo */}
+                <div style={{
+                  height: ROW_H,
+                  backgroundColor: CAT_BG,
+                  display: 'flex',
+                  alignItems: 'center',
+                  paddingLeft: 10,
+                  paddingRight: 10,
+                }}>
+                  <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '18px', fontWeight: 600, letterSpacing: 1, textTransform: 'uppercase', lineHeight: '1.2' }}>
+                    EXAMPLE
+                  </span>
+                </div>
+              </React.Fragment>
+            );
+          }
 
-        if (row.type === 'category') {
-          // vocabImage.ts: drawbox CAT_BG + drawtext GOLD x=MARGIN_X+14 y=+10
+          // Fila normal (Item de Vocabulario)
+          const { item, isOdd } = row;
+          const bgCell = isOdd ? ROW_ODD : 'transparent';
+
           return (
-            <div key={`cat-${row.label}-${idx}`} style={{
-              position: 'absolute',
-              top: rowAbsTop,
-              left: MARGIN_X,
-              right: MARGIN_X,
-              height: ROW_H,
-              backgroundColor: CAT_BG,
-              display: 'flex',
-              alignItems: 'center',
-              paddingLeft: 14,
-              borderLeft: `4px solid ${accentColor}`,
-            }}>
-              <div style={{ position: 'absolute', left: 20 }}>
-                <span style={{ color: accentColor, fontSize: FONT_SMALL, fontWeight: 700, letterSpacing: 1 }}>
-                  {row.label.toUpperCase()}
+            <React.Fragment key={`item-${item.term}-${idx}`}>
+              {/* Término — columna izquierda */}
+              <div style={{
+                height: ROW_H,
+                backgroundColor: bgCell,
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'center',
+                textAlign: 'center',
+                borderLeft: '4px solid transparent',
+                paddingLeft: 10,
+                paddingRight: 30,
+              }}>
+                <span style={{
+                  color: accentColor,
+                  fontSize: FONT_MEDIUM,
+                  fontWeight: 600,
+                  // Dejamos que salte de línea si un 'Concept' es más ancho de lo permisible visualmente
+                  lineHeight: '1.1'
+                }}>
+                  {item.term}
                 </span>
+                {item.phonetic && (
+                  <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '20px', fontFamily: 'monospace', fontWeight: 400, marginTop: '4px' }}>
+                    {item.phonetic}
+                  </span>
+                )}
               </div>
-              <div style={{ position: 'absolute', left: 550 }}>
-                <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '12px', fontWeight: 600, letterSpacing: 1, textTransform: 'uppercase', lineHeight: '1.2' }}>
-                  DEFINITION
-                </span>
+
+              {/* Definición English — columna medio */}
+              <div style={{
+                height: ROW_H,
+                backgroundColor: bgCell,
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'flex-start',
+                textAlign: 'left',
+                paddingLeft: 10,
+                paddingRight: 30,
+              }}>
+                <div style={{ color: WHITE, fontSize: FONT_MEDIUM, lineHeight: '1.2' }}>
+                  {item.english || item.definition}
+                </div>
               </div>
-              <div style={{ position: 'absolute', left: 1150 }}>
-                <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '12px', fontWeight: 600, letterSpacing: 1, textTransform: 'uppercase', lineHeight: '1.2' }}>
-                  EXAMPLE
-                </span>
+
+              {/* Example — columna derecha */}
+              <div style={{
+                height: ROW_H,
+                backgroundColor: bgCell,
+                display: 'flex',
+                flexDirection: 'column',
+                justifyContent: 'center',
+                alignItems: 'flex-start',
+                textAlign: 'left',
+                paddingLeft: 10,
+                paddingRight: 10,
+              }}>
+                <div style={{ color: 'rgba(255,255,255,0.7)', fontSize: '22px', fontStyle: 'italic', lineHeight: '1.2' }}>
+                  {item.example ? `"${item.example}"` : '-'}
+                </div>
               </div>
-            </div>
+            </React.Fragment>
           );
-        }
-
-        // vocabImage.ts: ROW_ODD para items impares | término GOLD | definición WHITE
-        const { item, isOdd } = row;
-        return (
-          <div key={`item-${item.term}-${idx}`} style={{
-            position: 'absolute',
-            top: rowAbsTop,
-            left: MARGIN_X,
-            right: MARGIN_X,
-            height: ROW_H,
-            backgroundColor: isOdd ? ROW_ODD : 'transparent',
-            display: 'flex',
-            alignItems: 'center',
-          }}>
-            {/* Término — columna izquierda */}
-            <div style={{
-              position: 'absolute',
-              left: 20,
-              width: 500,
-              color: accentColor,
-              fontSize: FONT_MEDIUM,
-              fontWeight: 600,
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center'
-            }}>
-              <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>{item.term}</span>
-              {item.phonetic && <span style={{ color: 'rgba(255,255,255,0.4)', fontSize: '16px', fontFamily: 'monospace', fontWeight: 400, marginTop: '4px' }}>{item.phonetic}</span>}
-            </div>
-
-            {/* Definición English — columna medio */}
-            <div style={{
-              position: 'absolute',
-              left: 550,
-              width: 550,
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              height: '100%'
-            }}>
-              <div style={{
-                color: WHITE,
-                fontSize: FONT_MEDIUM,
-                lineHeight: '1.2'
-              }}>
-                {item.english || item.definition}
-              </div>
-            </div>
-
-            {/* Example — columna derecha */}
-            <div style={{
-              position: 'absolute',
-              left: 1150,
-              width: 590,
-              display: 'flex',
-              flexDirection: 'column',
-              justifyContent: 'center',
-              height: '100%'
-            }}>
-              <div style={{
-                color: 'rgba(255,255,255,0.7)',
-                fontSize: '20px',
-                fontStyle: 'italic',
-                lineHeight: '1.2'
-              }}>
-                {item.example ? `"${item.example}"` : '-'}
-              </div>
-            </div>
-          </div>
-        );
-      })}
+        })}
+      </div>
 
     </AbsoluteFill>
   );

@@ -4,6 +4,7 @@ import { Captions, EpisodeLevel, VocabularyItem } from '../types';
 import { buildSubtitleBlocks } from '../utils/subtitleBlocks';
 import { getLevelColor, getVibrantColor } from '../utils/levelColors';
 import { useVocabMatch } from '../hooks/useVocabMatch';
+import { MAIN_FONT } from '../utils/fonts';
 
 interface KaraokeSubtitlesProps {
   captions: Captions;
@@ -29,7 +30,7 @@ export const KaraokeSubtitles: React.FC<KaraokeSubtitlesProps> = ({
 }) => {
   const standardColor = getLevelColor(level);
   const vibrantColor = getVibrantColor(level);
-  
+
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const currentTime = frame / fps;
@@ -66,7 +67,7 @@ export const KaraokeSubtitles: React.FC<KaraokeSubtitlesProps> = ({
     <div
       style={{
         position: 'absolute',
-        top: '40%',
+        top: '35%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
         display: 'flex',
@@ -78,14 +79,14 @@ export const KaraokeSubtitles: React.FC<KaraokeSubtitlesProps> = ({
         padding: '14px 28px',
         backgroundColor: 'rgba(0, 0, 0, 0.48)',
         borderRadius: '16px',
-        fontFamily: 'Outfit',
+        fontFamily: MAIN_FONT,
         opacity,
       }}
     >
       {block.words.map((word, idx) => {
         // Buscamos si esta palabra forma parte de CUALQUIERA de los matches del bloque
         const normalizedWord = word.word.toLowerCase().replace(/[.,!?;:]/g, '');
-        const isVocabHighlight = visibleMatches.some(m => 
+        const isVocabHighlight = visibleMatches.some(m =>
           m.item.term.toLowerCase().split(/\s+/).includes(normalizedWord)
         );
 
@@ -116,8 +117,8 @@ export const KaraokeSubtitles: React.FC<KaraokeSubtitlesProps> = ({
           // Lógica de FILL
           const isPassed = currentTime >= word.end;
           const isCurrent = currentTime >= word.start && currentTime < word.end;
-          
-          const progress = isPassed ? 1 : isCurrent 
+
+          const progress = isPassed ? 1 : isCurrent
             ? interpolate(currentTime, [word.start, word.end], [0.05, 0.95])
             : 0;
 

@@ -24,44 +24,7 @@ export function createRenderRouter(port: number = DEFAULT_PORT) {
 
       const data: RenderRequest = req.body;
 
-      // ── Normalizar vocabulary ────────────────────────────────────────────────
-      if (typeof data.vocabulary === 'string') {
-        const raw = data.vocabulary as unknown as string;
-        try {
-          const parsed = JSON.parse(raw);
-          if (Array.isArray(parsed)) {
-            data.vocabulary = parsed.map((item: any) => ({
-              term: item.term ?? item.word ?? item.name ?? String(item),
-              definition: item.definition ?? item.meaning ?? item.desc ?? item.description ?? '',
-              example: item.example ?? item.usage ?? undefined,
-              category: item.category ?? item.section ?? item.type ?? undefined,
-            }));
-          } else {
-            data.vocabulary = [];
-          }
-        } catch {
-          const lines = raw.split('\n').map((l: string) => l.trim());
-          const items: { term: string; definition: string; example?: string }[] = [];
-          for (const line of lines) {
-            if (!line.startsWith('|') || /^\|[-\s|]+\|$/.test(line)) continue;
-            const cells = line.split('|').map((c: string) => c.trim().replace(/\*\*/g, '').replace(/`/g, '')).filter((c: string) => c.length > 0);
-            if (cells.length < 2) continue;
-            const term = cells[0].trim();
-            const definition = cells[1].trim();
-            if (/^(term|word|phrasal|technical|vocabulary|english|spanish|definition|meaning)/i.test(term)) continue;
-            if (term.length === 0 || definition.length === 0) continue;
-            items.push({ term, definition, example: cells[2] ?? undefined });
-          }
-          data.vocabulary = items;
-        }
-      } else if (Array.isArray(data.vocabulary)) {
-        data.vocabulary = data.vocabulary.map((item: any) => ({
-          term: item.term ?? item.word ?? item.name ?? String(item),
-          definition: item.definition ?? item.meaning ?? item.desc ?? item.description ?? '',
-          example: item.example ?? item.usage ?? undefined,
-          category: item.category ?? item.section ?? item.type ?? undefined,
-        }));
-      }
+      // ── El vocabulario pasa exactamente como llega. La normalización (categorías, strings, fallbacks como 'español') sucederá en vocabNormalization.ts dentro del cliente Remotion ────────────────────────────────────────────────
 
       // ── Normalizar level ─────────────────────────────────────────────────────
       const VALID_LEVELS = ['beginner', 'intermediate', 'advanced'];

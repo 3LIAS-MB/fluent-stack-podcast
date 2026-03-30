@@ -192,7 +192,7 @@ export const AudioWave: React.FC<AudioWaveProps> = ({
     <div
       style={{
         position: 'absolute',
-        top: '52%',
+        top: '48%',
         left: '50%',
         transform: 'translateX(-50%)',
         width: '50%',
