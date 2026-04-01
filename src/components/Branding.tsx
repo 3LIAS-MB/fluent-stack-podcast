@@ -7,28 +7,29 @@ interface BrandingProps {
   level: EpisodeLevel;
 }
 
-
+// Mapeo de nombre largo del tipo EpisodeLevel a etiqueta corta para el UI
 const LEVEL_LABELS: Record<EpisodeLevel, string> = {
-  beginner: 'Beginner',
-  intermediate: 'Intermediate',
-  advanced: 'Advanced',
+  'Beginner A1-A2': 'Beginner',
+  'Intermediate B1-B2': 'Intermediate',
+  'Advanced C1-C2': 'Advanced',
 };
 
 export const Branding: React.FC<BrandingProps> = ({ level }) => {
-  // n8n puede enviar "intermediate b1-b2", "Intermediate", etc.
-  // Extraemos solo la primera palabra y la buscamos entre las keys conocidas.
-  const VALID_LEVELS: EpisodeLevel[] = ['beginner', 'intermediate', 'advanced'];
-  const rawLevel = typeof level === 'string' ? level.toLowerCase() : '';
-  const normalizedLevel: EpisodeLevel =
-    VALID_LEVELS.find((l) => rawLevel.includes(l)) ?? 'beginner';
+  // Aseguramos que el level sea uno de los válidos, si no usamos Beginner por defecto.
+  const normalizedLevel: EpisodeLevel = 
+    (Object.keys(LEVEL_LABELS) as EpisodeLevel[]).includes(level) 
+      ? level 
+      : 'Beginner A1-A2';
 
-  // Escala todos los tamaños en proporción al canvas real.
-  // Diseñado a 1920px → en preview (escalado por Remotion Player) se ve idéntico.
+  // Escala todos los tamaños en proporción al canvas real (1920px base).
   const { width } = useVideoConfig();
   const s = width / 1920;
 
+  const accentColor = LEVEL_ACCENT_COLOR[normalizedLevel] || LEVEL_ACCENT_COLOR['Beginner A1-A2'];
+
   return (
     <>
+      {/* Título del Podcast (Top-Left) */}
       <div
         style={{
           position: 'absolute',
@@ -53,12 +54,13 @@ export const Branding: React.FC<BrandingProps> = ({ level }) => {
         </div>
       </div>
 
+      {/* Etiqueta de Nivel (Top-Right) */}
       <div
         style={{
           position: 'absolute',
           top: Math.round(24 * s),
           right: Math.round(24 * s),
-          backgroundColor: LEVEL_ACCENT_COLOR[normalizedLevel],
+          backgroundColor: accentColor,
           color: '#FFFFFF',
           fontSize: Math.round(22 * s),
           fontWeight: 700,
@@ -67,8 +69,7 @@ export const Branding: React.FC<BrandingProps> = ({ level }) => {
           fontFamily: MAIN_FONT,
           textTransform: 'uppercase',
           letterSpacing: 1,
-          boxShadow: `0 4px 12px ${LEVEL_ACCENT_COLOR[normalizedLevel]}14, 0 2px 4px rgba(0,0,0,0.2)`,
-          // boxShadow: `0 4px 12px rgba(0,0,0,0.3)`,
+          boxShadow: `0 4px 12px ${accentColor}14, 0 2px 4px rgba(0,0,0,0.2)`,
         }}
       >
         {LEVEL_LABELS[normalizedLevel]}

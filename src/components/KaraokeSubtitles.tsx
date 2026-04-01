@@ -63,6 +63,21 @@ export const KaraokeSubtitles: React.FC<KaraokeSubtitlesProps> = ({
     opacity = interpolate(currentTime, [block.start, block.start + FADE_DURATION], [0, 1]);
   }
 
+  // Determinamos quién está hablando (usamos la palabra activa o la primera por defecto)
+  const activeWord = block.words.find(w => currentTime >= w.start && currentTime < w.end) || block.words[0];
+  const currentSpeakerRaw = activeWord.speaker;
+
+  // Lógica de traducción de Speaker
+  let speakerName = '🎙️ RYAN'; // Por defecto para 'solo'
+  if (format === 'duo') {
+    // Si viene de n8n, suele ser SPEAKER_00 / SPEAKER_01 o similar. Lo asociamos lógicamente.
+    if (currentSpeakerRaw === 'SPEAKER_00' || currentSpeakerRaw === 'Host' || currentSpeakerRaw === 'Alex') {
+      speakerName = '🎙️ ETHAN';
+    } else {
+      speakerName = '🎙️ KATHERINE';
+    }
+  }
+
   return (
     <div
       style={{
@@ -83,6 +98,23 @@ export const KaraokeSubtitles: React.FC<KaraokeSubtitlesProps> = ({
         opacity,
       }}
     >
+      {/* Etiqueta flotante superior izquierda del Speaker (Premium Minimalista) */}
+      <div style={{
+        position: 'absolute',
+        top: '-38px', // Flotando justo por encima
+        left: '12px',
+        color: vibrantColor,
+        fontSize: '22px',
+        fontWeight: 800,
+        textTransform: 'uppercase',
+        letterSpacing: '2.5px',
+        textShadow: `0 0 15px ${vibrantColor}88, 0 2px 4px rgba(0,0,0,0.8)`,
+        transition: 'all 0.3s ease',
+        opacity: opacity * 0.9,
+      }}>
+        {speakerName}
+      </div>
+
       {block.words.map((word, idx) => {
         // Buscamos si esta palabra forma parte de CUALQUIERA de los matches del bloque
         const normalizedWord = word.word.toLowerCase().replace(/[.,!?;:]/g, '');

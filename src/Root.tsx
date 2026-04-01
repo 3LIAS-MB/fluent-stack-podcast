@@ -18,19 +18,20 @@ const PodcastVideoSchema = z.object({
   imageUrl: z.string(),
   vocabulary: z.any(),
   title: z.string(),
-  level: z.enum(['beginner', 'intermediate', 'advanced']),
+  level: z.enum(['Beginner A1-A2', 'Intermediate B1-B2', 'Advanced C1-C2']),
   format: z.enum(['solo', 'duo']),
   captions: z.object({
     words: z.array(z.object({
       word: z.string(),
       start: z.number(),
       end: z.number(),
-      speaker: z.enum(['Host', 'Alex', 'Sam']),
+      speaker: z.string(),
     })),
   }),
 });
 
 import { normalizeVocabulary } from './utils/vocabNormalization';
+import { paginateVocabulary } from './utils/vocabPagination';
 
 // RemotionRoot es el componente raíz: debe devolver JSX con <Composition />
 const RemotionRoot: React.FC = () => {
@@ -39,9 +40,10 @@ const RemotionRoot: React.FC = () => {
   const lastWord = SHARED_CAPTIONS.words[SHARED_CAPTIONS.words.length - 1];
   const previewAudioFrames = Math.ceil(lastWord.end * 30) + 15; // +15 buffer
   
-  // Calculamos frames del vocabulario de manera dinámica:
+  // Calculamos frames del vocabulario de manera dinámica usando la paginación inteligente:
   const safeVocab = normalizeVocabulary(SHARED_VOCABULARY);
-  const pageCount = safeVocab.length > 0 ? Math.ceil(safeVocab.length / 8) : 0;
+  const pages = paginateVocabulary(safeVocab, 8); // Max 8 filas por página
+  const pageCount = pages.length;
   const TOTAL_FRAMES = previewAudioFrames + pageCount * 150; // páginas × 150 frames (5s)
   return (
     <>

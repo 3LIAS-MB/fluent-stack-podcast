@@ -1,4 +1,4 @@
-export type EpisodeLevel = 'beginner' | 'intermediate' | 'advanced';
+export type EpisodeLevel = 'Beginner A1-A2' | 'Intermediate B1-B2' | 'Advanced C1-C2';
 export type EpisodeFormat = 'solo' | 'duo';
 export type OutputFormat = '16:9' | '9:16';
 
@@ -6,7 +6,7 @@ export interface Word {
   word: string;
   start: number;
   end: number;
-  speaker: 'Host' | 'Alex' | 'Sam';
+  speaker: string; // Whisper output (e.g. SPEAKER_00, SPEAKER_01) or explicit names
 }
 
 export interface Captions {
