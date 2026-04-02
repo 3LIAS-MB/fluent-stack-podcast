@@ -15,9 +15,9 @@ interface KaraokeSubtitlesProps {
 }
 
 const COLORS = {
-  Host: '#FFFFFF',
-  Alex: '#FFFFFF',
-  Sam: '#87CEEB',
+  Ryan:         '#FFFFFF',
+  Ethan:        '#FFFFFF',
+  Katherine:    '#87CEEB',
   inactiveWord: 'rgba(255, 255, 255, 0.45)',
 };
 
@@ -63,20 +63,9 @@ export const KaraokeSubtitles: React.FC<KaraokeSubtitlesProps> = ({
     opacity = interpolate(currentTime, [block.start, block.start + FADE_DURATION], [0, 1]);
   }
 
-  // Determinamos quién está hablando (usamos la palabra activa o la primera por defecto)
+  // Tag de speaker: usa el campo speaker directamente (viene del alignment o es 'Ryan' en solo)
   const activeWord = block.words.find(w => currentTime >= w.start && currentTime < w.end) || block.words[0];
-  const currentSpeakerRaw = activeWord.speaker;
-
-  // Lógica de traducción de Speaker
-  let speakerName = '🎙️ RYAN'; // Por defecto para 'solo'
-  if (format === 'duo') {
-    // Si viene de n8n, suele ser SPEAKER_00 / SPEAKER_01 o similar. Lo asociamos lógicamente.
-    if (currentSpeakerRaw === 'SPEAKER_00' || currentSpeakerRaw === 'Host' || currentSpeakerRaw === 'Alex') {
-      speakerName = '🎙️ ETHAN';
-    } else {
-      speakerName = '🎙️ KATHERINE';
-    }
-  }
+  const speakerName = `🎙️ ${activeWord.speaker.toUpperCase()}`;
 
   return (
     <div

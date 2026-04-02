@@ -2,7 +2,7 @@ import { spawn } from 'child_process';
 import path from 'path';
 import fs from 'fs';
 import OpenAI from 'openai';
-import { Captions, TranscriptionMethod, TranscriptionResult, EpisodeFormat } from '../types';
+import { Captions, TranscriptionMethod, TranscriptionResult, EpisodeFormat, Word } from '../types';
 import { downloadFile, getTempDir } from './download';
 
 const openai = process.env.OPENAI_API_KEY
@@ -48,11 +48,10 @@ export async function transcribeWithOpenAI(
 
     const words = response.words
       .map((w: any) => ({
-        // Limpia puntuación pegada al inicio/fin que devuelve Whisper (ej: "done," → "done")
         word: w.word.trim().replace(/^[.,!?¡¿;:]+|[.,!?¡¿;:]+$/g, ''),
         start: w.start,
         end: w.end,
-        speaker: (format === 'solo' ? 'Host' : 'Alex') as 'Host' | 'Alex' | 'Sam',
+        speaker: (format === 'solo' ? 'Ryan' : 'Ethan') as 'Ryan' | 'Ethan' | 'Katherine',
       }))
       .filter((w) => w.word.length > 0); // descarta entradas que solo eran puntuación
 
@@ -107,9 +106,66 @@ export function generateEstimatedTimestamps(text: string, format: EpisodeFormat)
       word: word.replace(/[.,!?]/g, ''),
       start,
       end,
-      speaker: (format === 'solo' ? 'Host' : 'Alex') as 'Host' | 'Alex' | 'Sam',
+      speaker: (format === 'solo' ? 'Ryan' : 'Ethan') as 'Ryan' | 'Ethan' | 'Katherine',
     };
   });
 
   return { words: result };
+}
+
+/**
+ * Alinea los speakers del guion con los word timestamps de Whisper.
+ * Usa matching secuencial normalizado — ambas secuencias están en orden cronológico.
+ */
+export function alignSpeakers(
+  words: Word[],
+  scriptSegments: Array<{ speaker: string; text: string }>
+): Word[] {
+  if (!scriptSegments || scriptSegments.length === 0) return words;
+
+  // Normaliza una palabra para comparación (lowercase, sin puntuación)
+  const normalize = (w: string) => w.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+  // Construye lista plana de {speaker, normalized} desde los segmentos del guion
+  const scriptWords: Array<{ speaker: string; normalized: string }> = [];
+  for (const seg of scriptSegments) {
+    const segWords = seg.text.split(/\s+/).filter(w => w.length > 0);
+    for (const w of segWords) {
+      const normalized = normalize(w);
+      if (normalized) scriptWords.push({ speaker: seg.speaker, normalized });
+    }
+  }
+
+  if (scriptWords.length === 0) return words;
+
+  let scriptIdx = 0;
+  const LOOKAHEAD = 6; // tolerancia para diferencias menores de transcripción
+
+  return words.map(word => {
+    const normalizedWhisper = normalize(word.word);
+
+    if (!normalizedWhisper) {
+      // Palabra vacía tras normalizar: hereda speaker del contexto actual
+      const fallback = scriptWords[Math.min(scriptIdx, scriptWords.length - 1)];
+      return { ...word, speaker: (fallback?.speaker || 'Ryan') as any };
+    }
+
+    // Busca match en ventana deslizante
+    let matchIdx = -1;
+    for (let i = scriptIdx; i < Math.min(scriptIdx + LOOKAHEAD, scriptWords.length); i++) {
+      if (scriptWords[i].normalized === normalizedWhisper) {
+        matchIdx = i;
+        break;
+      }
+    }
+
+    if (matchIdx !== -1) {
+      scriptIdx = matchIdx + 1;
+      return { ...word, speaker: scriptWords[matchIdx].speaker as any };
+    }
+
+    // Sin match: usa el speaker en la posición actual (no retrocede)
+    const current = scriptWords[Math.min(scriptIdx, scriptWords.length - 1)];
+    return { ...word, speaker: (current?.speaker || 'Ryan') as any };
+  });
 }

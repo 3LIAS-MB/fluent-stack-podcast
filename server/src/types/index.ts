@@ -2,7 +2,12 @@ export type EpisodeLevel = 'beginner' | 'intermediate' | 'advanced';
 export type EpisodeFormat = 'solo' | 'duo';
 export type OutputFormat = '16:9' | '9:16';
 export type TranscriptionMethod = 'openai' | 'local';
-export type Speaker = 'Host' | 'Alex' | 'Sam';
+export type Speaker = 'Ryan' | 'Ethan' | 'Katherine';
+
+export interface ScriptSegment {
+  speaker: Speaker;
+  text: string;
+}
 
 export interface Word {
   word: string;
@@ -31,6 +36,7 @@ export interface RenderRequest {
   format: EpisodeFormat;
   outputFormat: OutputFormat;
   transcriptionMethod?: TranscriptionMethod;
+  scriptSegments?: ScriptSegment[] | string; // JSON string or parsed array from n8n
 }
 
 export interface RenderResponse {

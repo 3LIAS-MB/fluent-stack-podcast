@@ -1,7 +1,7 @@
 import { Request, Response } from 'express';
 import path from 'path';
 import { RenderRequest, RenderResponse } from '../types';
-import { transcribeAudio, downloadFile } from '../services';
+import { transcribeAudio, downloadFile, alignSpeakers } from '../services';
 import { renderVideo } from '../services/renderer';
 
 const DEFAULT_PORT = 3001;
@@ -46,10 +46,27 @@ export function createRenderRouter(port: number = DEFAULT_PORT) {
       const transcriptionMethod = data.transcriptionMethod || 'local';
 
       try {
-        const [{ captions, audioFile }, imageFile] = await Promise.all([
+        const [{ captions: rawCaptions, audioFile }, imageFile] = await Promise.all([
           transcribeAudio(data.audioUrl, data.format || 'solo', transcriptionMethod),
           downloadFile(data.imageUrl, 'image'),
         ]);
+
+        // Parsear scriptSegments si viene como string desde n8n
+        let scriptSegments: Array<{ speaker: string; text: string }> | undefined;
+        if (data.scriptSegments) {
+          try {
+            scriptSegments = typeof data.scriptSegments === 'string'
+              ? JSON.parse(data.scriptSegments)
+              : data.scriptSegments as any;
+          } catch (_) {
+            console.warn('[render] scriptSegments inválido, se omite alignment');
+          }
+        }
+
+        // Aplicar speaker alignment si hay segmentos disponibles
+        const captions = scriptSegments && scriptSegments.length > 0
+          ? { words: alignSpeakers(rawCaptions.words, scriptSegments) }
+          : rawCaptions;
 
         const outputPath = await renderVideo(data, captions, audioFile, imageFile, port);
 
