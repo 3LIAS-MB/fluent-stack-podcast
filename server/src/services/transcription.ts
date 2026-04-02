@@ -9,6 +9,31 @@ const openai = process.env.OPENAI_API_KEY
   ? new OpenAI({ apiKey: process.env.OPENAI_API_KEY })
   : null;
 
+function cleanTranscriptionText(captions: Captions): Captions {
+  const fixes: Array<[RegExp, string]> = [
+    [/^a1a2$/i, 'a1-a2'],
+    [/^b1b2$/i, 'b1-b2'],
+    [/^c1c2$/i, 'c1-c2'],
+  ];
+
+  return {
+    ...captions,
+    words: captions.words.map(w => {
+      let newWord = w.word;
+      const stripped = newWord.replace(/[.,!?;:]/g, '').toLowerCase(); // Solo para chequear
+      
+      for (const [regex, replacement] of fixes) {
+        if (regex.test(stripped)) {
+          // Mantener puntuación si la había, reemplazando el núcleo
+          newWord = newWord.toLowerCase().replace(regex, replacement);
+          break;
+        }
+      }
+      return { ...w, word: newWord };
+    })
+  };
+}
+
 export async function transcribeAudio(
   audioUrl: string,
   format: EpisodeFormat,
@@ -22,6 +47,9 @@ export async function transcribeAudio(
   } else {
     captions = await transcribeWithOpenAI(audioFile, format);
   }
+
+  // Post-procesar para corregir errores comunes de transcripción (ej. "b1b2")
+  captions = cleanTranscriptionText(captions);
 
   return { captions, audioFile };
 }

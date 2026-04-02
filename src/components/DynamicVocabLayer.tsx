@@ -34,6 +34,8 @@ export const DynamicVocabLayer: React.FC<DynamicVocabLayerProps> = ({
       category={lastMatch.current.item.category}
       level={level}
       isVisible={!!activeMatch}
+      occurrence={lastMatch.current.occurrence}
+      totalOccurrences={lastMatch.current.totalOccurrences}
     />
   );
 };

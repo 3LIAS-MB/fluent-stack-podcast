@@ -1,14 +1,19 @@
 import { useMemo } from 'react';
 import { useCurrentFrame, useVideoConfig } from 'remotion';
-import { Captions, VocabularyItem } from '../types';
+import { Captions, VocabularyItem, SubtitleBlock, Word } from '../types';
 import { buildSubtitleBlocks } from '../utils/subtitleBlocks';
 
 export interface VocabMatch {
   item: VocabularyItem;
-  start: number;
-  end: number;
-  uiStart: number; // Nueva: Cuándo debe mostrarse la CARD
-  uiEnd: number;   // Nueva: Cuándo debe ocultarse la CARD
+  start: number;      // Frame de inicio del bloque
+  end: number;        // Frame de fin del bloque (exclusivo)
+  uiStart: number;    // Frame de entrada de la CARD
+  uiEnd: number;      // Frame de salida de la CARD
+  termStart: number;  // Segundos exactos de inicio del audio
+  termEnd: number;    // Segundos exactos de fin del audio
+  wordIndices: number[]; // Índices de las palabras DENTRO del bloque
+  occurrence: number;
+  totalOccurrences: number; 
 }
 
 export const useVocabMatch = (
@@ -19,86 +24,126 @@ export const useVocabMatch = (
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
 
-  // 1. Encontrar todos los matches de frases
   const processedMatches = useMemo(() => {
     const blocks = buildSubtitleBlocks(captions.words);
-    const matches: (VocabMatch & { blockIndex: number })[] = [];
+    const finalMatches: (VocabMatch & { blockIndex: number })[] = [];
 
-    // Encontrar todos los matches crudos
-    vocabulary.forEach((item) => {
-      const termWords = item.term.toLowerCase().split(/\s+/);
-      for (let i = 0; i <= captions.words.length - termWords.length; i++) {
-        let isMatch = true;
-        for (let j = 0; j < termWords.length; j++) {
-          const captionWord = captions.words[i + j].word.toLowerCase().replace(/[.,!?;:]/g, '');
-          if (captionWord !== termWords[j]) {
-            isMatch = false;
-            break;
+    // 1. Preparar vocabulario: los más largos primero para evitar falsos positivos
+    // (Ej: "Prompt Engineering" gana a "Prompt")
+    const sortedVocab = [...vocabulary].sort((a, b) => 
+      b.term.split(/\s+/).length - a.term.split(/\s+/).length
+    );
+
+    // 2. Rastrear palabras ya emparejadas para evitar solapamientos
+    // Formato: "blockIndex-wordIndexInBlock"
+    const matchedWords = new Set<string>();
+
+    blocks.forEach((block, bIdx) => {
+      const blockWords = block.words;
+      const blockMatches: any[] = [];
+
+      sortedVocab.forEach((item) => {
+        const termWords = item.term.toLowerCase().split(/\s+/);
+        
+        // Buscar el término dentro de las palabras de ESTE bloque solamente
+        for (let i = 0; i <= blockWords.length - termWords.length; i++) {
+          let isMatch = true;
+          const indicesInBlock: number[] = [];
+
+          for (let j = 0; j < termWords.length; j++) {
+            const wordIdxInBlock = i + j;
+            const wordKey = `${bIdx}-${wordIdxInBlock}`;
+
+            // Si esta palabra ya es parte de un match (uno más largo), saltar
+            if (matchedWords.has(wordKey)) {
+              isMatch = false;
+              break;
+            }
+
+            const captionWord = blockWords[wordIdxInBlock].word.toLowerCase().replace(/[.,!?;:]/g, '');
+            if (captionWord !== termWords[j]) {
+              isMatch = false;
+              break;
+            }
+            indicesInBlock.push(wordIdxInBlock);
           }
-        }
 
-        if (isMatch) {
-          const originalStart = captions.words[i].start;
-          const originalEnd = captions.words[i + termWords.length - 1].end;
-          const blockIndex = blocks.findIndex(b => originalStart >= b.start && originalStart <= b.end);
-          
-          if (blockIndex !== -1) {
-            matches.push({
+          if (isMatch) {
+            // Marcar palabras como ocupadas
+            indicesInBlock.forEach(idx => matchedWords.add(`${bIdx}-${idx}`));
+
+            const firstWord = blockWords[i];
+            const lastWord = blockWords[i + termWords.length - 1];
+
+            blockMatches.push({
               item,
-              start: Math.floor(blocks[blockIndex].start * fps),
-              end: Math.ceil(blocks[blockIndex].end * fps),
-              uiStart: 0, // Se calcula abajo
-              uiEnd: 0,   // Se calcula abajo
-              blockIndex
+              blockIndex: bIdx,
+              start: Math.floor(block.start * fps),
+              end: Math.ceil(block.end * fps),
+              termStart: firstWord.start,
+              termEnd: lastWord.end,
+              wordIndices: indicesInBlock,
+              uiStart: 0,
+              uiEnd: 0,
             });
           }
         }
-      }
-    });
+      });
 
-    // 2. Lógica de Reparto de Tiempo si hay colisiones en el mismo bloque
-    const matchesByBlock: Record<number, typeof matches> = {};
-    matches.forEach(m => {
-      if (!matchesByBlock[m.blockIndex]) matchesByBlock[m.blockIndex] = [];
-      matchesByBlock[m.blockIndex].push(m);
-    });
-
-    const finalMatches: VocabMatch[] = [];
-
-    Object.keys(matchesByBlock).forEach(key => {
-      const blockIdx = parseInt(key);
-      const blockMatches = matchesByBlock[blockIdx].sort((a, b) => a.start - b.start);
-      const block = blocks[blockIdx];
+      // Ordenar matches del bloque por aparición para repartir el tiempo (uiStart/uiEnd)
+      blockMatches.sort((a, b) => a.termStart - b.termStart);
+      
       const blockStartFrame = Math.floor(block.start * fps);
       const blockEndFrame = Math.ceil(block.end * fps);
       const blockDuration = blockEndFrame - blockStartFrame;
-
-      // Dividimos el tiempo del bloque equitativamente entre los N matches
       const slotDuration = Math.floor(blockDuration / blockMatches.length);
 
       blockMatches.forEach((m, i) => {
+        const uiStart = blockStartFrame + (i * slotDuration);
+        const uiEnd = i === blockMatches.length - 1 
+          ? blockEndFrame 
+          : blockStartFrame + ((i + 1) * slotDuration);
+
         finalMatches.push({
           ...m,
-          uiStart: blockStartFrame + (i * slotDuration),
-          uiEnd: i === blockMatches.length - 1 ? blockEndFrame : blockStartFrame + ((i + 1) * slotDuration)
+          uiStart,
+          uiEnd,
         });
       });
     });
 
-    return finalMatches.sort((a, b) => a.start - b.start);
+    // 3. Calcular ocurrencias totales (x1, x2...) después de encontrar todos los matches
+    const termCounts: Record<string, number> = {};
+    const finalWithOccurrences = finalMatches
+      .sort((a, b) => a.termStart - b.termStart) // Orden cronológico global
+      .map(m => {
+        const term = m.item.term.toLowerCase();
+        termCounts[term] = (termCounts[term] || 0) + 1;
+        return {
+          ...m,
+          occurrence: termCounts[term]
+        };
+      });
+
+    // Añadir totalOccurrences a cada uno
+    return finalWithOccurrences.map(m => ({
+      ...m,
+      totalOccurrences: termCounts[m.item.term.toLowerCase()]
+    }));
+
   }, [captions.words, vocabulary, fps]);
 
-  // 3. activeMatch basa su visibilidad de CARD en uiStart/uiEnd
+  // 4. activeMatch: La CARD actual (usa < uiEnd exclusivo)
   const activeMatch = useMemo(() => {
     return processedMatches.find((m) => {
-      return frame >= m.uiStart && frame <= m.uiEnd;
+      return frame >= m.uiStart && frame < m.uiEnd;
     });
   }, [processedMatches, frame]);
 
-  // 4. visibleMatches contiene todos los que están en el bloque actual (para el Karaoke)
+  // 5. visibleMatches: Lo que se debe resaltar en el Karaoke del bloque actual
   const visibleMatches = useMemo(() => {
     return processedMatches.filter((m) => {
-      return frame >= m.start && frame <= m.end;
+      return frame >= m.start && frame < m.end;
     });
   }, [processedMatches, frame]);
 

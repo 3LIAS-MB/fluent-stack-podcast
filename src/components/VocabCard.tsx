@@ -10,6 +10,8 @@ interface VocabCardProps {
   category?: string;
   isVisible: boolean;
   level: EpisodeLevel;
+  occurrence?: number;
+  totalOccurrences?: number;
 }
 
 const BACKGROUND_COLOR = '#0A0A1A';
@@ -20,6 +22,8 @@ export const VocabCard: React.FC<VocabCardProps> = ({
   category = 'Technical Terms',
   isVisible,
   level,
+  occurrence,
+  totalOccurrences,
 }) => {
   const frame = useCurrentFrame();
   const { fps, width } = useVideoConfig();
@@ -66,18 +70,33 @@ export const VocabCard: React.FC<VocabCardProps> = ({
       }}
     >
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline' }}>
-        <span
-          style={{
-            color: vibrantColor,
-            fontSize: `${35 * s}px`,  // Reducido a tamaño elegante (antes 34, luego 52)
-            fontWeight: 600,
-            textTransform: 'uppercase',
-            letterSpacing: `${1.5 * s}px`,
-            textShadow: `0 0 ${15 * s}px ${vibrantColor}44`,
-          }}
-        >
-          {term}
-        </span>
+        <div>
+          <span
+            style={{
+              color: vibrantColor,
+              fontSize: `${35 * s}px`,  // Reducido a tamaño elegante (antes 34, luego 52)
+              fontWeight: 600,
+              textTransform: 'uppercase',
+              letterSpacing: `${1.5 * s}px`,
+              textShadow: `0 0 ${15 * s}px ${vibrantColor}44`,
+            }}
+          >
+            {term}
+          </span>
+          {totalOccurrences && totalOccurrences >= 1 && occurrence && (
+            <span
+              style={{
+                color: 'rgba(255, 255, 255, 0.45)',
+                fontSize: `${20 * s}px`,
+                fontWeight: 600,
+                marginLeft: `${14 * s}px`,
+                letterSpacing: `${1 * s}px`,
+              }}
+            >
+              x{occurrence}
+            </span>
+          )}
+        </div>
         <span
           style={{
             fontSize: `${20 * s}px`,  // Balanceado y sutil (antes 13, luego 22)

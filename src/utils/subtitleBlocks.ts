@@ -85,13 +85,19 @@ export function buildSubtitleBlocks(words: Word[]): SubtitleBlock[] {
     const reachedSoftLimit = currentChars >= TARGET_CHARS_MIN;
     const reachedHardLimit = newChars >= TARGET_CHARS_MAX;
 
+    // Evitamos cortar justo antes de una palabra muy corta (ej: "it", "to")
+    // a menos que la pausa sea crítica o el bloque esté muy lleno.
+    const isNextWordTiny = curr.word.replace(/[.,!?;:]/g, '').length <= 2;
+
     // ¿Deberíamos cortar aquí?
     const shouldBreak = 
       forcedBreak || 
-      (longPause && !isTooShort) || 
-      (reachedSoftLimit && prevHasStrongPunct) || 
-      (reachedSoftLimit && prevHasSoftPunct && newChars > TARGET_CHARS_MIN + 15) || 
-      reachedHardLimit;
+      reachedHardLimit ||
+      (!isNextWordTiny && (
+        (longPause && !isTooShort) || 
+        (reachedSoftLimit && prevHasStrongPunct) || 
+        (reachedSoftLimit && prevHasSoftPunct && newChars > TARGET_CHARS_MIN + 15)
+      ));
 
     if (shouldBreak) {
       // Cerrar bloque e iniciar uno nuevo
