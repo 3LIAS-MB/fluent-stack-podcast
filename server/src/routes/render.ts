@@ -26,12 +26,16 @@ export function createRenderRouter(port: number = DEFAULT_PORT) {
 
       // ── El vocabulario pasa exactamente como llega. La normalización (categorías, strings, fallbacks como 'español') sucederá en vocabNormalization.ts dentro del cliente Remotion ────────────────────────────────────────────────
 
-      // ── Normalizar level ─────────────────────────────────────────────────────
-      const VALID_LEVELS = ['beginner', 'intermediate', 'advanced'];
+      // ── Normalizar level → enum completo que espera Remotion ────────────────
+      const LEVEL_MAP: Record<string, string> = {
+        beginner:     'Beginner A1-A2',
+        intermediate: 'Intermediate B1-B2',
+        advanced:     'Advanced C1-C2',
+      };
       if (typeof data.level === 'string') {
         const lower = data.level.toLowerCase();
-        const found = VALID_LEVELS.find((l) => lower.includes(l));
-        data.level = (found ?? 'beginner') as any;
+        const key = Object.keys(LEVEL_MAP).find((k) => lower.includes(k));
+        data.level = (LEVEL_MAP[key ?? ''] ?? 'Beginner A1-A2') as any;
       }
 
       if (!data.audioUrl || !data.imageUrl || !data.title) {

@@ -29,6 +29,8 @@ export const paginateVocabulary = (
     // Más el espacio para la palabra (+1 fila).
     const rowsNeeded = isNewCategory ? 2 : 1;
 
+    let categoryAlreadyAdded = false;
+
     if (currentRowCount + rowsNeeded > maxRows) {
       // Salto de página
       if (currentPageRows.length > 0) {
@@ -41,15 +43,11 @@ export const paginateVocabulary = (
       currentPageRows.push({ type: 'category', label: itemCategory });
       currentCategory = itemCategory;
       currentRowCount++;
+      categoryAlreadyAdded = true; // ← evita inserción doble abajo
     }
 
-    if (isNewCategory && currentRowCount === 0) {
-      // Caso normal: primera categoría de la primera página
-      currentPageRows.push({ type: 'category', label: itemCategory });
-      currentCategory = itemCategory;
-      currentRowCount++;
-    } else if (isNewCategory) {
-      // Caso normal: cambio de categoría a mitad de página
+    if (!categoryAlreadyAdded && isNewCategory) {
+      // Cambio de categoría dentro de la misma página
       currentPageRows.push({ type: 'category', label: itemCategory });
       currentCategory = itemCategory;
       currentRowCount++;

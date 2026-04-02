@@ -4,7 +4,7 @@ import ragCaptions from './rag-captions.json';
 export const SHARED_AUDIO_URL = 'ElevenLabs1.mp3';
 export const SHARED_IMAGE_URL = 'img/solo/background.jpg';
 export const SHARED_TITLE = 'Mastering RAG: The Architecture for 2025';
-export const SHARED_LEVEL: EpisodeLevel = 'Beginner A1-A2';
+export const SHARED_LEVEL: EpisodeLevel = 'Advanced C1-C2';
 export const SHARED_FORMAT: EpisodeFormat = 'solo';
 export const SHARED_CAPTIONS = ragCaptions as Captions;
 
