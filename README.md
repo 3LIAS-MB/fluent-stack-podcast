@@ -103,29 +103,50 @@ El sistema opera de forma "headless":
 
 ---
 
-## 📁 Estructura del Proyecto
+## 📂 Estructura del Proyecto (Monorepo)
 
-```
-src/
-├── compositions/   # Escenas principales (PodcastVideo.tsx)
-├── components/     # Visuales: AudioWave, KaraokeSubtitles, VocabCard
-├── hooks/          # Lógica reactiva: useVocabMatch.ts
-├── utils/          # Constantes: levelColors.ts, subtitleBlocks.ts
-├── types/          # Definiciones de interfaces globales
-└── Root.tsx        # Punto de entrada de Remotion
-```
+Este proyecto utiliza **NPM Workspaces** para separar las responsabilidades. **IMPORTANTE:** Todos los comandos principales se deben ejecutar desde la **raíz del proyecto** (`Fluent-Stack-Podcast v2`).
+
+### Carpetas Principales:
+
+*   **`apps/api/`**: Contiene el servidor Express que actúa como "Orquestador". Recibe peticiones de n8n y lanza los renders.
+    *   *Puerto por defecto:* `3000` (Acceder vía `http://localhost:3000`).
+*   **`apps/video/`**: Contiene el motor de video en **Remotion**. Aquí es donde vive la lógica visual, los componentes de React y los estilos del podcast.
+*   **`packages/shared/`**: Contiene definiciones de tipos (TypeScript) y utilidades que usan tanto la API como el Video. No es una aplicación ejecutable por sí sola.
+*   **`docs/`**: Manuales detallados de cada componente.
+*   **`output/`**: Carpeta donde se guardan los videos MP4 finales una vez renderizados.
+*   **`temp/`**: Carpeta temporal para procesar audios y activos durante el renderizado.
 
 ---
 
-## 🚀 Comandos Principales
+## 📖 Documentación Detallada
 
-| Comando                | Función                                       |
-| ---------------------- | --------------------------------------------- |
-| `npm run studio`       | Abre Remotion Studio para preview interactivo |
-| `npm run dev`          | Inicia entorno de desarrollo Vite             |
-| `npm run render`       | Renderiza video principal (16:9)              |
-| `npm run render:short` | Genera clip vertical/short                    |
-| `npm run server`       | Inicia API de orquestación                    |
+Para profundizar en cada parte del sistema, consulta los siguientes manuales:
+
+1.  [🏛️ Arquitectura del Sistema](docs/01-architecture.md)
+2.  [🚀 Servicio de API (Backend)](docs/02-api-service.md)
+3.  [🎬 Motor de Video (Remotion)](docs/03-video-remotion.md)
+4.  [🧩 Tipos Compartidos](docs/04-shared-package.md)
+5.  [⚙️ Guía de Instalación y Setup](docs/05-setup-guide.md)
+6.  [🔗 Integración con n8n/Pipeline](docs/06-workflow-integration.md)
+7.  [🔧 Registro de Decisiones Técnicas](docs/07-technical-decisions.md)
+
+---
+
+## 🚀 Guía de Comandos (Desde la Raíz)
+
+Para que el sistema funcione correctamente, abre una terminal en la carpeta principal del proyecto y usa estos comandos:
+
+| Comando | Lo que antes hacías con... | ¿Qué hace? |
+| :--- | :--- | :--- |
+| `npm run dev:api` | `npm run server` | **Inicia la API.** Necesario para que n8n pueda enviar renders. |
+| `npm run dev:video` | `npm run dev` | **Preview Web.** Abre Vite para ver el video en el navegador. |
+| `npm run studio` | `npm run studio` | **Remotion Studio.** Herramienta para editar y previsualizar con línea de tiempo. |
+| `npm run render` | `npm run render` | **Renderizar MP4.** Genera el video final desde la consola. |
+| `npm run check-types` | (Nuevo) | Valida que no haya errores de TypeScript en ninguna carpeta. |
+
+> [!TIP]
+> **Sobre el servidor API:** Si ves que el servidor dice `http://0.0.0.0:3000`, en tu navegador de Windows debes usar **`http://localhost:3000`**.
 
 ---
 
@@ -133,10 +154,10 @@ src/
 
 Este proyecto representa una **"Low-Op Content Machine"** (máquina de contenido de baja operación) que permite:
 
-- Producción masiva de contenido educativo técnico con mínima intervención humana
-- Integración perfecta de aprendizaje de inglés técnico con conceptos de ingeniería
-- Escalabilidad mediante automatización completa del pipeline (generación de audio → transcripción → renderizado → publicación)
+- Producción masiva de contenido educativo técnico con mínima intervención humana.
+- Integración perfecta de aprendizaje de inglés técnico con conceptos de ingeniería.
+- Escalabilidad mediante automatización completa del pipeline (generación de audio → transcripción → renderizado → publicación).
 
 ---
 
-_© 2024 Fluent Stack Podcast — Optimizando la educación tecnológica mediante automatización de video._
+_© 2024-2026 Fluent Stack Podcast — Optimizando la educación tecnológica mediante automatización de video._

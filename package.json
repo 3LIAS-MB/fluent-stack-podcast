@@ -1,6 +1,11 @@
 {
   "name": "fluent-stack-remotion",
   "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "description": "Remotion video renderer for Fluent Stack Podcast",
   "main": "src/index.tsx",
   "dependencies": {
@@ -29,13 +34,12 @@
     "vite": "^5.0.11"
   },
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    "server": "npx ts-node server/src/index.ts",
-    "render": "npx remotion render src/Root.tsx",
-    "render:short": "npx remotion render src/Root.tsx PodcastVideoShort",
-    "studio": "remotion preview src/Root.tsx"
+    "dev:api": "npm run dev -w @fluent-stack/api",
+    "dev:video": "npm run dev -w @fluent-stack/video",
+    "studio": "npm run studio -w @fluent-stack/video",
+    "render": "npm run render -w @fluent-stack/video",
+    "render:short": "npm run render:short -w @fluent-stack/video",
+    "check-types": "npm run build -w @fluent-stack/shared && npm run check-types -w @fluent-stack/api && npm run check-types -w @fluent-stack/video"
   },
   "browserslist": [
     ">0.2%",
