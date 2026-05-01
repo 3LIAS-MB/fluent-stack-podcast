@@ -8,13 +8,14 @@ if (!fs.existsSync(TEMP_DIR)) {
   fs.mkdirSync(TEMP_DIR, { recursive: true });
 }
 
-export async function downloadFile(url: string, suffix: string): Promise<string> {
+export async function downloadFile(url: string, suffix: string, title?: string): Promise<string> {
   const https = require('https');
   const http = require('http');
 
   const cleanUrl = url.split('?')[0];
   const ext = path.extname(cleanUrl) || (suffix === 'audio' ? '.mp3' : '.jpg');
-  const tempFile = path.join(TEMP_DIR, `temp-${suffix}-${Date.now()}${ext}`);
+  const safeTitle = title ? title.replace(/[^a-z0-9]/gi, '-').replace(/-+/g, '-').toLowerCase() : 'untitled';
+  const tempFile = path.join(TEMP_DIR, `temp-${safeTitle}-${suffix}-${Date.now()}${ext}`);
 
   return new Promise((resolve, reject) => {
     const protocol = url.startsWith('https') ? https : http;
@@ -60,9 +61,9 @@ export async function downloadFile(url: string, suffix: string): Promise<string>
 }
 
 export async function downloadMultiple(
-  urls: { url: string; suffix: string }[]
+  urls: { url: string; suffix: string; title?: string }[]
 ): Promise<{ path: string; suffix: string }[]> {
-  const downloads = urls.map(({ url, suffix }) => downloadFile(url, suffix));
+  const downloads = urls.map(({ url, suffix, title }) => downloadFile(url, suffix, title));
   const results = await Promise.all(downloads);
   return results.map((path, index) => ({
     path,

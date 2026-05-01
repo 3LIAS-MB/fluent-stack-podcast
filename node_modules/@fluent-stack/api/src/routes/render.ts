@@ -44,8 +44,8 @@ export function createRenderRouter(port: number = DEFAULT_PORT) {
 
       try {
         const [{ captions: rawCaptions, audioFile }, imageFile] = await Promise.all([
-          transcribeAudio(data.audioUrl, data.format || 'solo', transcriptionMethod),
-          downloadFile(data.imageUrl, 'image'),
+          transcribeAudio(data.audioUrl, data.format || 'solo', transcriptionMethod, title),
+          downloadFile(data.imageUrl, 'image', title),
         ]);
 
         // Parsear scriptSegments si viene como string desde n8n
